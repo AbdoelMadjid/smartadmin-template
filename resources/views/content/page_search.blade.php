@@ -1,8 +1,8 @@
 @extends('inc.main')
 @section('title', 'Search')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -147,15 +147,15 @@
                                 <span class="fs-sm d-flex align-items-center mt-3">
                                     <a href="#" class="mr-2 mt-1" title="SmartAdmin WebApp Colors">
                                         <span class="d-block img-share"
-                                            style="background-image:url('/admin/img/thumbs/ng-thumb-2.png'); background-size: cover;"></span>
+                                            style="background-image:url('/assets/img/thumbs/ng-thumb-2.png'); background-size: cover;"></span>
                                     </a>
                                     <a href="#" class="mr-2 mt-1" title="SmartAdmin WebApp Alerts">
                                         <span class="d-block img-share"
-                                            style="background-image:url('/admin/img/thumbs/ng-thumb-3.png'); background-size: cover;"></span>
+                                            style="background-image:url('/assets/img/thumbs/ng-thumb-3.png'); background-size: cover;"></span>
                                     </a>
                                     <a href="#" class="mr-2 mt-1" title="SmartAdmin WebApp Progress">
                                         <span class="d-block img-share"
-                                            style="background-image:url('/admin/img/thumbs/ng-thumb-4.png'); background-size: cover;"></span>
+                                            style="background-image:url('/assets/img/thumbs/ng-thumb-4.png'); background-size: cover;"></span>
                                     </a>
                                 </span>
                             </li>
@@ -188,7 +188,7 @@
                                 <div class="scrolling-wrapper">
                                     <div class="card shadow-0 d-inline-flex mr-2" style="width: 200px;">
                                         <div class="card-img-top position-relative"
-                                            style="background-image:url('/admin/img/thumbs/ng-thumb-video-1.png');display: block;height: 110px;width: 200px;">
+                                            style="background-image:url('/assets/img/thumbs/ng-thumb-video-1.png');display: block;height: 110px;width: 200px;">
                                             <div class="w-100 h-100 d-flex align-items-center justify-content-center">
                                                 <i class="fas fa-play-circle display-3 m-0 opacity-50"></i>
                                             </div>
@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="card shadow-0 d-inline-flex mr-2" style="width: 200px;">
                                         <div class="card-img-top position-relative"
-                                            style="background-image:url('/admin/img/thumbs/ng-thumb-video-2.png');display: block;height: 110px;width: 200px;">
+                                            style="background-image:url('/assets/img/thumbs/ng-thumb-video-2.png');display: block;height: 110px;width: 200px;">
                                             <div class="w-100 h-100 d-flex align-items-center justify-content-center">
                                                 <i class="fas fa-play-circle display-3 m-0 opacity-50"></i>
                                             </div>
@@ -354,7 +354,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/1.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/1.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -373,7 +373,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/2.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/2.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -392,7 +392,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/3.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/3.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -411,7 +411,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/5.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/5.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -430,7 +430,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/6.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/6.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -449,7 +449,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/10.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/10.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -468,7 +468,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/14.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/14.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -487,7 +487,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/12.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/12.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -506,7 +506,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/4.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/4.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -525,7 +525,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/1.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/1.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -544,7 +544,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/2.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/2.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -563,7 +563,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/3.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/3.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -582,7 +582,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/5.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/5.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -601,7 +601,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/6.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/6.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -620,7 +620,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/10.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/10.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -639,7 +639,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/14.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/14.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -658,7 +658,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/12.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/12.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -677,7 +677,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/4.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/4.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -696,7 +696,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/15.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/15.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -715,7 +715,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/13.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/13.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -734,7 +734,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/11.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/11.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -753,7 +753,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/1.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/1.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -772,7 +772,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/2.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/2.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -791,7 +791,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/3.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/3.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>
@@ -810,7 +810,7 @@
                                         <i class="fal fa-plus-circle display-2 m-0 opacity-90"></i>
                                     </div>
                                 </div>
-                                <img src="/admin/img/demo/search/4.png" alt="Search SmartAdmin Thumbnail"
+                                <img src="/assets/img/demo/search/4.png" alt="Search SmartAdmin Thumbnail"
                                     class="img-thumbnail">
                             </a>
                         </div>

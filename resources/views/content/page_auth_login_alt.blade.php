@@ -11,7 +11,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
 <head>
     @include('inc._head')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/page-login-alt.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/page-login-alt.css">
 </head>
 <!-- BEGIN Body -->
 <!-- Possible Classes
@@ -47,7 +47,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
         <div
             class="page-logo m-0 w-100 align-items-center justify-content-center rounded border-bottom-left-radius-0 border-bottom-right-radius-0 px-4">
             <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
-                <img src="/admin/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
+                <img src="/assets/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
                 <span class="page-logo-text mr-1">SmartAdmin WebApp</span>
                 <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
             </a>
@@ -93,9 +93,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
             </div>
         </div>
     </div>
-    <video poster="/admin/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
-        <source src="/admin/media/video/cc.webm" type="video/webm">
-        <source src="/admin/media/video/cc.mp4" type="video/mp4">
+    <video poster="/assets/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
+        <source src="/assets/media/video/cc.webm" type="video/webm">
+        <source src="/assets/media/video/cc.mp4" type="video/mp4">
     </video>
     <!-- BEGIN Color profile -->
     <!-- this area is hidden and will not be seen on screens or screen readers -->

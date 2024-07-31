@@ -2,8 +2,8 @@
 @section('title', 'Inbox Read')
 @section('body_class', 'nav-function-minify layout-composed')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -172,7 +172,7 @@
                                 class="d-flex flex-column border-faded border-top-0 border-left-0 border-right-0 py-3 px-3 px-sm-4 px-lg-0 mr-0 mr-lg-5 flex-shrink-0">
                                 <div class="d-flex align-items-center flex-row">
                                     <div class="ml-0 mr-3 mx-lg-3">
-                                        <img src="/admin/img/demo/avatars/avatar-c.png"
+                                        <img src="/assets/img/demo/avatars/avatar-c.png"
                                             class="profile-image profile-image-md rounded-circle" alt="Melissa Ayre">
                                     </div>
                                     <div class="fw-500 flex-1 d-flex flex-column cursor-pointer" data-toggle="collapse"
@@ -212,7 +212,7 @@
                                 class="d-flex flex-column border-faded border-top-0 border-left-0 border-right-0 py-3 px-3 px-sm-4 px-lg-0 mr-0 mr-lg-5 flex-shrink-0">
                                 <div class="d-flex align-items-center flex-row">
                                     <div class="ml-0 mr-3 mx-lg-3">
-                                        <img src="/admin/img/demo/avatars/avatar-admin.png"
+                                        <img src="/assets/img/demo/avatars/avatar-admin.png"
                                             class="profile-image profile-image-md rounded-circle" alt="Dr. Codex Lantern">
                                     </div>
                                     <div class="fw-500 flex-1 d-flex flex-column cursor-pointer" data-toggle="collapse"
@@ -246,7 +246,7 @@
                                         <br>
                                         <br>
                                         <div class="d-flex d-column align-items-start mb-3">
-                                            <img src="/admin/img/logo.png" alt="SmartAdmin WebApp" class="mr-3 mt-1">
+                                            <img src="/assets/img/logo.png" alt="SmartAdmin WebApp" class="mr-3 mt-1">
                                             <div class="border-left pl-3">
                                                 <span class="fw-500 fs-lg d-block l-h-n">Dr. Codex Lantern</span>
                                                 <span class="fw-400 fs-nano d-block l-h-n mb-1">Orthopedic Surgeon</span>
@@ -276,7 +276,7 @@
                                 class="d-flex flex-column border-faded border-top-0 border-left-0 border-right-0 py-3 px-3 px-sm-4 px-lg-0 mr-0 mr-lg-5 flex-shrink-0">
                                 <div class="d-flex align-items-center flex-row">
                                     <div class="ml-0 mr-3 mx-lg-3 width-2">
-                                        <img src="/admin/img/demo/avatars/avatar-c.png"
+                                        <img src="/assets/img/demo/avatars/avatar-c.png"
                                             class="profile-image profile-image-md rounded-circle" alt="Melissa Ayre">
                                     </div>
                                     <div class="fw-500 flex-1 d-flex flex-column cursor-pointer" data-toggle="collapse"
@@ -377,7 +377,7 @@
                                 <br>
                                 <br>
                                 <div class="d-flex d-column align-items-start mb-3">
-                                    <img src="/admin/img/logo.png" alt="SmartAdmin WebApp" class="mr-3 mt-1">
+                                    <img src="/assets/img/logo.png" alt="SmartAdmin WebApp" class="mr-3 mt-1">
                                     <div class="border-left pl-3">
                                         <span class="fw-500 fs-lg d-block l-h-n">Dr. Codex Lantern</span>
                                         <span class="fw-400 fs-nano d-block l-h-n mb-1">Orthopedic Surgeon</span>

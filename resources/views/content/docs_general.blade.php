@@ -1,9 +1,9 @@
 @extends('inc.main')
 @section('title', 'General Docs')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-duotone.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-duotone.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -2762,7 +2762,7 @@ link rel="stylesheet" media="screen, print" href="css/app.bundle-rtl.css"</pre>
                             <div class="col col-lg-9 col-xl-7">
                                 <div class="demo-window rounded height-sm mb-g">
                                     <div class="demo-window-content">
-                                        <img src="/admin/img/demo/chromedevtools-1.png">
+                                        <img src="/assets/img/demo/chromedevtools-1.png">
                                     </div>
                                 </div>
                             </div>
@@ -2781,7 +2781,7 @@ link rel="stylesheet" media="screen, print" href="css/app.bundle-rtl.css"</pre>
                             <div class="col col-lg-9 col-xl-7">
                                 <div class="demo-window rounded height-sm mb-g">
                                     <div class="demo-window-content">
-                                        <img src="/admin/img/demo/chromedevtools-2.png">
+                                        <img src="/assets/img/demo/chromedevtools-2.png">
                                     </div>
                                 </div>
                             </div>
@@ -2797,7 +2797,7 @@ link rel="stylesheet" media="screen, print" href="css/app.bundle-rtl.css"</pre>
                             <div class="col col-lg-9 col-xl-7">
                                 <div class="demo-window rounded height-sm mb-g">
                                     <div class="demo-window-content">
-                                        <img src="/admin/img/demo/chromedevtools-3.png">
+                                        <img src="/assets/img/demo/chromedevtools-3.png">
                                     </div>
                                 </div>
                             </div>
@@ -2813,7 +2813,7 @@ link rel="stylesheet" media="screen, print" href="css/app.bundle-rtl.css"</pre>
                             <div class="col col-lg-9 col-xl-7">
                                 <div class="demo-window rounded height-sm mb-g">
                                     <div class="demo-window-content">
-                                        <img src="/admin/img/demo/chromedevtools-4.png">
+                                        <img src="/assets/img/demo/chromedevtools-4.png">
                                     </div>
                                 </div>
                             </div>
@@ -2903,7 +2903,7 @@ link rel="stylesheet" media="screen, print" href="css/app.bundle-rtl.css"</pre>
     <script>
         $(document).ready(function() {
             var jsdisplay = $('#js-display');
-            var url = "/admin/media/data/plugin-reference.json";
+            var url = "/assets/media/data/plugin-reference.json";
 
             $.getJSON(url, function(data) {
                 $.each(data, function(index, value) {

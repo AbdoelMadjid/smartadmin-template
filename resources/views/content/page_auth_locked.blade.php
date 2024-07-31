@@ -1,7 +1,7 @@
 @extends('inc.main_auth')
 @section('title', 'Auto Locked')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     @component('inc._auth_header')
@@ -10,11 +10,11 @@
         </a>
     @endcomponent
     <div class="d-flex flex-1"
-        style="background: url(/admin/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
+        style="background: url(/assets/img/svg/pattern-1.svg) no-repeat center bottom fixed; background-size: cover;">
         <div class="container py-4 py-lg-5 my-lg-5 px-4 px-sm-0 text-white d-flex align-items-center justify-content-center">
             <form id="js-login" role="form" class="text-center text-white mb-5 pb-5" action="/intel_analytics_dashboard">
                 <div class="py-3">
-                    <img src="/admin/img/demo/avatars/avatar-admin-lg.png"
+                    <img src="/assets/img/demo/avatars/avatar-admin-lg.png"
                         class="img-responsive rounded-circle img-thumbnail" alt="thumbnail">
                 </div>
                 <div class="form-group">

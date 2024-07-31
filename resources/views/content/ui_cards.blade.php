@@ -64,7 +64,7 @@
                                 The most basic example of cards with enforced width
                             </div>
                             <div class="card border m-auto m-lg-0" style="max-width: 18rem;">
-                                <img src="/admin/img/card-backgrounds/cover-3-lg.png" class="card-img-top" alt="...">
+                                <img src="/assets/img/card-backgrounds/cover-3-lg.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the
@@ -752,7 +752,7 @@
 
 
         var ng_bgColors,
-            ng_bgColors_URL = "/admin/media/data/ng-bg-colors.json",
+            ng_bgColors_URL = "/assets/media/data/ng-bg-colors.json",
             formatBgColors = [];
 
         $.when(

@@ -1,9 +1,9 @@
 @extends('inc.main')
 @section('title', 'Analytics Dashboard')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/miscellaneous/reactions/reactions.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/miscellaneous/fullcalendar/fullcalendar.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/miscellaneous/jqvmap/jqvmap.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/reactions/reactions.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/fullcalendar/fullcalendar.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/jqvmap/jqvmap.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -248,7 +248,7 @@
                                             <!-- profile photo : lazy loaded -->
                                             <span class="status status-danger">
                                                 <span class="profile-image rounded-circle d-inline-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-j.png')"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-j.png')"></span>
                                             </span>
                                             <!-- profile photo end -->
                                             <div class="ml-3">
@@ -319,7 +319,7 @@
                                             <!-- profile photo : lazy loaded -->
                                             <span class="status status-danger">
                                                 <span class="profile-image rounded-circle d-inline-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-admin.png')"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-admin.png')"></span>
                                             </span>
                                             <!-- profile photo end -->
                                             <div class="ml-3">
@@ -532,12 +532,12 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/dependency/moment/moment.js"></script>
-    <script src="/admin/js/miscellaneous/fullcalendar/fullcalendar.bundle.js"></script>
-    <script src="/admin/js/statistics/sparkline/sparkline.bundle.js"></script>
-    <script src="/admin/js/statistics/easypiechart/easypiechart.bundle.js"></script>
-    <script src="/admin/js/statistics/flot/flot.bundle.js"></script>
-    <script src="/admin/js/miscellaneous/jqvmap/jqvmap.bundle.js"></script>
+    <script src="/assets/js/dependency/moment/moment.js"></script>
+    <script src="/assets/js/miscellaneous/fullcalendar/fullcalendar.bundle.js"></script>
+    <script src="/assets/js/statistics/sparkline/sparkline.bundle.js"></script>
+    <script src="/assets/js/statistics/easypiechart/easypiechart.bundle.js"></script>
+    <script src="/assets/js/statistics/flot/flot.bundle.js"></script>
+    <script src="/assets/js/miscellaneous/jqvmap/jqvmap.bundle.js"></script>
     <script>
         $(document).ready(function() {
             //$('#js-page-content').smartPanel();
@@ -888,7 +888,7 @@
                     }
 
                     $('.js-jqvmap-flag').attr('src',
-                        '/admin/img/flags/4x3/' + code.toLowerCase() +
+                        '/assets/img/flags/4x3/' + code.toLowerCase() +
                         '.svg');
                     $('.js-jqvmap-country').html(region + ' - ' + '$' + randomNumber.toFixed(2).replace(
                         /(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + arrow);

@@ -291,37 +291,37 @@
                             </div>
                             <div class="demo">
                                 <span class="status d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
                                         alt="...">
                                 </span>
                                 <span class="status status-danger d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
                                         alt="...">
                                 </span>
                                 <span class="status status-success d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
                                         alt="...">
                                 </span>
                                 <span class="status status-warning d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png" class="profile-image rounded-circle"
                                         alt="...">
                                 </span>
                             </div>
                             <div class="demo">
                                 <span class="status status-sm d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                         class="profile-image profile-image-md rounded-circle" alt="...">
                                 </span>
                                 <span class="status status-sm status-danger d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                         class="profile-image profile-image-md rounded-circle" alt="...">
                                 </span>
                                 <span class="status status-sm status-success d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                         class="profile-image profile-image-md rounded-circle" alt="...">
                                 </span>
                                 <span class="status status-sm status-warning d-inline-block">
-                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                         class="profile-image profile-image-md rounded-circle" alt="...">
                                 </span>
                             </div>

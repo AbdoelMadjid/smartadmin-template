@@ -2,9 +2,9 @@
 @section('title', 'Select2')
 @section('pages-css')
     <!-- DEMO related CSS below -->
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
     <!-- page related CSS below -->
-    <link rel="stylesheet" media="screen, print" href="/admin/css/formplugins/select2/select2.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/select2/select2.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -979,7 +979,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/formplugins/select2/select2.bundle.js"></script>
+    <script src="/assets/js/formplugins/select2/select2.bundle.js"></script>
     <script>
         $(document).ready(function() {
             $(function() {

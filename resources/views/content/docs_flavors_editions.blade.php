@@ -19,7 +19,7 @@
                                 class="badge badge-primary fw-300 ml-auto position-absolute pos-top pos-right mr-4 mt-4 hidden-sm-down">SLIM
                                 + SEED + FULL PROJECT</span>
                             <div class="d-flex align-items-center mb-g">
-                                <img src="/admin/img/demo/html5.png" class="mr-3">
+                                <img src="/assets/img/demo/html5.png" class="mr-3">
                                 <h1 class="fw-300 m-0 l-h-n">
                                     <span class="text-contrast">
                                         Pure HTML5
@@ -107,7 +107,7 @@
                             <div class="card h-100 rounded overflow-hidden position-relative">
                                 <div class="card-body p-4">
                                     <div class="d-flex align-items-center mb-g">
-                                        <img src="/admin/img/demo/mvc.png" class="mr-3">
+                                        <img src="/assets/img/demo/mvc.png" class="mr-3">
                                         <h1 class="fw-300 m-0 l-h-n">
                                             <span class="text-contrast">.Net Core 3.1</span>
                                             <small class="fw-300 m-0 l-h-n">
@@ -144,7 +144,7 @@
                             <div class="card h-100 rounded overflow-hidden">
                                 <div class="card-body p-4">
                                     <div class="d-flex align-items-center mb-g">
-                                        <img src="/admin/img/demo/php.png" class="mr-3">
+                                        <img src="/assets/img/demo/php.png" class="mr-3">
                                         <h1 class="fw-300 m-0 l-h-n">
                                             <span class="text-contrast">Php 7</span>
                                             <small class="fw-300 m-0 l-h-n">
@@ -185,7 +185,7 @@
                             <div class="card h-100 rounded overflow-hidden position-relative">
                                 <div class="card-body p-4">
                                     <div class="d-flex align-items-center mb-g">
-                                        <img src="/admin/img/demo/rails.png" class="mr-3">
+                                        <img src="/assets/img/demo/rails.png" class="mr-3">
                                         <h1 class="fw-300 m-0 l-h-n">
                                             <span class="text-contrast">
                                                 Rails
@@ -223,7 +223,7 @@
                             <div class="card h-100 rounded overflow-hidden position-relative">
                                 <div class="card-body p-4">
                                     <div class="d-flex align-items-center mb-g">
-                                        <img src="/admin/img/demo/laravel.png" class="mr-3">
+                                        <img src="/assets/img/demo/laravel.png" class="mr-3">
                                         <h1 class="fw-300 m-0 l-h-n">
                                             <span class="text-contrast">
                                                 Laravel 7

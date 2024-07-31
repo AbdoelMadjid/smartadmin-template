@@ -138,7 +138,7 @@
         var prefix_extend = ""
 
         // file that will be filtered
-        var filename = "/admin/media/data/ng-icon-base.json";
+        var filename = "/assets/media/data/ng-icon-base.json";
 
         $.getJSON(filename).then(function(data) {
 
@@ -149,20 +149,20 @@
                 jQuery.each(data, function(index, item) {
                     formatedDOMElms.push(
                         '<div class="col-4 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center mb-g">\
-                                                                    <a href="#" class="rounded bg-white p-0 m-0 d-flex flex-column w-100 h-100 shadow-hover-2 js-showcase-icon" data-toggle="modal" data-target="#iconModal" data-filter-tags=' +
+                                                                        <a href="#" class="rounded bg-white p-0 m-0 d-flex flex-column w-100 h-100 shadow-hover-2 js-showcase-icon" data-toggle="modal" data-target="#iconModal" data-filter-tags=' +
                         item + '>\
-                                                                        <div class="rounded-top color-fusion-300 w-100 bg-primary-300">\
-                                                                            <div class="rounded-top d-flex align-items-center justify-content-center w-100 pt-3 pb-3 pr-2 pl-2 fa-6x hover-bg">\
-                                                                                <i class="' + item +
+                                                                            <div class="rounded-top color-fusion-300 w-100 bg-primary-300">\
+                                                                                <div class="rounded-top d-flex align-items-center justify-content-center w-100 pt-3 pb-3 pr-2 pl-2 fa-6x hover-bg">\
+                                                                                    <i class="' + item +
                         '"></i>\
+                                                                                </div>\
                                                                             </div>\
-                                                                        </div>\
-                                                                        <div class="rounded-bottom p-1 w-100 d-flex justify-content-center align-items-center text-center">\
-                                                                            <span class="d-block text-truncate text-muted">' +
+                                                                            <div class="rounded-bottom p-1 w-100 d-flex justify-content-center align-items-center text-center">\
+                                                                                <span class="d-block text-truncate text-muted">' +
                         item + '</span>\
-                                                                        </div>\
-                                                                    </a>\
-                                                                </div>');
+                                                                            </div>\
+                                                                        </a>\
+                                                                    </div>');
 
                 });
 

@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Accordion')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -631,7 +631,7 @@
                                             data-target="#js_demo_accordion-6a" aria-expanded="true">
                                             <div class="d-flex flex-row align-items-center">
                                                 <span class="mr-2">
-                                                    <img src="/admin/img/demo/avatars/avatar-admin.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-admin.png"
                                                         class="rounded-circle profile-image" alt="Dr. Codex Lantern">
                                                 </span>
                                                 <div class="info-card-text">
@@ -746,7 +746,7 @@
                                             data-target="#js_demo_accordion-6b" aria-expanded="false">
                                             <div class="d-flex flex-row align-items-center">
                                                 <span class="mr-2">
-                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                         class="rounded-circle profile-image" alt="Jessica Milano">
                                                 </span>
                                                 <div class="info-card-text">

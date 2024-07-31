@@ -13,10 +13,10 @@
         + smartpanels.js (extension)
         + src/../jquery-snippets.js (core)
     -->
-    <script src="/admin/js/vendors.bundle.js"></script>
-    <script src="/admin/js/app.bundle.js"></script>
-    <script src="/admin/js/confirmRedirect.js"></script>
-    <script src="/admin/js/customAlert.js"></script>
+    <script src="/assets/js/vendors.bundle.js"></script>
+    <script src="/assets/js/app.bundle.js"></script>
+    <script src="/assets/js/confirmRedirect.js"></script>
+    <script src="/assets/js/customAlert.js"></script>
     {{--
     <script type="text/javascript">
         /* Activate smart panels */

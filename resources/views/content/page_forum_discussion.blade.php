@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Discussion')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -30,7 +30,7 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/admin/img/demo/avatars/avatar-admin.png" class="img-fluid img-thumbnail"
+                                <img src="/assets/img/demo/avatars/avatar-admin.png" class="img-fluid img-thumbnail"
                                     alt="">
                             </div>
                             <div class="d-block ml-2">
@@ -92,7 +92,7 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/admin/img/demo/avatars/avatar-b.png" class="img-fluid img-thumbnail"
+                                <img src="/assets/img/demo/avatars/avatar-b.png" class="img-fluid img-thumbnail"
                                     alt="">
                             </div>
                             <div class="d-block ml-2">
@@ -147,7 +147,7 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/admin/img/demo/avatars/avatar-e.png" class="img-fluid img-thumbnail"
+                                <img src="/assets/img/demo/avatars/avatar-e.png" class="img-fluid img-thumbnail"
                                     alt="">
                             </div>
                             <div class="d-block ml-2">
@@ -200,7 +200,7 @@
                     <div class="card-header p-0">
                         <div class="p-3 d-flex flex-row">
                             <div class="d-block flex-shrink-0">
-                                <img src="/admin/img/demo/avatars/avatar-h.png" class="img-fluid img-thumbnail"
+                                <img src="/assets/img/demo/avatars/avatar-h.png" class="img-fluid img-thumbnail"
                                     alt="">
                             </div>
                             <div class="d-block ml-2">

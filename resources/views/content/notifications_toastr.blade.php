@@ -1,8 +1,8 @@
 @extends('inc.main')
 @section('title', 'Toastr')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/notifications/toastr/toastr.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/notifications/toastr/toastr.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -270,7 +270,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/notifications/toastr/toastr.js"></script>
+    <script src="/assets/js/notifications/toastr/toastr.js"></script>
     <script>
         $(document).ready(function() {
 

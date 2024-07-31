@@ -130,7 +130,7 @@
 
         /*JSON file that will be loaded*/
         var filename =
-            "/admin/media/data/ng-icon-list"; //available JSON files [ng-icon-base, ng-icon-list, ng-text-colors, fa-brand-list, fa-icon-list]
+            "/assets/media/data/ng-icon-list"; //available JSON files [ng-icon-base, ng-icon-list, ng-text-colors, fa-brand-list, fa-icon-list]
 
         /*execute code*/
         $.getJSON(filename + ".json").then(function(data) {
@@ -142,22 +142,24 @@
             jQuery.each(data, function(index, item) {
                 formatedDOMElms.push(
                     '<div class="col-4 col-sm-3 col-md-3 col-lg-2 col-xl-1 d-flex justify-content-center align-items-center mb-g">\
-                                                                <a href="#" class="rounded bg-white p-0 m-0 d-flex flex-column w-100 h-100 js-showcase-icon shadow-hover-2" data-toggle="modal" data-target="#iconModal" data-filter-tags=' +
+                                                                    <a href="#" class="rounded bg-white p-0 m-0 d-flex flex-column w-100 h-100 js-showcase-icon shadow-hover-2" data-toggle="modal" data-target="#iconModal" data-filter-tags=' +
                     item.substring(1) + '>\
-                                                                    <div class="rounded-top color-fusion-300 w-100 bg-primary-300">\
-                                                                        <div class="rounded-top d-flex align-items-center justify-content-center w-100 pt-3 pb-3 pr-2 pl-2 fa-3x hover-bg">\
-                                                                            <i class="' + prefix + ' ' + prefix_extend +
-                    item + '"></i>\
+                                                                        <div class="rounded-top color-fusion-300 w-100 bg-primary-300">\
+                                                                            <div class="rounded-top d-flex align-items-center justify-content-center w-100 pt-3 pb-3 pr-2 pl-2 fa-3x hover-bg">\
+                                                                                <i class="' + prefix + ' ' +
+                    prefix_extend +
+                    item +
+                    '"></i>\
+                                                                            </div>\
                                                                         </div>\
-                                                                    </div>\
-                                                                    <div class="rounded-bottom p-1 w-100 d-flex justify-content-center align-items-center text-center">\
-                                                                        <span class="d-block text-truncate text-muted">' +
+                                                                        <div class="rounded-bottom p-1 w-100 d-flex justify-content-center align-items-center text-center">\
+                                                                            <span class="d-block text-truncate text-muted">' +
                     item
                     .substring(
                         1) + '</span>\
-                                                                    </div>\
-                                                                </a>\
-                                                            </div>');
+                                                                        </div>\
+                                                                    </a>\
+                                                                </div>');
             });
 
             /* append to HTML dom*/

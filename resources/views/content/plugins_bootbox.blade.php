@@ -751,7 +751,7 @@
 
             $("#js-bootbox-alert-1").on("click", function() {
 
-                initApp.playSound('/admin/media/sound', 'bigbox')
+                initApp.playSound('/assets/media/sound', 'bigbox')
 
                 bootbox.confirm({
                     title: "<i class='fal fa-times-circle text-danger mr-2'></i> Do you wish to delete this table?",
@@ -779,7 +779,7 @@
 
             $("#js-bootbox-alert-2").on("click", function() {
 
-                initApp.playSound('/admin/media/sound', 'voice_on')
+                initApp.playSound('/assets/media/sound', 'voice_on')
 
                 bootbox.alert({
                     title: "<i class='fal fa-check-circle text-success mr-2'></i> <span class='text-success fw-500'>Success!</span>",

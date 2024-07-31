@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Projects')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -57,32 +57,32 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-b.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-b.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-h.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-h.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s fs-xs">
                                                     <span data-hasmore="+7" class="rounded-circle profile-image-sm">
-                                                        <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                        <img src="/assets/img/demo/avatars/avatar-j.png"
                                                             class="profile-image-sm rounded-circle" alt="aa">
                                                     </span>
                                                 </a>
@@ -101,19 +101,19 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-g.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-g.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-i.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-i.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -132,11 +132,11 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-g.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-g.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-m.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-m.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -154,19 +154,19 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-f.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-f.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-h.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-h.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-d.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-d.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -184,23 +184,23 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-m.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-m.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -219,15 +219,15 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-b.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-b.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -245,11 +245,11 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-d.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-d.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -268,19 +268,19 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-i.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-i.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-m.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-m.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -299,19 +299,19 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-g.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-g.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-i.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-i.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -330,7 +330,7 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -349,19 +349,19 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-b.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-b.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -380,23 +380,23 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-g.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-g.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-b.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-b.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -415,15 +415,15 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-d.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-d.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -441,15 +441,15 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-c.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-d.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-d.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -468,15 +468,15 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-g.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-g.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-h.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-h.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -494,11 +494,11 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-m.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-m.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-f.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-f.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -516,15 +516,15 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-d.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-d.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -543,32 +543,32 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-k.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-h.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-h.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-e.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-a.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-m.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-m.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                                 <a href="#" class="btn-m-s fs-xs">
                                                     <span data-hasmore="+7" class="rounded-circle profile-image-sm">
-                                                        <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                        <img src="/assets/img/demo/avatars/avatar-j.png"
                                                             class="profile-image-sm rounded-circle" alt="aa">
                                                     </span>
                                                 </a>
@@ -587,7 +587,7 @@
                                         <td>
                                             <div class="fs-sm d-flex align-items-center flex-row-reverse">
                                                 <a href="#" class="btn-m-s">
-                                                    <img src="/admin/img/demo/avatars/avatar-admin.png"
+                                                    <img src="/assets/img/demo/avatars/avatar-admin.png"
                                                         class="profile-image-sm rounded-circle" alt="aa">
                                                 </a>
                                             </div>
@@ -633,7 +633,7 @@
  + dataTables.select.js
  + datatables.styles.app.js
  + datatables.styles.buttons.app.js --> --}}
-    <script src="/admin/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         $(document).ready(function() {
             // initialize datatable

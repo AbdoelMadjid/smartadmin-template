@@ -85,7 +85,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -137,7 +137,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -190,7 +190,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -272,7 +272,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -323,7 +323,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-f.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-f.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -378,7 +378,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -431,7 +431,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -511,7 +511,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -558,7 +558,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -605,7 +605,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate text-blur">
@@ -652,7 +652,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate text-blur">
@@ -700,7 +700,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">
@@ -747,7 +747,7 @@
                                                 <div
                                                     class="d-inline-block align-middle status status-success status-sm mr-2">
                                                     <span class="profile-image-md rounded-circle d-block"
-                                                        style="background-image:url('/admin/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
+                                                        style="background-image:url('/assets/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
                                                 </div>
                                                 <div class="flex-1 min-width-0">
                                                     <a href="javascript:void(0)" class="d-block text-truncate">

@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Summernote')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/formplugins/summernote/summernote.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/summernote/summernote.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -128,7 +128,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/formplugins/summernote/summernote.js"></script>
+    <script src="/assets/js/formplugins/summernote/summernote.js"></script>
     <script>
         var autoSave = $('#autoSave');
         var interval;

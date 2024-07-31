@@ -1,8 +1,8 @@
 @extends('inc.main')
 @section('title', 'Contacts')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -40,7 +40,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-success mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -92,7 +92,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-warning mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -145,7 +145,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-danger mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -198,7 +198,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-success mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -251,7 +251,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-success mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -304,7 +304,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-success mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -357,7 +357,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-success mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-i.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-i.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"
@@ -410,7 +410,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="status status-success mr-3">
                                 <span class="rounded-circle profile-image d-block "
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
                             </span>
                             <div class="info-card-text flex-1">
                                 <a href="javascript:void(0);" class="fs-xl text-truncate text-truncate-lg text-info"

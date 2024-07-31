@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'C3 Charts')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/statistics/c3/c3.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/statistics/c3/c3.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -458,10 +458,10 @@
 @endsection
 @section('pages-script')
     <!-- dependency for c3 charts : this dependency is a BSD license with clause 3 -->
-    <script src="/admin/js/statistics/d3/d3.js"></script>
+    <script src="/assets/js/statistics/d3/d3.js"></script>
     <!-- c3 charts : MIT license -->
-    <script src="/admin/js/statistics/c3/c3.js"></script>
-    <script src="/admin/js/statistics/demo-data/demo-c3.js"></script>
+    <script src="/assets/js/statistics/c3/c3.js"></script>
+    <script src="/assets/js/statistics/demo-data/demo-c3.js"></script>
     <script>
         var colors = [color.success._500, color.danger._500, color.info._500, color.primary._500, color.warning._500];
 

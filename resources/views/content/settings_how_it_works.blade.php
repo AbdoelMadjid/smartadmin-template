@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'How it works')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -41,7 +41,7 @@
                                             &nbsp;
                                         </div>
                                         <div class="app-container-demo flex-1 p-3">
-                                            <img src="/admin/img/demo/s-1.png" class="w-100" alt="">
+                                            <img src="/assets/img/demo/s-1.png" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -67,7 +67,7 @@
                                     <div class="d-flex flex-column flex-1">
                                         <div class="app-header-demo bg-fusion-200"></div>
                                         <div class="app-container-demo flex-1 p-3">
-                                            <img src="/admin/img/demo/s-1.png" class="w-100" alt="">
+                                            <img src="/assets/img/demo/s-1.png" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                                     <div class="d-flex flex-column flex-1">
                                         <div class="app-header-demo bg-fusion-200"></div>
                                         <div class="app-container-demo flex-1 p-3">
-                                            <img src="/admin/img/demo/s-1.png" class="w-100" alt="">
+                                            <img src="/assets/img/demo/s-1.png" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@
                                     <div class="d-flex flex-column flex-1">
                                         <div class="app-header-demo bg-fusion-200"></div>
                                         <div class="app-container-demo flex-1 p-3">
-                                            <img src="/admin/img/demo/s-1.png" class="w-100" alt="">
+                                            <img src="/assets/img/demo/s-1.png" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
                                     <div class="app-header-demo bg-fusion-200"></div>
                                     <div class="app-nav-demo-top bg-primary-300 pattern-0 p-1"></div>
                                     <div class="app-container-demo flex-1 p-3" style="overflow:hidden;">
-                                        <img src="/admin/img/demo/s-1.png" class="w-100" alt="">
+                                        <img src="/assets/img/demo/s-1.png" class="w-100" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +169,7 @@
                                     <div class="d-flex flex-column flex-1">
                                         <div class="app-header-demo bg-fusion-200"></div>
                                         <div class="app-container-demo bg-white flex-1 p-3">
-                                            <img src="/admin/img/demo/s-1.png" class="w-100" alt="">
+                                            <img src="/assets/img/demo/s-1.png" class="w-100" alt="">
                                         </div>
                                     </div>
                                 </div>

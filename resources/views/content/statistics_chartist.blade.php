@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Chartist.js')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/statistics/chartist/chartist.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/statistics/chartist/chartist.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -609,7 +609,7 @@
 @endsection
 @section('pages-script')
     <!-- plugin Chartist.js : MIT license -->
-    <script src="/admin/js/statistics/chartist/chartist.js"></script>
+    <script src="/assets/js/statistics/chartist/chartist.js"></script>
     <script>
         /* line chart area */
         var lineChartArea = function() {

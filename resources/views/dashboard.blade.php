@@ -1,9 +1,9 @@
 @extends('inc.main')
 @section('title', 'Dashboard')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/notifications/toastr/toastr.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/notifications/toastr/toastr.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">

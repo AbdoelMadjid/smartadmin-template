@@ -496,7 +496,7 @@
     <!-- sparkline bundle:
                   + jquery.sparkline.js (core)
                   + src/../jquery.sparkline.config.js (config) -->
-    <script src="/admin/js/statistics/sparkline/sparkline.bundle.js"></script>
+    <script src="/assets/js/statistics/sparkline/sparkline.bundle.js"></script>
     <script>
         /*
          * draw the little mouse speed animated graph this just attaches a handler to the mousemove event to see

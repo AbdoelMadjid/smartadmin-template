@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Carousel')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -82,21 +82,21 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="/admin/img/demo/relax-full.jpg" alt="First slide">
+                                        <img class="d-block w-100" src="/assets/img/demo/relax-full.jpg" alt="First slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5 class="color-white opacity-70">First slide label</h5>
                                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100" src="/admin/img/demo/peace-full.jpg" alt="Second slide">
+                                        <img class="d-block w-100" src="/assets/img/demo/peace-full.jpg" alt="Second slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5 class="color-white opacity-70">Second slide label</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="/admin/img/demo/sea-full.jpg" alt="Third slide">
+                                        <img class="d-block w-100" src="/assets/img/demo/sea-full.jpg" alt="Third slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5 class="color-white opacity-70">Third slide label</h5>
                                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -474,7 +474,7 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="/admin/img/demo/relax-full.jpg"
+                                        <img class="d-block w-100" src="/assets/img/demo/relax-full.jpg"
                                             alt="First slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5 class="color-white opacity-70">First slide label</h5>
@@ -482,7 +482,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item active">
-                                        <img class="d-block w-100" src="/admin/img/demo/peace-full.jpg"
+                                        <img class="d-block w-100" src="/assets/img/demo/peace-full.jpg"
                                             alt="Second slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5 class="color-white opacity-70">Second slide label</h5>
@@ -490,7 +490,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block w-100" src="/admin/img/demo/sea-full.jpg" alt="Third slide">
+                                        <img class="d-block w-100" src="/assets/img/demo/sea-full.jpg" alt="Third slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5 class="color-white opacity-70">Third slide label</h5>
                                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

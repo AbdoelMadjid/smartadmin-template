@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Basic')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -952,7 +952,7 @@
     + datatables.styles.app.js
     + datatables.styles.buttons.app.js
     --> --}}
-    <script src="/admin/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         /* demo scripts for change table color */
         /* change background */

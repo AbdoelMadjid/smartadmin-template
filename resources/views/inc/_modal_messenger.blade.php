@@ -5,7 +5,7 @@
                 <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
                     <span class="mr-2">
                         <span class="rounded-circle profile-image d-block"
-                            style="background-image:url('/admin/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
+                            style="background-image:url('/assets/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
                     </span>
                     <div class="info-card-text">
                         <a href="javascript:void(0);" class="fs-lg text-truncate text-truncate-lg text-white"
@@ -47,7 +47,7 @@
                                         data-filter-tags="tracey chang online">
                                         <div class="d-table-cell align-middle status status-success status-sm ">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -64,7 +64,7 @@
                                         data-filter-tags="oliver kopyuv online">
                                         <div class="d-table-cell align-middle status status-success status-sm ">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -81,7 +81,7 @@
                                         data-filter-tags="dr john cook phd away">
                                         <div class="d-table-cell align-middle status status-warning status-sm ">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -98,7 +98,7 @@
                                         data-filter-tags="ali amdaney online">
                                         <div class="d-table-cell align-middle status status-success status-sm ">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -115,7 +115,7 @@
                                         data-filter-tags="sarah mcbrook online">
                                         <div class="d-table-cell align-middle status status-success status-sm">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -132,7 +132,7 @@
                                         data-filter-tags="ali amdaney offline">
                                         <div class="d-table-cell align-middle status status-sm">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -149,7 +149,7 @@
                                         data-filter-tags="ali amdaney busy">
                                         <div class="d-table-cell align-middle status status-danger status-sm">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -166,7 +166,7 @@
                                         data-filter-tags="ali amdaney offline">
                                         <div class="d-table-cell align-middle status status-sm">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">
@@ -183,7 +183,7 @@
                                         data-filter-tags="ali amdaney inactive">
                                         <div class="d-table-cell align-middle">
                                             <span class="profile-image-md rounded-circle d-block"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                             <div class="text-truncate text-truncate-md">

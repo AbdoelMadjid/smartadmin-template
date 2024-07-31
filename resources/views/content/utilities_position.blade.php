@@ -63,7 +63,7 @@
                             <button type="button" class="btn btn-outline-danger hidden-sm-down" data-toggle="popover"
                                 data-template='<div class="popover max-width-reset" role="tooltip"><div class="arrow"></div><div class="popover-body p-3"></div></div>'
                                 data-placement="top" data-trigger="hover" title="" data-html="true"
-                                data-content='<img src="/admin/img/demo/position-fixed.gif" alt="" style="width:360px">'><i
+                                data-content='<img src="/assets/img/demo/position-fixed.gif" alt="" style="width:360px">'><i
                                     class="fal fa-play mr-2"></i>Live example</button>
                         </div>
                     </div>
@@ -177,7 +177,7 @@
                             <button type="button" class="btn btn-outline-danger hidden-sm-down" data-toggle="popover"
                                 data-template='<div class="popover max-width-reset" role="tooltip"><div class="arrow"></div><div class="popover-body p-3"></div></div>'
                                 data-placement="top" data-trigger="hover" title="" data-html="true"
-                                data-content='<img src="/admin/img/demo/position-absolute.gif" alt="" style="width:360px">'><i
+                                data-content='<img src="/assets/img/demo/position-absolute.gif" alt="" style="width:360px">'><i
                                     class="fal fa-play mr-2"></i>Live example</button>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                             <button type="button" class="btn btn-outline-danger hidden-sm-down" data-toggle="popover"
                                 data-template='<div class="popover max-width-reset" role="tooltip"><div class="arrow"></div><div class="popover-body p-3"></div></div>'
                                 data-placement="top" data-trigger="hover" title="" data-html="true"
-                                data-content='<img src="/admin/img/demo/position-sticky.gif" alt="" style="width:360px">'><i
+                                data-content='<img src="/assets/img/demo/position-sticky.gif" alt="" style="width:360px">'><i
                                     class="fal fa-play mr-2"></i>Live example</button>
                         </div>
                     </div>

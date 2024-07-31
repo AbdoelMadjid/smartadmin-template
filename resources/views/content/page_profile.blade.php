@@ -2,8 +2,8 @@
 @section('title', 'Profile')
 @section('pages-css')
     <!-- Optional: page related CSS-->
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -23,7 +23,7 @@
                     <div class="row no-gutters row-grid">
                         <div class="col-12">
                             <div class="d-flex flex-column align-items-center justify-content-center p-4">
-                                <img src="/admin/img/demo/avatars/avatar-admin-lg.png"
+                                <img src="/assets/img/demo/avatars/avatar-admin-lg.png"
                                     class="rounded-circle shadow-2 img-thumbnail" alt="">
                                 <h5 class="mb-0 fw-700 text-center mt-3">
                                     Dr. Codex Lantern
@@ -95,63 +95,63 @@
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/1.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/1.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/2.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/2.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/3.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/3.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/4.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/4.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/5.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/5.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/6.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/6.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/7.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/7.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/8.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/8.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);"
                                 class="text-center px-3 py-4 d-flex position-relative height-10 border">
                                 <span class="position-absolute pos-top pos-left pos-right pos-bottom"
-                                    style="background-image: url('/admin/img/demo/gallery/thumb/9.jpg');background-size: cover;"></span>
+                                    style="background-image: url('/assets/img/demo/gallery/thumb/9.jpg');background-size: cover;"></span>
                             </a>
                         </div>
                         <div class="col-12">
@@ -174,63 +174,63 @@
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Oliver Kopyov</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Sesha Gray</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Preny Amdaney</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Dr. John Cook PhD</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Sarah McBrook</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-i.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-i.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Jimmy Fellan</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Arica Grace</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-k.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Jim Ketty</span>
                             </a>
                         </div>
                         <div class="col-4">
                             <a href="javascript:void(0);" class="text-center p-3 d-flex flex-column hover-highlight">
                                 <span class="profile-image rounded-circle d-block m-auto"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
                                 <span class="d-block text-truncate text-muted fs-xs mt-1">Ali Grey</span>
                             </a>
                         </div>
@@ -249,7 +249,7 @@
                             <div class="border-0 flex-1 position-relative shadow-top">
                                 <div class="pt-2 pb-1 pr-0 pl-0 rounded-0 position-relative" tabindex="-1">
                                     <span class="profile-image rounded-circle d-block position-absolute"
-                                        style="background-image:url('/admin/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+                                        style="background-image:url('/assets/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
                                     <div class="pl-5 ml-5">
                                         <textarea class="form-control border-0 p-0 fs-xl bg-transparent" rows="4"
                                             placeholder="What's on your mind Codex?..."></textarea>
@@ -280,7 +280,7 @@
                         <div class="d-flex flex-row pb-3 pt-2  border-top-0 border-left-0 border-right-0">
                             <div class="d-inline-block align-middle status status-success mr-3">
                                 <span class="profile-image rounded-circle d-block"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                             </div>
                             <h5 class="mb-0 flex-1 text-dark fw-500">
                                 Dr. John Cook PhD
@@ -313,7 +313,7 @@
                             <div class="d-flex flex-row w-100 py-4">
                                 <div class="d-inline-block align-middle status status-sm status-success mr-3">
                                     <span class="profile-image profile-image-md rounded-circle d-block mt-1"
-                                        style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                        style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                                 </div>
                                 <div class="mb-0 flex-1 text-dark">
                                     <div class="d-flex">
@@ -334,7 +334,7 @@
                             <div class="d-flex flex-row w-100 py-4">
                                 <div class="d-inline-block align-middle status status-sm status-success mr-3">
                                     <span class="profile-image profile-image-md rounded-circle d-block mt-1"
-                                        style="background-image:url('/admin/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+                                        style="background-image:url('/assets/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
                                 </div>
                                 <div class="mb-0 flex-1 text-dark">
                                     <div class="d-flex">
@@ -350,7 +350,7 @@
                                     <div class="pl-0 d-flex flex-row w-100 pb-0 pt-4">
                                         <div class="d-inline-block align-middle status status-sm status-success mr-3">
                                             <span class="profile-image profile-image-md rounded-circle d-block mt-1"
-                                                style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                                style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                                         </div>
                                         <div class="mb-0 flex-1 text-dark">
                                             <div class="d-flex">
@@ -384,7 +384,7 @@
                         <div class="d-flex flex-row pb-3 pt-2  border-top-0 border-left-0 border-right-0">
                             <div class="d-inline-block align-middle status status-success mr-3">
                                 <span class="profile-image rounded-circle d-block"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
                             </div>
                             <h5 class="mb-0 flex-1 text-dark fw-500">
                                 Dr. Codex Lantern
@@ -398,7 +398,7 @@
                         </div>
                         <div class="pb-3 pt-2 border-top-0 border-left-0 border-right-0 text-muted">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                            <img src="/admin/img/demo/gallery/46.jpg" class="img-fluid" alt="">
+                            <img src="/assets/img/demo/gallery/46.jpg" class="img-fluid" alt="">
                         </div>
                         <div class="d-flex align-items-center demo-h-spacing py-3">
                             <a href="javascript:void(0);" class="d-inline-flex align-items-center text-dark">
@@ -415,7 +415,7 @@
                             <div class="d-flex flex-row w-100 py-4">
                                 <div class="d-inline-block align-middle status status-sm status-success mr-3">
                                     <span class="profile-image profile-image-md rounded-circle d-block mt-1"
-                                        style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                        style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                                 </div>
                                 <div class="mb-0 flex-1 text-dark">
                                     <div class="d-flex">
@@ -447,7 +447,7 @@
                         <div class="d-flex flex-row pb-3 pt-2  border-top-0 border-left-0 border-right-0">
                             <div class="d-inline-block align-middle status status-success mr-3">
                                 <span class="profile-image rounded-circle d-block"
-                                    style="background-image:url('/admin/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
+                                    style="background-image:url('/assets/img/demo/avatars/avatar-admin.png'); background-size: cover;"></span>
                             </div>
                             <h5 class="mb-0 flex-1 text-dark fw-500">
                                 Dr. Codex Lantern
@@ -465,7 +465,7 @@
                             <div class="d-flex overflow-hidden rounded w-100 border">
                                 <div class="row no-gutters">
                                     <div class="col-2 col-sm-3"
-                                        style="background-image:url('/admin/img/demo/profile/article-healthyfood.png'); background-size: cover;">
+                                        style="background-image:url('/assets/img/demo/profile/article-healthyfood.png'); background-size: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="bg-faded flex-1 p-4 h-100">
@@ -703,32 +703,32 @@
                                     <div class="text-secondary mb-1">Project Owners</div>
                                     <div class="fs-sm d-flex align-items-center">
                                         <a href="#" class="btn-m-s">
-                                            <img src="/admin/img/demo/avatars/avatar-a.png"
+                                            <img src="/assets/img/demo/avatars/avatar-a.png"
                                                 class="profile-image-sm rounded-circle" alt="aa">
                                         </a>
                                         <a href="#" class="btn-m-s">
-                                            <img src="/admin/img/demo/avatars/avatar-b.png"
+                                            <img src="/assets/img/demo/avatars/avatar-b.png"
                                                 class="profile-image-sm rounded-circle" alt="aa">
                                         </a>
                                         <a href="#" class="btn-m-s">
-                                            <img src="/admin/img/demo/avatars/avatar-c.png"
+                                            <img src="/assets/img/demo/avatars/avatar-c.png"
                                                 class="profile-image-sm rounded-circle" alt="aa">
                                         </a>
                                         <a href="#" class="btn-m-s">
-                                            <img src="/admin/img/demo/avatars/avatar-e.png"
+                                            <img src="/assets/img/demo/avatars/avatar-e.png"
                                                 class="profile-image-sm rounded-circle" alt="aa">
                                         </a>
                                         <a href="#" class="btn-m-s">
-                                            <img src="/admin/img/demo/avatars/avatar-h.png"
+                                            <img src="/assets/img/demo/avatars/avatar-h.png"
                                                 class="profile-image-sm rounded-circle" alt="aa">
                                         </a>
                                         <a href="#" class="btn-m-s">
-                                            <img src="/admin/img/demo/avatars/avatar-k.png"
+                                            <img src="/assets/img/demo/avatars/avatar-k.png"
                                                 class="profile-image-sm rounded-circle" alt="aa">
                                         </a>
                                         <a href="#" class="btn-m-s fs-xs">
                                             <span data-hasmore="+7" class="rounded-circle profile-image-sm">
-                                                <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                <img src="/assets/img/demo/avatars/avatar-j.png"
                                                     class="profile-image-sm rounded-circle" alt="aa">
                                             </span>
                                         </a>

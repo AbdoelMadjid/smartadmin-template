@@ -1,8 +1,8 @@
 @extends('inc.main')
 @section('title', 'Export')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/datagrid/datatables/datatables.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -566,14 +566,14 @@
                              + dataTables.select.js
                              + datatables.styles.app.js
                              + datatables.styles.buttons.app.js -->
-    <script src="/admin/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <!-- datatbles buttons bundle contains:
                              + "jszip.js",
                              + "pdfmake.js",
                              + "vfs_fonts.js"
                              NOTE: 	The file size is pretty big, but you can always use the
                                build.json file to deselect any components you do not need under "export" -->
-    <script src="/admin/js/datagrid/datatables/datatables.export.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.export.js"></script>
     <script>
         $(document).ready(function() {
 

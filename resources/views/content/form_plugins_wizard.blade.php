@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Wizard')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/formplugins/smartwizard/smartwizard.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/smartwizard/smartwizard.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -90,7 +90,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/formplugins/smartwizard/smartwizard.js"></script>
+    <script src="/assets/js/formplugins/smartwizard/smartwizard.js"></script>
     <script>
         $(document).ready(function() {
 
@@ -113,17 +113,17 @@
                     showNextButton: true, // show/hide a Next button
                     showPreviousButton: true, // show/hide a Previous button
                     /*toolbarExtraButtons: [
-                				$('<button></button>').text('Finish')
-                							  .addClass('btn btn-info')
-                							  .on('click', function(){
-                							alert('Finsih button click');
-                							  }),
-                				$('<button></button>').text('Cancel')
-                							  .addClass('btn btn-danger')
-                							  .on('click', function(){
-                							alert('Cancel button click');
-                							  })
-                						  ]*/
+                    				$('<button></button>').text('Finish')
+                    							  .addClass('btn btn-info')
+                    							  .on('click', function(){
+                    							alert('Finsih button click');
+                    							  }),
+                    				$('<button></button>').text('Cancel')
+                    							  .addClass('btn btn-danger')
+                    							  .on('click', function(){
+                    							alert('Cancel button click');
+                    							  })
+                    						  ]*/
                 },
                 anchorSettings: {
                     anchorClickable: true, // Enable/Disable anchor navigation

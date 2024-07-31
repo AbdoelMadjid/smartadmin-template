@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Skin Options')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -61,7 +61,7 @@
                         </h4>
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:550px">
                             <div class="demo-window-content">
-                                <img src="/admin/img/demo/skins/black.png" alt="dark">
+                                <img src="/assets/img/demo/skins/black.png" alt="dark">
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                         </h4>
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:550px">
                             <div class="demo-window-content">
-                                <img src="/admin/img/demo/skins/blue.png" alt="dark">
+                                <img src="/assets/img/demo/skins/blue.png" alt="dark">
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         </h4>
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:550px">
                             <div class="demo-window-content">
-                                <img src="/admin/img/demo/skins/green.png" alt="dark">
+                                <img src="/assets/img/demo/skins/green.png" alt="dark">
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                         </h4>
                         <div class="demo-window rounded mb-g shadow-1 m-auto" style="max-width:550px">
                             <div class="demo-window-content">
-                                <img src="/admin/img/demo/skins/pink.png" alt="dark">
+                                <img src="/assets/img/demo/skins/pink.png" alt="dark">
                             </div>
                         </div>
                     </div>

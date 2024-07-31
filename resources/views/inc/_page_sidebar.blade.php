@@ -2,7 +2,7 @@
     <div class="page-logo">
         <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative"
             data-toggle="modal" data-target="#modal-shortcut">
-            <img src="/admin/img/{{ $profileApp->app_logo ?? '' }}" alt="{{ $profileApp->app_nama ?? '' }} WebApp"
+            <img src="/assets/img/{{ $profileApp->app_logo ?? '' }}" alt="{{ $profileApp->app_nama ?? '' }} WebApp"
                 aria-roledescription="logo">
             <span class="page-logo-text mr-1">{{ $profileApp->app_nama ?? '' }} WebApp</span>
             <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="info-card">
-            <img src="/admin/img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
+            <img src="/assets/img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
                 alt="Dr. Codex Lantern">
             <div class="info-card-text">
                 <a href="#" class="d-flex align-items-center text-white">
@@ -32,7 +32,7 @@
                 </a>
                 <span class="d-inline-block text-truncate text-truncate-sm">Toronto, Canada</span>
             </div>
-            <img src="/admin/img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
+            <img src="/assets/img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
             <a href="#" onclick="return false;" class="pull-trigger-btn" data-action="toggle"
                 data-class="list-filter-active" data-target=".page-sidebar" data-focus="nav_filter_input">
                 <i class="fal fa-angle-down"></i>

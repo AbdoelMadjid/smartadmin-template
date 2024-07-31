@@ -1,10 +1,10 @@
 @extends('inc.main')
 @section('title', 'Generate Stack')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-regular.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-duotone.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-regular.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-duotone.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -80,11 +80,11 @@
             ni_icon,
             ni_base,
             ng_textColors,
-            fa_icon_URL = "/admin/media/data/fa-icon-list.json",
-            fa_brand_URL = "/admin/media/data/fa-brand-list.json",
-            ni_icon_URL = "/admin/media/data/ng-icon-list.json",
-            ni_base_URL = "/admin/media/data/ng-icon-base.json",
-            ng_textColors_URL = "/admin/media/data/ng-text-colors.json",
+            fa_icon_URL = "/assets/media/data/fa-icon-list.json",
+            fa_brand_URL = "/assets/media/data/fa-brand-list.json",
+            ni_icon_URL = "/assets/media/data/ng-icon-list.json",
+            ni_base_URL = "/assets/media/data/ng-icon-base.json",
+            ng_textColors_URL = "/assets/media/data/ng-text-colors.json",
             prefix = ["base", "fal", "fas", "far", "fad", "fab", "ni"],
             iconSize = ["icon-stack-3x", "icon-stack-2x", "icon-stack-1x"],
             layers = getUrlParameter('layers') || 3,
@@ -164,80 +164,80 @@
                         '" class="pl-4 pr-0 bg-subtlelight-fade mb-3 rounded border-faded shadow-1" data-layer-target="' +
                         i +
                         '">\
-                        									<div class="d-flex flex-row position-relative">\
-                        										<div class="badge badge-icon" style="left: -33px; top: -5px; background: #fff; color: #333; border-color: #c9d9e0;">' +
+                            									<div class="d-flex flex-row position-relative">\
+                            										<div class="badge badge-icon" style="left: -33px; top: -5px; background: #fff; color: #333; border-color: #c9d9e0;">' +
                         i + '</div>\
-                        										<div class="flex-1 row no-gutters pb-2 pt-2">\
-                        											<div class="col-sm-6 col-md-4 col-lg-2">\
-                        												<div class="form-group mr-2 mb-md-2">\
-                        													<label>Icon prefix</label>\
-                        													<select class="js-icon-prefix js-select-trigger custom-select w-100"></select>\
-                        												</div>\
-                        											</div>\
-                        											<div class="col-sm-6 col-md-4 col-lg-3">\
-                        												<div class="form-group mr-2 mb-md-2">\
-                        													<label>Choose Icon</label>\
-                        													<select data-icon-target="' + i + '" class="js-icon-class js-select-trigger custom-select w-100"></select>\
-                        												</div>\
-                        											</div>\
-                        											<div class="col-sm-6 col-md-4 col-lg-3">\
-                        												<div class="form-group mr-2 mb-md-2">\
-                        													<label>Select Color</label>\
-                        													<select class="js-icon-color js-select-trigger custom-select w-100"></select>\
-                        												</div>\
-                        											</div>\
-                        											<div class="col-sm-6 col-md-6 col-lg-2">\
-                        												<div class="form-group mr-2 mb-md-2">\
-                        													<label>Stack Size</label>\
-                        													<select class="js-icon-size js-select-trigger custom-select w-100"></select>\
-                        												</div>\
-                        											</div>\
-                        											<div class="col-sm-12 col-md-6 col-lg-2">\
-                        												<div class="form-group mb-md-2">\
-                        													<label>Opacity</label>\
-                        													<input type="range" min="5" max="100" step="5" value="100" class="w-100 js-icon-opacity js-select-trigger">\
-                        												</div>\
-                        											</div>\
-                        											<div class="col-12 position-relative">\
-                        												<a class="fs-nano" data-toggle="collapse" href="#advance-' + i +
+                            										<div class="flex-1 row no-gutters pb-2 pt-2">\
+                            											<div class="col-sm-6 col-md-4 col-lg-2">\
+                            												<div class="form-group mr-2 mb-md-2">\
+                            													<label>Icon prefix</label>\
+                            													<select class="js-icon-prefix js-select-trigger custom-select w-100"></select>\
+                            												</div>\
+                            											</div>\
+                            											<div class="col-sm-6 col-md-4 col-lg-3">\
+                            												<div class="form-group mr-2 mb-md-2">\
+                            													<label>Choose Icon</label>\
+                            													<select data-icon-target="' + i + '" class="js-icon-class js-select-trigger custom-select w-100"></select>\
+                            												</div>\
+                            											</div>\
+                            											<div class="col-sm-6 col-md-4 col-lg-3">\
+                            												<div class="form-group mr-2 mb-md-2">\
+                            													<label>Select Color</label>\
+                            													<select class="js-icon-color js-select-trigger custom-select w-100"></select>\
+                            												</div>\
+                            											</div>\
+                            											<div class="col-sm-6 col-md-6 col-lg-2">\
+                            												<div class="form-group mr-2 mb-md-2">\
+                            													<label>Stack Size</label>\
+                            													<select class="js-icon-size js-select-trigger custom-select w-100"></select>\
+                            												</div>\
+                            											</div>\
+                            											<div class="col-sm-12 col-md-6 col-lg-2">\
+                            												<div class="form-group mb-md-2">\
+                            													<label>Opacity</label>\
+                            													<input type="range" min="5" max="100" step="5" value="100" class="w-100 js-icon-opacity js-select-trigger">\
+                            												</div>\
+                            											</div>\
+                            											<div class="col-12 position-relative">\
+                            												<a class="fs-nano" data-toggle="collapse" href="#advance-' + i +
                         '" role="button" aria-expanded="false" aria-controls="advance-' + i + '">\
-                        													More Options\
-                        												</a>\
-                        											</div>\
-                        											<div class="collapse col-12" id="advance-' + i + '">\
-                        												<div class="row no-gutters">\
-                        													<div class="col-sm-3">\
-                        														<div class="form-group mr-2 mb-0">\
-                        															 <select class="js-icon-animate js-select-trigger custom-select w-100">\
-                        																<option value="">Un-animated</option>\
-                        																<option value="fa-spin">Animated</option>\
-                        															 </select>\
-                        														</div>\
-                        													</div>\
-                        													<div class="col-sm-3">\
-                        														<div class="form-group mr-2 mb-0">\
-                        															 <select class="js-icon-rotate js-select-trigger custom-select w-100">\
-                        																<option value="">No rotation</option>\
-                        																<option value="fa-rotate-90">Rotate 90</option>\
-                        																<option value="fa-rotate-180">Rotate 180</option>\
-                        																<option value="fa-rotate-270">Rotate 270</option>\
-                        																<option value="fa-flip-horizontal">Flip horizontal</option>\
-                        																<option value="fa-flip-vertical">Flip vertical</option>\
-                        															 </select>\
-                        														</div>\
-                        													</div>\
-                        												</div>\
-                        											</div>\
-                        										</div>\
-                        										<div class="width-5 js-move-trigger ml-2">\
-                        											<a href="#" class="h-100 w-100 d-flex align-items-center justify-content-center text-dark cursor-move bg-faded">\
-                        												<i class="fal fa-ellipsis-v fs-lg btn-m-s mb-2"></i>\
-                        												<i class="fal fa-ellipsis-v fs-lg btn-m-s mb-2"></i>\
-                        												<i class="fal fa-ellipsis-v fs-lg btn-m-s mb-2"></i>\
-                        											</a>\
-                        										</div>\
-                        									</div>\
-                        								</li>');
+                            													More Options\
+                            												</a>\
+                            											</div>\
+                            											<div class="collapse col-12" id="advance-' + i + '">\
+                            												<div class="row no-gutters">\
+                            													<div class="col-sm-3">\
+                            														<div class="form-group mr-2 mb-0">\
+                            															 <select class="js-icon-animate js-select-trigger custom-select w-100">\
+                            																<option value="">Un-animated</option>\
+                            																<option value="fa-spin">Animated</option>\
+                            															 </select>\
+                            														</div>\
+                            													</div>\
+                            													<div class="col-sm-3">\
+                            														<div class="form-group mr-2 mb-0">\
+                            															 <select class="js-icon-rotate js-select-trigger custom-select w-100">\
+                            																<option value="">No rotation</option>\
+                            																<option value="fa-rotate-90">Rotate 90</option>\
+                            																<option value="fa-rotate-180">Rotate 180</option>\
+                            																<option value="fa-rotate-270">Rotate 270</option>\
+                            																<option value="fa-flip-horizontal">Flip horizontal</option>\
+                            																<option value="fa-flip-vertical">Flip vertical</option>\
+                            															 </select>\
+                            														</div>\
+                            													</div>\
+                            												</div>\
+                            											</div>\
+                            										</div>\
+                            										<div class="width-5 js-move-trigger ml-2">\
+                            											<a href="#" class="h-100 w-100 d-flex align-items-center justify-content-center text-dark cursor-move bg-faded">\
+                            												<i class="fal fa-ellipsis-v fs-lg btn-m-s mb-2"></i>\
+                            												<i class="fal fa-ellipsis-v fs-lg btn-m-s mb-2"></i>\
+                            												<i class="fal fa-ellipsis-v fs-lg btn-m-s mb-2"></i>\
+                            											</a>\
+                            										</div>\
+                            									</div>\
+                            								</li>');
 
                 }
 

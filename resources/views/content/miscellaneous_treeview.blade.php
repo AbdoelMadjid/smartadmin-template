@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Tree View')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/miscellaneous/treeview/treeview.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/treeview/treeview.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -242,7 +242,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/miscellaneous/treeview/treeview.js"></script>
+    <script src="/assets/js/miscellaneous/treeview/treeview.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Handler when the DOM is fully loaded

@@ -2,7 +2,7 @@
 @section('title', 'Date Range Picker')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print"
-        href="/admin/css/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.css">
+        href="/assets/css/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -187,8 +187,8 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/dependency/moment/moment.js"></script>
-    <script src="/admin/js/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
+    <script src="/assets/js/dependency/moment/moment.js"></script>
+    <script src="/assets/js/formplugins/bootstrap-daterangepicker/bootstrap-daterangepicker.js"></script>
     <script>
         $(document).ready(function() {
             $('#datepicker-1, #datepicker-modal-2').daterangepicker({

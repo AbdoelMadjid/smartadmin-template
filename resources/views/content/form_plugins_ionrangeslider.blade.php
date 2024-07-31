@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Ion.RangeSlider')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/formplugins/ion-rangeslider/ion-rangeslider.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/ion-rangeslider/ion-rangeslider.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -347,7 +347,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/formplugins/ion-rangeslider/ion-rangeslider.js"></script>
+    <script src="/assets/js/formplugins/ion-rangeslider/ion-rangeslider.js"></script>
     <script>
         $(document).ready(function() {
 

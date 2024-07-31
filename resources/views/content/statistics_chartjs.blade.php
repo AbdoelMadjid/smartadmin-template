@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Chart.js')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/statistics/chartjs/chartjs.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/statistics/chartjs/chartjs.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -422,7 +422,7 @@
 @endsection
 @section('pages-script')
     <!-- plugin Chart.js : MIT license -->
-    <script src="/admin/js/statistics/chartjs/chartjs.bundle.js"></script>
+    <script src="/assets/js/statistics/chartjs/chartjs.bundle.js"></script>
     <script>
         /* line chart */
         var lineChart = function() {

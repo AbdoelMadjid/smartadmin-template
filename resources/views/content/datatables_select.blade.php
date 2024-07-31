@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Select')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -579,7 +579,7 @@
  + dataTables.select.js
  + datatables.styles.app.js
  + datatables.styles.buttons.app.js --> --}}
-    <script src="/admin/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         $(document).ready(function() {
             $('#dt-basic-example').dataTable({

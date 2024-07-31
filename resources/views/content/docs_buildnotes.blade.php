@@ -112,9 +112,9 @@
                             <code>head</code> element, refer to the HTML ID <code>#mytheme</code> and <code>#myskin</code>
                         </div>
                         <div class="ml-6 mb-3">
-                            <img src="/admin/img/demo/modes/mode-dark.png" alt="Theme Modes (Dark)"
+                            <img src="/assets/img/demo/modes/mode-dark.png" alt="Theme Modes (Dark)"
                                 class="border mt-2 mr-1">
-                            <img src="/admin/img/demo/modes/mode-light.png" alt="Theme Modes (Light)"
+                            <img src="/assets/img/demo/modes/mode-light.png" alt="Theme Modes (Light)"
                                 class="border mr-1 mt-2">
                         </div>
                     </li>

@@ -22,16 +22,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <!-- Remove Tap Highlight on Windows Phone IE -->
     <meta name="msapplication-tap-highlight" content="no">
     <!-- base css -->
-    <link id="vendorsbundle" rel="stylesheet" media="screen, print" href="/admin/css/vendors.bundle.css">
-    <link id="appbundle" rel="stylesheet" media="screen, print" href="/admin/css/app.bundle.css">
+    <link id="vendorsbundle" rel="stylesheet" media="screen, print" href="/assets/css/vendors.bundle.css">
+    <link id="appbundle" rel="stylesheet" media="screen, print" href="/assets/css/app.bundle.css">
     <link id="mytheme" rel="stylesheet" media="screen, print" href="#">
-    <link id="myskin" rel="stylesheet" media="screen, print" href="/admin/css/skins/skin-master.css">
+    <link id="myskin" rel="stylesheet" media="screen, print" href="/assets/css/skins/skin-master.css">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/admin/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/admin/img/favicon/favicon-32x32.png">
-    <link rel="mask-icon" href="/admin/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <!-- You can add your own stylesheet here to override any styles that comes before it
-  <link rel="stylesheet" media="screen, print" href="/admin/css/your_styles.css">-->
+  <link rel="stylesheet" media="screen, print" href="/assets/css/your_styles.css">-->
 </head>
 <!-- BEGIN Body -->
 <!-- Possible Classes
@@ -124,7 +124,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <a href="#"
                         class="page-logo-link press-scale-down d-flex align-items-center position-relative"
                         data-toggle="modal" data-target="#modal-shortcut">
-                        <img src="/admin/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
+                        <img src="/assets/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
                         <span class="page-logo-text mr-1">SmartAdmin WebApp</span>
                         <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
                         <i class="fal fa-angle-down d-inline-block ml-1 fs-lg color-primary-300"></i>
@@ -143,7 +143,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         </div>
                     </div>
                     <div class="info-card">
-                        <img src="/admin/img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
+                        <img src="/assets/img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
                             alt="Dr. Codex Lantern">
                         <div class="info-card-text">
                             <a href="#" class="d-flex align-items-center text-white">
@@ -153,7 +153,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                             </a>
                             <span class="d-inline-block text-truncate text-truncate-sm">Toronto, Canada</span>
                         </div>
-                        <img src="/admin/img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
+                        <img src="/assets/img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
                         <a href="#" onclick="return false;" class="pull-trigger-btn" data-action="toggle"
                             data-class="list-filter-active" data-target=".page-sidebar" data-focus="nav_filter_input">
                             <i class="fal fa-angle-down"></i>
@@ -278,7 +278,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <a href="#"
                             class="page-logo-link press-scale-down d-flex align-items-center position-relative"
                             data-toggle="modal" data-target="#modal-shortcut">
-                            <img src="/admin/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
+                            <img src="/assets/img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
                             <span class="page-logo-text mr-1">SmartAdmin WebApp</span>
                             <span
                                 class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
@@ -566,7 +566,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status mr-2">
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-c.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-c.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Melissa Ayre <span
@@ -582,7 +582,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status mr-2">
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-a.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-a.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Adison Lee</span>
@@ -595,7 +595,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status status-success mr-2">
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-b.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-b.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Oliver Kopyuv</span>
@@ -608,7 +608,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status status-warning mr-2">
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-e.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-e.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Dr. John Cook PhD</span>
@@ -620,9 +620,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                 <li>
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status status-success mr-2">
-                                                            <!-- <img src="/admin/img/demo/avatars/avatar-m.png" data-src="/admin/img/demo/avatars/avatar-h.png" class="profile-image rounded-circle" alt="Sarah McBrook" /> -->
+                                                            <!-- <img src="/assets/img/demo/avatars/avatar-m.png" data-src="/assets/img/demo/avatars/avatar-h.png" class="profile-image rounded-circle" alt="Sarah McBrook" /> -->
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-h.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-h.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Sarah McBrook</span>
@@ -635,7 +635,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status status-success mr-2">
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-m.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-m.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Anothony Bezyeth</span>
@@ -648,7 +648,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                     <a href="#" class="d-flex align-items-center">
                                                         <span class="status status-danger mr-2">
                                                             <span class="profile-image rounded-circle d-inline-block"
-                                                                style="background-image:url('/admin/img/demo/avatars/avatar-j.png')"></span>
+                                                                style="background-image:url('/assets/img/demo/avatars/avatar-j.png')"></span>
                                                         </span>
                                                         <span class="d-flex flex-column flex-1 ml-1">
                                                             <span class="name">Lisa Hatchensen</span>
@@ -704,7 +704,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                 </li>
                                                 <li>
                                                     <div class="d-flex align-items-center show-child-on-hover">
-                                                        <!--<img src="/admin/img/demo/avatars/avatar-m.png" data-src="/admin/img/demo/avatars/avatar-k.png" class="profile-image rounded-circle" alt="k" />-->
+                                                        <!--<img src="/assets/img/demo/avatars/avatar-m.png" data-src="/assets/img/demo/avatars/avatar-k.png" class="profile-image rounded-circle" alt="k" />-->
                                                         <div class="d-flex flex-column flex-1">
                                                             <span class="name">
                                                                 Troy Norman'<span class="fw-300">s new
@@ -713,21 +713,21 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                             <div class="fs-sm d-flex align-items-center mt-2">
                                                                 <span
                                                                     class="profile-image-md mr-1 rounded-circle d-inline-block"
-                                                                    style="background-image:url('/admin/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
+                                                                    style="background-image:url('/assets/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
                                                                 <span
                                                                     class="profile-image-md mr-1 rounded-circle d-inline-block"
-                                                                    style="background-image:url('/admin/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                                                    style="background-image:url('/assets/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
                                                                 <span
                                                                     class="profile-image-md mr-1 rounded-circle d-inline-block"
-                                                                    style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                                                    style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                                                                 <span
                                                                     class="profile-image-md mr-1 rounded-circle d-inline-block"
-                                                                    style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                                                    style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                                                                 <div data-hasmore="+3"
                                                                     class="rounded-circle profile-image-md mr-1">
                                                                     <span
                                                                         class="profile-image-md mr-1 rounded-circle d-inline-block"
-                                                                        style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                                                        style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                                                                 </div>
                                                             </div>
                                                             <span class="fs-nano text-muted mt-1">55 minutes ago</span>
@@ -741,7 +741,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                 </li>
                                                 <li>
                                                     <div class="d-flex align-items-center show-child-on-hover">
-                                                        <!--<img src="/admin/img/demo/avatars/avatar-m.png" data-src="/admin/img/demo/avatars/avatar-e.png" class="profile-image-sm rounded-circle align-self-start mt-1" alt="k" />-->
+                                                        <!--<img src="/assets/img/demo/avatars/avatar-m.png" data-src="/assets/img/demo/avatars/avatar-e.png" class="profile-image-sm rounded-circle align-self-start mt-1" alt="k" />-->
                                                         <div class="d-flex flex-column flex-1">
                                                             <span class="name">Dr John Cook <span
                                                                     class="fw-300">sent a <span
@@ -768,22 +768,22 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                                 <a href="#" class="mr-1 mt-1"
                                                                     title="Cell A-0012">
                                                                     <span class="d-block img-share"
-                                                                        style="background-image:url('/admin/img/thumbs/pic-7.png'); background-size: cover;"></span>
+                                                                        style="background-image:url('/assets/img/thumbs/pic-7.png'); background-size: cover;"></span>
                                                                 </a>
                                                                 <a href="#" class="mr-1 mt-1"
                                                                     title="Patient A-473 saliva">
                                                                     <span class="d-block img-share"
-                                                                        style="background-image:url('/admin/img/thumbs/pic-8.png'); background-size: cover;"></span>
+                                                                        style="background-image:url('/assets/img/thumbs/pic-8.png'); background-size: cover;"></span>
                                                                 </a>
                                                                 <a href="#" class="mr-1 mt-1"
                                                                     title="Patient A-473 blood cells">
                                                                     <span class="d-block img-share"
-                                                                        style="background-image:url('/admin/img/thumbs/pic-11.png'); background-size: cover;"></span>
+                                                                        style="background-image:url('/assets/img/thumbs/pic-11.png'); background-size: cover;"></span>
                                                                 </a>
                                                                 <a href="#" class="mr-1 mt-1"
                                                                     title="Patient A-473 Membrane O.C">
                                                                     <span class="d-block img-share"
-                                                                        style="background-image:url('/admin/img/thumbs/pic-12.png'); background-size: cover;"></span>
+                                                                        style="background-image:url('/assets/img/thumbs/pic-12.png'); background-size: cover;"></span>
                                                                 </a>
                                                             </div>
                                                             <span class="fs-nano text-muted mt-1">55 minutes ago</span>
@@ -797,7 +797,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                                 </li>
                                                 <li>
                                                     <div class="d-flex align-items-center show-child-on-hover">
-                                                        <!--<img src="/admin/img/demo/avatars/avatar-m.png" data-src="/admin/img/demo/avatars/avatar-h.png" class="profile-image rounded-circle align-self-start mt-1" alt="k" />-->
+                                                        <!--<img src="/assets/img/demo/avatars/avatar-m.png" data-src="/assets/img/demo/avatars/avatar-h.png" class="profile-image rounded-circle align-self-start mt-1" alt="k" />-->
                                                         <div class="d-flex flex-column flex-1">
                                                             <div class="name mb-2">
                                                                 Lisa Lamar<span class="fw-300"> updated project</span>
@@ -948,7 +948,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                         <div>
                             <a href="#" data-toggle="dropdown" title="drlantern@gotbootstrap.com"
                                 class="header-icon d-flex align-items-center justify-content-center ml-2">
-                                <img src="/admin/img/demo/avatars/avatar-admin.png"
+                                <img src="/assets/img/demo/avatars/avatar-admin.png"
                                     class="profile-image rounded-circle" alt="Dr. Codex Lantern">
                                 <!-- you can also add username next to the avatar with the codes below:
          <span class="ml-1 mr-1 text-truncate text-truncate-header hidden-xs-down">Me</span>
@@ -958,7 +958,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 <div class="dropdown-header bg-trans-gradient d-flex flex-row py-4 rounded-top">
                                     <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
                                         <span class="mr-2">
-                                            <img src="/admin/img/demo/avatars/avatar-admin.png"
+                                            <img src="/assets/img/demo/avatars/avatar-admin.png"
                                                 class="rounded-circle profile-image" alt="Dr. Codex Lantern">
                                         </span>
                                         <div class="info-card-text">
@@ -1370,7 +1370,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                     <div class="d-flex flex-row align-items-center mt-1 mb-1 color-white">
                         <span class="mr-2">
                             <span class="rounded-circle profile-image d-block"
-                                style="background-image:url('/admin/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
+                                style="background-image:url('/assets/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
                         </span>
                         <div class="info-card-text">
                             <a href="javascript:void(0);" class="fs-lg text-truncate text-truncate-lg text-white"
@@ -1412,7 +1412,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="tracey chang online">
                                             <div class="d-table-cell align-middle status status-success status-sm ">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-d.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1429,7 +1429,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="oliver kopyuv online">
                                             <div class="d-table-cell align-middle status status-success status-sm ">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-b.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1446,7 +1446,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="dr john cook phd away">
                                             <div class="d-table-cell align-middle status status-warning status-sm ">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-e.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1463,7 +1463,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="ali amdaney online">
                                             <div class="d-table-cell align-middle status status-success status-sm ">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-g.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1480,7 +1480,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="sarah mcbrook online">
                                             <div class="d-table-cell align-middle status status-success status-sm">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-h.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1497,7 +1497,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="ali amdaney offline">
                                             <div class="d-table-cell align-middle status status-sm">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-a.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1514,7 +1514,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="ali amdaney busy">
                                             <div class="d-table-cell align-middle status status-danger status-sm">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-j.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1531,7 +1531,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="ali amdaney offline">
                                             <div class="d-table-cell align-middle status status-sm">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-c.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1548,7 +1548,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             data-filter-tags="ali amdaney inactive">
                                             <div class="d-table-cell align-middle">
                                                 <span class="profile-image-md rounded-circle d-block"
-                                                    style="background-image:url('/admin/img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
+                                                    style="background-image:url('/assets/img/demo/avatars/avatar-m.png'); background-size: cover;"></span>
                                             </div>
                                             <div class="d-table-cell w-100 align-middle pl-2 pr-2">
                                                 <div class="text-truncate text-truncate-md">
@@ -1965,86 +1965,86 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-1" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-1.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-1.css" data-toggle="tooltip"
                                         data-placement="top" title="Tapestry" data-original-title="Tapestry"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-2" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-2.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-2.css" data-toggle="tooltip"
                                         data-placement="top" title="Atlantis" data-original-title="Atlantis"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-3" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-3.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-3.css" data-toggle="tooltip"
                                         data-placement="top" title="Indigo" data-original-title="Indigo"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-4" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-4.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-4.css" data-toggle="tooltip"
                                         data-placement="top" title="Dodger Blue"
                                         data-original-title="Dodger Blue"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-5" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-5.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-5.css" data-toggle="tooltip"
                                         data-placement="top" title="Tradewind"
                                         data-original-title="Tradewind"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-6" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-6.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-6.css" data-toggle="tooltip"
                                         data-placement="top" title="Cranberry"
                                         data-original-title="Cranberry"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-7" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-7.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-7.css" data-toggle="tooltip"
                                         data-placement="top" title="Oslo Gray"
                                         data-original-title="Oslo Gray"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-8" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-8.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-8.css" data-toggle="tooltip"
                                         data-placement="top" title="Chetwode Blue"
                                         data-original-title="Chetwode Blue"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-9" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-9.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-9.css" data-toggle="tooltip"
                                         data-placement="top" title="Apricot" data-original-title="Apricot"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-10" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-10.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-10.css" data-toggle="tooltip"
                                         data-placement="top" title="Blue Smoke"
                                         data-original-title="Blue Smoke"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-11" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-11.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-11.css" data-toggle="tooltip"
                                         data-placement="top" title="Green Smoke"
                                         data-original-title="Green Smoke"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-12" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-12.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-12.css" data-toggle="tooltip"
                                         data-placement="top" title="Wild Blue Yonder"
                                         data-original-title="Wild Blue Yonder"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-13" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-13.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-13.css" data-toggle="tooltip"
                                         data-placement="top" title="Emerald" data-original-title="Emerald"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-14" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-14.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-14.css" data-toggle="tooltip"
                                         data-placement="top" title="Supernova"
                                         data-original-title="Supernova"></a>
                                 </li>
                                 <li>
                                     <a href="#" id="myapp-15" data-action="theme-update" data-themesave
-                                        data-theme="/admin/css/themes/cust-theme-15.css" data-toggle="tooltip"
+                                        data-theme="/assets/css/themes/cust-theme-15.css" data-toggle="tooltip"
                                         data-placement="top" title="Hoki" data-original-title="Hoki"></a>
                                 </li>
                             </ul>
@@ -2084,7 +2084,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <div class="bg-white border-bottom border-primary py-1"></div>
                                             <div class="bg-faded flex-1 pt-3 pb-3 px-2">
                                                 <div class="py-3"
-                                                    style="background:url('/admin/img/demo/s-1.png') top left no-repeat;background-size: 100%;">
+                                                    style="background:url('/assets/img/demo/s-1.png') top left no-repeat;background-size: 100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -2102,7 +2102,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <div class="bg-white border-bottom border- py-1"></div>
                                             <div class="bg-white flex-1 pt-3 pb-3 px-2">
                                                 <div class="py-3"
-                                                    style="background:url('/admin/img/demo/s-1.png') top left no-repeat;background-size: 100%;">
+                                                    style="background:url('/assets/img/demo/s-1.png') top left no-repeat;background-size: 100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -2120,7 +2120,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
                                             <div class="bg-fusion-600 border-bottom py-1"></div>
                                             <div class="bg-fusion-300 flex-1 pt-3 pb-3 px-2">
                                                 <div class="py-3 opacity-30"
-                                                    style="background:url('/admin/img/demo/s-1.png') top left no-repeat;background-size: 100%;">
+                                                    style="background:url('/assets/img/demo/s-1.png') top left no-repeat;background-size: 100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -2161,8 +2161,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
       + waves.js (extension)
       + smartpanels.js (extension)
       + src/../jquery-snippets.js (core) -->
-    <script src="/admin/js/vendors.bundle.js"></script>
-    <script src="/admin/js/app.bundle.js"></script>
+    <script src="/assets/js/vendors.bundle.js"></script>
+    <script src="/assets/js/app.bundle.js"></script>
     <!--This page contains the basic JS and CSS files to get started on your project. If you need aditional addon's or plugins please see scripts located at the bottom of each page in order to find out which JS/CSS files to add.-->
 </body>
 <!-- END Body -->

@@ -2,8 +2,8 @@
 @section('title', 'Inbox General')
 @section('body_class', 'nav-function-minify layout-composed')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-brands.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-brands.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -734,7 +734,7 @@
                                 <br>
                                 <br>
                                 <div class="d-flex d-column align-items-start mb-3">
-                                    <img src="/admin/img/{{ $profileApp->app_logo ?? '' }}"
+                                    <img src="/assets/img/{{ $profileApp->app_logo ?? '' }}"
                                         alt="{{ $profileApp->app_nama ?? '' }} WebApp" class="mr-3 mt-1">
                                     <div class="border-left pl-3">
                                         <span class="fw-500 fs-lg d-block l-h-n">Dr. Codex Lantern</span>

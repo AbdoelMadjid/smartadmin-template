@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Markdown')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/.../styles.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/.../styles.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">

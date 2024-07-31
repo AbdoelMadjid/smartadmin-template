@@ -65,7 +65,7 @@
         <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
             <div
                 class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/admin/img/demo/authors/sunny.png" alt="Sunny A."
+                <img src="/assets/img/demo/authors/sunny.png" alt="Sunny A."
                     class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                 <div class="ml-2 mr-3">
                     <h5 class="m-0">
@@ -82,7 +82,7 @@
             </div>
             <div
                 class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/admin/img/demo/authors/josh.png" alt="Jos K."
+                <img src="/assets/img/demo/authors/josh.png" alt="Jos K."
                     class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                 <div class="ml-2 mr-3">
                     <h5 class="m-0">
@@ -98,7 +98,7 @@
             </div>
             <div
                 class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/admin/img/demo/authors/jovanni.png" alt="Jovanni Lo"
+                <img src="/assets/img/demo/authors/jovanni.png" alt="Jovanni Lo"
                     class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                 <div class="ml-2 mr-3">
                     <h5 class="m-0">
@@ -114,7 +114,7 @@
             </div>
             <div
                 class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                <img src="/admin/img/demo/authors/roberto.png" alt="Jovanni Lo"
+                <img src="/assets/img/demo/authors/roberto.png" alt="Jovanni Lo"
                     class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                 <div class="ml-2 mr-3">
                     <h5 class="m-0">

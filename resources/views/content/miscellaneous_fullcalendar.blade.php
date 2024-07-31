@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'FullCalendar')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/miscellaneous/fullcalendar/fullcalendar.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/fullcalendar/fullcalendar.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -73,7 +73,7 @@
 @section('pages-script')
     {{--         <!-- moment.js (dependency for the demo only); you do not have to use it unless you need it
 	DOC: Parse, validate, manipulate, and display dates and times in JavaScript. (https://momentjs.com/) --> --}}
-    <script src="/admin/js/dependency/moment/moment.js"></script>
+    <script src="/assets/js/dependency/moment/moment.js"></script>
     {{--         <!-- fullcalendar bundle:
 	 DOC: you may remove the extensions if you do not plan on using them. Learn more about these extensions at https://fullcalendar.io
 				+ core/main.js (core)
@@ -82,7 +82,7 @@
 				+ timegrid/main.js (extension)
 				+ interaction/main.js (extension)
 				+ src/../bootstrap-main-cust.js (core) --> --}}
-    <script src="/admin/js/miscellaneous/fullcalendar/fullcalendar.bundle.js"></script>
+    <script src="/assets/js/miscellaneous/fullcalendar/fullcalendar.bundle.js"></script>
     <script>
         var todayDate = moment().startOf('day');
         var YM = todayDate.format('YYYY-MM');

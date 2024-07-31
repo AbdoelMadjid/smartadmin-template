@@ -111,7 +111,7 @@
                             </div>
                             <nav class="navbar navbar-light bg-light">
                                 <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                    <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2" alt="logo">
+                                    <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2" alt="logo">
                                     SmartAdmin
                                 </a>
                             </nav>
@@ -143,7 +143,7 @@
                             </div>
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                 <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                    <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2" alt="logo">
+                                    <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2" alt="logo">
                                     SmartAdmin
                                 </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -202,7 +202,7 @@
                             </div>
                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                 <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                    <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2" alt="logo">
+                                    <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2" alt="logo">
                                     SmartAdmin
                                 </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -259,7 +259,7 @@
                             <div class="demo">
                                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                                     <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                        <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2"
+                                        <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2"
                                             alt="logo">
                                         SmartAdmin
                                     </a>
@@ -294,7 +294,7 @@
                                 </nav>
                                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-primary-gradient">
                                     <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                        <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2"
+                                        <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2"
                                             alt="logo">
                                         SmartAdmin
                                     </a>
@@ -329,7 +329,7 @@
                                 </nav>
                                 <nav class="navbar navbar-expand-lg navbar-light">
                                     <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                        <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2"
+                                        <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2"
                                             alt="logo">
                                         SmartAdmin
                                     </a>
@@ -402,7 +402,7 @@
                                 </h2>
                                 <nav class="navbar navbar-expand-lg navbar-light bg-warning-500 sticky-top">
                                     <a class="navbar-brand d-flex align-items-center fw-500" href="#">
-                                        <img src="/admin/img/logo.png" class="d-inline-block align-top mr-2"
+                                        <img src="/assets/img/logo.png" class="d-inline-block align-top mr-2"
                                             alt="logo">
                                         SmartAdmin
                                     </a>
@@ -663,7 +663,7 @@
                                     </a>
                                     <a href="#" data-toggle="dropdown" title="drlantern@gotbootstrap.com"
                                         class="d-flex align-items-center justify-content-center ml-2">
-                                        <img src="/admin/img/demo/avatars/avatar-admin.png"
+                                        <img src="/assets/img/demo/avatars/avatar-admin.png"
                                             class="profile-image profile-image-md rounded-circle"
                                             alt="drlantern@gotbootstrap.com">
                                         <span class="ml-1 mr-1 text-truncate text-truncate-header hidden-xs-down">Dr. Codex

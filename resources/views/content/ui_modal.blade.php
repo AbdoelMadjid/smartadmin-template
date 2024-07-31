@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Modal')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -389,39 +389,39 @@
                                                         <div class="text-secondary mb-1">Project Owners</div>
                                                         <div class="fs-sm d-flex align-items-center">
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-a.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-b.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-b.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-c.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-e.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-h.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-h.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-k.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s fs-xs">
                                                                 <span data-hasmore="+7"
                                                                     class="rounded-circle profile-image-sm">
-                                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                                         class="profile-image-sm rounded-circle"
                                                                         alt="aa">
                                                                 </span>
@@ -582,39 +582,39 @@
                                                         <div class="text-secondary mb-1">Project Owners</div>
                                                         <div class="fs-sm d-flex align-items-center">
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-a.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-a.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-b.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-b.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-c.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-c.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-e.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-e.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-h.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-h.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s">
-                                                                <img src="/admin/img/demo/avatars/avatar-k.png"
+                                                                <img src="/assets/img/demo/avatars/avatar-k.png"
                                                                     class="profile-image-sm rounded-circle"
                                                                     alt="aa">
                                                             </a>
                                                             <a href="#" class="btn-m-s fs-xs">
                                                                 <span data-hasmore="+7"
                                                                     class="rounded-circle profile-image-sm">
-                                                                    <img src="/admin/img/demo/avatars/avatar-j.png"
+                                                                    <img src="/assets/img/demo/avatars/avatar-j.png"
                                                                         class="profile-image-sm rounded-circle"
                                                                         alt="aa">
                                                                 </span>
@@ -924,7 +924,7 @@
                                                 </ol>
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item">
-                                                        <img class="d-block w-100" src="/admin/img/demo/relax-full.jpg"
+                                                        <img class="d-block w-100" src="/assets/img/demo/relax-full.jpg"
                                                             alt="First slide">
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5 class="color-white opacity-70">First slide label</h5>
@@ -933,7 +933,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="carousel-item active">
-                                                        <img class="d-block w-100" src="/admin/img/demo/peace-full.jpg"
+                                                        <img class="d-block w-100" src="/assets/img/demo/peace-full.jpg"
                                                             alt="Second slide">
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5 class="color-white opacity-70">Second slide label</h5>
@@ -941,7 +941,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="carousel-item">
-                                                        <img class="d-block w-100" src="/admin/img/demo/sea-full.jpg"
+                                                        <img class="d-block w-100" src="/assets/img/demo/sea-full.jpg"
                                                             alt="Third slide">
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5 class="color-white opacity-70">Third slide label</h5>

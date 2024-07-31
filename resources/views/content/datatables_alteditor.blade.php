@@ -1,8 +1,8 @@
 @extends('inc.main')
 @section('title', 'AltEditor (beta)')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/datagrid/datatables/datatables.bundle.css">
-    <link rel="stylesheet" media="screen, print" href="/admin/css/theme-demo.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -279,7 +279,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         $(document).ready(function() {
 
@@ -433,7 +433,7 @@
                 dom: "<'row mb-3'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
                     "<'row'<'col-sm-12'tr>>" +
                     "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
-                ajax: "/admin/media/data/server-demo.json",
+                ajax: "/assets/media/data/server-demo.json",
                 columns: columnSet,
                 /* selecting multiple rows will not work */
                 select: 'single',

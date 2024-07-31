@@ -3,9 +3,9 @@
 @section('pages-css')
     <!-- page related css -->
     <!-- FYI: it has a demo CSS file concatinated, about 1kb, you can remove it from build.js if needed -->
-    <link rel="stylesheet" media="screen, print" href="/admin/css/formplugins/cropperjs/cropper.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/formplugins/cropperjs/cropper.css">
     <!-- page related demo css (for icons only) -->
-    <link rel="stylesheet" media="screen, print" href="/admin/css/fa-solid.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -72,7 +72,7 @@
                                     <div class="col-xl-9">
                                         <!-- <h3>Demo:</h3> -->
                                         <div class="img-container">
-                                            <img id="image" src="/admin/img/demo/gallery/3.jpg" alt="Picture">
+                                            <img id="image" src="/assets/img/demo/gallery/3.jpg" alt="Picture">
                                         </div>
                                     </div>
                                     <div class="col-xl-3">
@@ -681,7 +681,7 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/formplugins/cropperjs/cropper.js"></script>
+    <script src="/assets/js/formplugins/cropperjs/cropper.js"></script>
     <script>
         $(function() {
             'use strict';

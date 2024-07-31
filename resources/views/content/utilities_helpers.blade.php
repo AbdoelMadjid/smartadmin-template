@@ -730,7 +730,7 @@
         // gradient example
 
         var ng_bgColors,
-            ng_bgColors_URL = "/admin/media/data/ng-bg-colors.json",
+            ng_bgColors_URL = "/assets/media/data/ng-bg-colors.json",
             formatBgColors = [];
 
         $.when(

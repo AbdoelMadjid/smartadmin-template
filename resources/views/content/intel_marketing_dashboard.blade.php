@@ -1,7 +1,7 @@
 @extends('inc.main')
 @section('title', 'Marketing Dashboard')
 @section('pages-css')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/datagrid/datatables/datatables.bundle.css">
+    <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
@@ -1264,10 +1264,10 @@
     </main>
 @endsection
 @section('pages-script')
-    <script src="/admin/js/statistics/peity/peity.bundle.js"></script>
-    <script src="/admin/js/statistics/flot/flot.bundle.js"></script>
-    <script src="/admin/js/statistics/easypiechart/easypiechart.bundle.js"></script>
-    <script src="/admin/js/datagrid/datatables/datatables.bundle.js"></script>
+    <script src="/assets/js/statistics/peity/peity.bundle.js"></script>
+    <script src="/assets/js/statistics/flot/flot.bundle.js"></script>
+    <script src="/assets/js/statistics/easypiechart/easypiechart.bundle.js"></script>
+    <script src="/assets/js/datagrid/datatables/datatables.bundle.js"></script>
     <script>
         /* defined datas */
         var dataTargetProfit = [
