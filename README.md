@@ -26,6 +26,52 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+<!-- INSTALLATION -->
+## Installation
+
+```console
+git clone https://github.com/AbdoelMadjid/smartadmin-template.git
+```
+
+```console
+cd smartadmin-template
+```
+
+```console
+composer install
+```
+
+```console
+composer dump-autoload
+```
+
+```console
+cp .env.example .env
+```
+
+```console
+php artisan key:generate
+```
+
+```html
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=??
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+```console
+php artisan migrate
+```
+
+```console
+php artisan db:seed
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
