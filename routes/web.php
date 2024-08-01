@@ -21,8 +21,11 @@ use App\Http\Controllers\TemplateController;
 
 Route::fallback([ErrorController::class, 'index']);
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', [AuthController::class, 'index'])->name('login');
+Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/dashboard', [TemplateController::class, 'index'])->name('dashboard');
 Route::get('/about', [TemplateController::class, 'about'])->name('about');
 
