@@ -1,14 +1,14 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Buttons')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Datatables'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Datatables'])
         <div class="subheader">
             <h1 class="subheader-title">
-                @component('inc._page_heading', [
+                @component('layouts._page_heading', [
                     'icon' => 'table',
                     'heading1' => 'DataTables:',
                     'heading2' => 'Buttons',

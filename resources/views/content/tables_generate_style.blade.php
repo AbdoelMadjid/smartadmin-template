@@ -1,8 +1,8 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Generate Table Style')
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Tables'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Tables'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='fal fa-th-list text-primary'></i> Generate Table Style
@@ -92,7 +92,7 @@
                                         <td>Price</td>
                                         <td>nec.enim.Nunc@facilisis.net</td>
                                         <td>1-963-499-3886</td>
-                                        <td>Risus Quisque Inc.</td>
+                                        <td>Risus Quisque layouts.</td>
                                         <td>Cascavel</td>
                                     </tr>
                                     <tr>

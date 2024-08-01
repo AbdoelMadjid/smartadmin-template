@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Toastr')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/notifications/toastr/toastr.css">
@@ -6,7 +6,7 @@
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Notifications'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Notifications'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-exclamation-circle'></i> Toastr <sup

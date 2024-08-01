@@ -1,13 +1,13 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Clearfix')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Utilities'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Utilities'])
         <div class="subheader">
-            @component('inc._page_heading', [
+            @component('layouts._page_heading', [
                 'icon' => 'window',
                 'heading1' => 'Clearfix',
             ])

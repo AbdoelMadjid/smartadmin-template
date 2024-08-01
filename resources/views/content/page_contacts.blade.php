@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Contacts')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
@@ -6,7 +6,7 @@
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Page Views'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Page Views'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-plus-circle'></i> Contacts
@@ -53,7 +53,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">IT Director, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">IT Director, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_1 > .card-body + .card-body" aria-expanded="false">
@@ -105,7 +105,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Project Manager, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Project Manager, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_2 > .card-body + .card-body" aria-expanded="false">
@@ -158,7 +158,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Human Resources, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Human Resources, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_3 > .card-body + .card-body" aria-expanded="false">
@@ -211,7 +211,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Staff Orgnizer, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Staff Orgnizer, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_4 > .card-body + .card-body" aria-expanded="false">
@@ -264,7 +264,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Oncologist, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Oncologist, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_5 > .card-body + .card-body" aria-expanded="false">
@@ -317,7 +317,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Xray Division, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Xray Division, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_6 > .card-body + .card-body" aria-expanded="false">
@@ -370,7 +370,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Accounting, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Accounting, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_7 > .card-body + .card-body" aria-expanded="false">
@@ -423,7 +423,7 @@
                                     <a class="dropdown-item" href="#">Create Appointment</a>
                                     <a class="dropdown-item" href="#">Block User</a>
                                 </div>
-                                <span class="text-truncate text-truncate-xl">Accounting, Gotbootstrap Inc.</span>
+                                <span class="text-truncate text-truncate-xl">Accounting, Gotbootstrap layouts.</span>
                             </div>
                             <button class="js-expand-btn btn btn-sm btn-default d-none" data-toggle="collapse"
                                 data-target="#c_8 > .card-body + .card-body" aria-expanded="false">

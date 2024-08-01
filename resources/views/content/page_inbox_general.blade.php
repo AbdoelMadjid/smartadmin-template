@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Inbox General')
 @section('body_class', 'nav-function-minify layout-composed')
 @section('pages-css')
@@ -499,7 +499,7 @@
                                             <div class="row w-100">
                                                 <a href="/page_inbox_read"
                                                     class="name d-flex width-sm align-items-center pt-1 pb-0 py-lg-1 col-12 col-lg-auto">Bloodworks
-                                                    Inc.</a>
+                                                    layouts.</a>
                                                 <a href="/page_inbox_read"
                                                     class="name d-flex align-items-center pt-0 pb-1 py-lg-1 flex-1 col-12 col-lg-auto">Your
                                                     results are here</a>

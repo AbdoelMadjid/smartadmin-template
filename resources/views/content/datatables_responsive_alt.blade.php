@@ -1,13 +1,13 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Responsive Alternative')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Datatables'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Datatables'])
         <div class="subheader">
-            @component('inc._page_heading', [
+            @component('layouts._page_heading', [
                 'icon' => 'table',
                 'heading1' => 'DataTables:',
                 'heading2' => 'Responsive Alternative',
@@ -341,7 +341,7 @@
                                         <td>Oman</td>
                                         <td>Guardia Sanframondi</td>
                                         <td>Thor Powell</td>
-                                        <td>Non Ante Inc.</td>
+                                        <td>Non Ante layouts.</td>
                                         <td>82480723199</td>
                                         <td>70.98602</td>
                                         <td>82.79917</td>
@@ -656,7 +656,7 @@
                                         <td>Mauritania</td>
                                         <td>Ucluelet</td>
                                         <td>Molly Cain</td>
-                                        <td>Imperdiet Non Inc.</td>
+                                        <td>Imperdiet Non layouts.</td>
                                         <td>43623678899</td>
                                         <td>34.17445</td>
                                         <td>-60.66068</td>
@@ -908,7 +908,7 @@
                                         <td>Bonaire, Sint Eustatius and Saba</td>
                                         <td>Vigo</td>
                                         <td>Wyoming Robles</td>
-                                        <td>Ultricies Ligula Nullam Inc.</td>
+                                        <td>Ultricies Ligula Nullam layouts.</td>
                                         <td>62802708699</td>
                                         <td>23.91274</td>
                                         <td>100.39545</td>
@@ -1160,7 +1160,7 @@
                                         <td>Serbia</td>
                                         <td>Richmond Hill</td>
                                         <td>Brent Mullen</td>
-                                        <td>Aliquet Odio Inc.</td>
+                                        <td>Aliquet Odio layouts.</td>
                                         <td>11716056699</td>
                                         <td>16.77936</td>
                                         <td>88.80543</td>
@@ -2240,9 +2240,9 @@
                         render: function(data, type, full, meta) {
 
                             /*
-                                -- ES6
-                                -- convert using https://babeljs.io online transpiler
-                                return `
+                                    -- ES6
+                                    -- convert using https://babeljs.io online transpiler
+                                    return `
                         <div class='d-flex mt-2'>
                             <a href='javascript:void(0);' class='btn btn-sm btn-outline-danger mr-2' title='Delete Record'>
                                 <i class="fal fa-times"></i> Delete Record
@@ -2261,9 +2261,9 @@
                             </div>
                         </div>`;
 
-                                ES5 example below:
+                                    ES5 example below:
 
-                                */
+                                    */
                             return "\n\t\t\t\t\t\t<div class='d-flex mt-2'>\n\t\t\t\t\t\t\t<a href='javascript:void(0);' class='btn btn-sm btn-outline-danger mr-2' title='Delete Record'><i class=\"fal fa-times\"></i> Delete Record</a>\n\t\t\t\t\t\t\t<a href='javascript:void(0);' class='btn btn-sm btn-outline-primary mr-2' title='Edit'><i class=\"fal fa-edit\"></i> Edit</a>\n\t\t\t\t\t\t\t<div class='dropdown d-inline-block'>\n\t\t\t\t\t\t\t\t<a href='#'' class='btn btn-sm btn-outline-primary mr-2' data-toggle='dropdown' aria-expanded='true' title='More options'><i class=\"fal fa-plus\"></i></a>\n\t\t\t\t\t\t\t\t<div class='dropdown-menu'>\n\t\t\t\t\t\t\t\t\t<a class='dropdown-item' href='javascript:void(0);'>Change Status</a>\n\t\t\t\t\t\t\t\t\t<a class='dropdown-item' href='javascript:void(0);'>Generate Report</a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>";
                         },
                     },

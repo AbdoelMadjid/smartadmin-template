@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Analytics Dashboard')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/reactions/reactions.css">
@@ -7,9 +7,9 @@
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Application Intel'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Application Intel'])
         <div class="subheader">
-            @component('inc._page_heading', [
+            @component('layouts._page_heading', [
                 'icon' => 'chart-area',
                 'heading1' => 'Analytics',
                 'heading2' => 'Dashboard',

@@ -1,13 +1,13 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Scroller')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/datagrid/datatables/datatables.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Datatables'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Datatables'])
         <div class="subheader">
-            @component('inc._page_heading', [
+            @component('layouts._page_heading', [
                 'icon' => 'table',
                 'heading1' => 'DataTables:',
                 'heading2' => 'Scroller',
@@ -127,9 +127,9 @@
                         render: function(data, type, full, meta) {
 
                             /*
-                                                            -- ES6
-                                                            -- convert using https://babeljs.io online transpiler
-                                                            return `
+                                                                -- ES6
+                                                                -- convert using https://babeljs.io online transpiler
+                                                                return `
                         <a href='javascript:void(0);' class='btn btn-sm btn-icon btn-outline-danger rounded-circle mr-1' title='Delete Record'>
                         	<i class="fal fa-times"></i>
                         </a>
@@ -143,9 +143,9 @@
                         	</div>
                         </div>`;
 
-                                                            ES5 example below:
+                                                                ES5 example below:
 
-                                                            */
+                                                                */
                             return "\n\t\t\t\t\t\t<a href='javascript:void(0);' class='btn btn-sm btn-icon btn-outline-danger rounded-circle mr-1' title='Delete Record'>\n\t\t\t\t\t\t\t<i class=\"fal fa-times\"></i>\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<div class='dropdown d-inline-block'>\n\t\t\t\t\t\t\t<a href='#'' class='btn btn-sm btn-icon btn-outline-primary rounded-circle shadow-0' data-toggle='dropdown' aria-expanded='true' title='More options'>\n\t\t\t\t\t\t\t\t<i class=\"fal fa-ellipsis-v\"></i>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<div class='dropdown-menu'>\n\t\t\t\t\t\t\t\t<a class='dropdown-item' href='javascript:void(0);'>Change Status</a>\n\t\t\t\t\t\t\t\t<a class='dropdown-item' href='javascript:void(0);'>Generate Report</a>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>";
                         },
                     },

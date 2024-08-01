@@ -1,8 +1,8 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Chat')
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Page Views'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Page Views'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-plus-circle'></i> Chat

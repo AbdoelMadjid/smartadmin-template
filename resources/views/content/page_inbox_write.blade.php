@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Inbox Write')
 @section('body_class', 'nav-function-minify layout-composed')
 @section('pages-css')

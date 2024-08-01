@@ -1,7 +1,7 @@
-@extends('inc.main_auth')
+@extends('layouts.main_auth')
 @section('title', 'Login Forget')
 @section('pages-content')
-    @component('inc._auth_header')
+    @component('layouts._auth_header')
         <span class="text-white opacity-50 ml-auto mr-2 hidden-sm-down">
             Already a member?
         </span>

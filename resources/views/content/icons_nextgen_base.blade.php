@@ -1,13 +1,13 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Base')
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', [
+        @include('layouts._page_breadcrumb', [
             'category_1' => 'Font Icons',
             'category_2' => 'NextGen Icons',
         ])
         <div class="subheader">
-            @component('inc._page_heading', [
+            @component('layouts._page_heading', [
                 'heading1' => 'NextGen Icons:',
                 'heading2' => 'Base',
                 'pagedescription' => 'NextGen Icons description',
@@ -149,20 +149,20 @@
                 jQuery.each(data, function(index, item) {
                     formatedDOMElms.push(
                         '<div class="col-4 col-sm-4 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center mb-g">\
-                                                                        <a href="#" class="rounded bg-white p-0 m-0 d-flex flex-column w-100 h-100 shadow-hover-2 js-showcase-icon" data-toggle="modal" data-target="#iconModal" data-filter-tags=' +
+                                                                            <a href="#" class="rounded bg-white p-0 m-0 d-flex flex-column w-100 h-100 shadow-hover-2 js-showcase-icon" data-toggle="modal" data-target="#iconModal" data-filter-tags=' +
                         item + '>\
-                                                                            <div class="rounded-top color-fusion-300 w-100 bg-primary-300">\
-                                                                                <div class="rounded-top d-flex align-items-center justify-content-center w-100 pt-3 pb-3 pr-2 pl-2 fa-6x hover-bg">\
-                                                                                    <i class="' + item +
+                                                                                <div class="rounded-top color-fusion-300 w-100 bg-primary-300">\
+                                                                                    <div class="rounded-top d-flex align-items-center justify-content-center w-100 pt-3 pb-3 pr-2 pl-2 fa-6x hover-bg">\
+                                                                                        <i class="' + item +
                         '"></i>\
+                                                                                    </div>\
                                                                                 </div>\
-                                                                            </div>\
-                                                                            <div class="rounded-bottom p-1 w-100 d-flex justify-content-center align-items-center text-center">\
-                                                                                <span class="d-block text-truncate text-muted">' +
+                                                                                <div class="rounded-bottom p-1 w-100 d-flex justify-content-center align-items-center text-center">\
+                                                                                    <span class="d-block text-truncate text-muted">' +
                         item + '</span>\
-                                                                            </div>\
-                                                                        </a>\
-                                                                    </div>');
+                                                                                </div>\
+                                                                            </a>\
+                                                                        </div>');
 
                 });
 

@@ -1,8 +1,8 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Easy Pie Chart')
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Statistics'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Statistics'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-chart-pie'></i> Easy Pie Chart <sup

@@ -10,7 +10,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    @include('inc._head')
+    @include('layouts._head')
     <link rel="stylesheet" media="screen, print" href="/assets/css/page-login-alt.css">
 </head>
 <!-- BEGIN Body -->
@@ -41,7 +41,7 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
 <body>
     <!-- DOC: script to save and load page settings -->
-    @include('inc._script_page_settings')
+    @include('layouts._script_page_settings')
 
     <div class="blankpage-form-field">
         <div
@@ -100,9 +100,9 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
     <!-- BEGIN Color profile -->
     <!-- this area is hidden and will not be seen on screens or screen readers -->
     <!-- we use this only for CSS color refernce for JS stuff -->
-    @include('inc._color_profile')
+    @include('layouts._color_profile')
     <!-- END Color profile -->
-    @include('inc._script_bundle')
+    @include('layouts._script_bundle')
 </body>
 <!-- END Body -->
 

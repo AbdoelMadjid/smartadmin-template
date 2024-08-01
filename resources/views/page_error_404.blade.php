@@ -1,7 +1,7 @@
-@extends('inc.main_auth')
+@extends('layouts.main_auth')
 @section('title', 'Error Page')
 @section('pages-content')
-    @component('inc._auth_header')
+    @component('layouts._auth_header')
         <a href="/dashboard" class="btn-link text-white ml-auto">
             Dashboard
         </a>

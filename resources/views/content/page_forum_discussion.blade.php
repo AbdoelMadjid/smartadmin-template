@@ -1,11 +1,11 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Discussion')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', [
+        @include('layouts._page_breadcrumb', [
             'category_1' => 'Page Views',
             'category_2' => 'Forum Layouts',
         ])

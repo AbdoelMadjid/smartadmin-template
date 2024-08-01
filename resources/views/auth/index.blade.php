@@ -10,8 +10,8 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    @include('inc._head')
-    <link rel="stylesheet" media="screen, print" href="/admin/css/page-login-alt.css">
+    @include('layouts._head')
+    <link rel="stylesheet" media="screen, print" href="/assets/css/page-login-alt.css">
 </head>
 <!-- BEGIN Body -->
 <!-- Possible Classes
@@ -41,13 +41,13 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
 
 <body>
     <!-- DOC: script to save and load page settings -->
-    @include('inc._script_page_settings')
+    @include('layouts._script_page_settings')
 
     <div class="blankpage-form-field">
         <div
             class="page-logo m-0 w-100 align-items-center justify-content-center rounded border-bottom-left-radius-0 border-bottom-right-radius-0 px-4">
             <a href="javascript:void(0)" class="page-logo-link press-scale-down d-flex align-items-center">
-                <img src="/admin/img/{{ $profileApp->app_logo ?? '' }}" alt="{{ $profileApp->app_nama ?? '' }} WebApp"
+                <img src="/assets/img/{{ $profileApp->app_logo ?? '' }}" alt="{{ $profileApp->app_nama ?? '' }} WebApp"
                     aria-roledescription="logo">
                 <span class="page-logo-text mr-1">{{ $profileApp->app_nama ?? '' }} WebApp</span>
 
@@ -94,16 +94,16 @@ License: You must have a valid license purchased only from wrapbootstrap.com (li
             </div>
         </div>
     </div>
-    <video poster="/admin/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
-        <source src="/admin/media/video/cc.webm" type="video/webm">
-        <source src="/admin/media/video/cc.mp4" type="video/mp4">
+    <video poster="/assets/img/backgrounds/clouds.png" id="bgvid" playsinline autoplay muted loop>
+        <source src="/assets/media/video/cc.webm" type="video/webm">
+        <source src="/assets/media/video/cc.mp4" type="video/mp4">
     </video>
     <!-- BEGIN Color profile -->
     <!-- this area is hidden and will not be seen on screens or screen readers -->
     <!-- we use this only for CSS color refernce for JS stuff -->
-    @include('inc._color_profile')
+    @include('layouts._color_profile')
     <!-- END Color profile -->
-    @include('inc._script_bundle')
+    @include('layouts._script_bundle')
 </body>
 <!-- END Body -->
 

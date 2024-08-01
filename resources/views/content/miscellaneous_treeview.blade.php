@@ -1,11 +1,11 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Tree View')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/treeview/treeview.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Miscellaneous'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Miscellaneous'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-globe'></i> Treeview<sup class='badge badge-primary fw-500'>ADDON</sup>

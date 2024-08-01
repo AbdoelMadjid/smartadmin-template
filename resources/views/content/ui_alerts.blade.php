@@ -1,11 +1,11 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Alerts')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'UI Components'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-window'></i> Alerts

@@ -39,7 +39,7 @@
             </a>
         </div>
 
-        @include('inc._nav_menu')
+        @include('layouts._nav_menu')
 
         <div class="filter-message js-filter-message bg-success-600"></div>
     </nav>

@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Generate Stack')
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">

@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Search')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-solid.css">

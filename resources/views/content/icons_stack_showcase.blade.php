@@ -1,4 +1,4 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Base')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/fa-light.css">
@@ -8,12 +8,12 @@
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', [
+        @include('layouts._page_breadcrumb', [
             'category_1' => 'Font Icons',
             'category_2' => 'Stack Icons',
         ])
         <div class="subheader">
-            @component('inc._page_heading', [
+            @component('layouts._page_heading', [
                 'heading1' => 'Stack Icons:',
                 'heading2' => 'Showcase',
                 'pagedescription' => 'NextGen Icons description',

@@ -1,11 +1,11 @@
-@extends('inc.main')
+@extends('layouts.main')
 @section('title', 'Light Gallery')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/miscellaneous/lightgallery/lightgallery.bundle.css">
 @endsection
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
-        @include('inc._page_breadcrumb', ['category_1' => 'Miscellaneous'])
+        @include('layouts._page_breadcrumb', ['category_1' => 'Miscellaneous'])
         <div class="subheader">
             <h1 class="subheader-title">
                 <i class='subheader-icon fal fa-globe'></i> Light Gallery<sup class='badge badge-primary fw-500'>PREMIUM
