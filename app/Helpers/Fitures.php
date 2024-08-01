@@ -13,8 +13,8 @@ class Fitures
 
         foreach ($fitur as $f) {
             // Mengambil view berdasarkan nama_fitur
-            if (view()->exists("inc.fitur.{$f->nama_fitur}")) {
-                $hasil[] = "inc.fitur.{$f->nama_fitur}";
+            if (view()->exists("layouts.fitur.{$f->nama_fitur}")) {
+                $hasil[] = "layouts.fitur.{$f->nama_fitur}";
             }
         }
 
