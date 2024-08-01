@@ -7,7 +7,7 @@
     @component('layouts._auth_header')
         <div class="demo ml-auto mt-3">
             <div class="btn-group">
-                <button class="btn btn-secondary btn-sm dropdown-toggle waves-effect waves-themed" type="button"
+                <button class="btn btn-primary btn-sm dropdown-toggle waves-effect waves-themed" type="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     User Auth
                 </button>
