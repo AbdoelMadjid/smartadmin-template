@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         elem.addEventListener("click", function(event) {
             event.preventDefault(); // Mencegah perilaku default
 
-            initApp.playSound('/admin/media/sound', 'messagebox')
+            initApp.playSound('/assets/media/sound', 'messagebox')
 
             var elem = this;
             var title = elem.getAttribute("data-title");

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         elem.addEventListener("click", function(event) {
             event.preventDefault(); // Mencegah perilaku default
 
-            initApp.playSound('/admin/media/sound', 'voice_on')
+            initApp.playSound('/assets/media/sound', 'voice_on')
 
             var title = this.getAttribute("data-title");
             var message = this.getAttribute("data-message");

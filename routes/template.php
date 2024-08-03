@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Route;
 /* Route::fallback([TemplateController::class, 'error_pages']); */
 
 // DEVELOPER
-//Route::get('/dev_component', [TemplateController::class, 'dev_component'])->name('developer_component');
+Route::get('/dev_component', [TemplateController::class, 'dev_component'])->name('developer_component');
 
 
 // INTEL

@@ -11,7 +11,7 @@
             <span class="nav-link-text" data-i18n="nav.application_about">About</span>
         </a>
     </li>
-    {{-- @include('layouts.mainmenu._menu_depelover') --}}
+    @include('layouts.mainmenu._menu_depelover')
     @include('layouts.mainmenu._menu_intel_app')
     @include('layouts.mainmenu._menu_tools_component_app')
     @include('layouts.mainmenu._menu_plugin_addon_app')
