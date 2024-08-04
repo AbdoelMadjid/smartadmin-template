@@ -19,50 +19,12 @@
         </div>
 
 
-        <div class="alert alert-primary">
-            <div class="d-flex flex-start w-100">
-                <div class="mr-2 hidden-md-down">
-                    <span class="icon-stack icon-stack-lg">
-                        <i class="base base-6 icon-stack-3x opacity-100 color-primary-500"></i>
-                        <i class="base base-10 icon-stack-2x opacity-100 color-primary-300 fa-flip-vertical"></i>
-                        <i class="ni ni-blog-read icon-stack-1x opacity-100 color-white"></i>
-                    </span>
-                </div>
-                <div class="d-flex flex-fill">
-                    <div class="flex-fill">
-                        <x-div div :text="__('Pro Tip!')" class="h5" />
-                        <p>
-                            Laravel has provided one of the interesting features in its templating blade, namely Components.
-                            Components allow us to chop up code so that it can be reused without having to rewrite all the
-                            parts completely. Similar to sections and layouts which are also part of the blade tempalting
-                            feature.
-                        </p>
-                        <p class="m-0">
-                            Follow a slogal with a useful link or call to action <a href="#" target="_blank">Call to
-                                action >></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <x-panel.show title="Contoh" subtitle="panel">
-            <x-slot name="paneltoolbar">
-                <x-panel.tool-bar>
-                    isi panel tool-bar
-                </x-panel.tool-bar>
-            </x-slot>
-            <x-slot name="tagpanel">
-                isi tagpanel
-            </x-slot>
-            <p>
-                ini content panel
-            </p>
-            <x-slot name="panelcontentfoot">
-                isi panelcontent foot
-            </x-slot>
-        </x-panel.show>
-        <x-row-column :column="2">
-            <x-slot name="column1">
+        <x-tips icon="ni ni-blog-read" title="Pro Tip!"
+            text="Laravel has provided one of the interesting features in its templating blade, namely Components. Components allow us to chop up code so that it can be reused without having to rewrite all the parts completely. Similar to sections and layouts which are also part of the blade templating feature."
+            link="#" linkText="Call to action >>" />
+
+        <x-column-layout :sizes="[6, 6]" :useCards="[false, false]">
+            <x-slot name="slot0">
                 <x-panel.show title="Default" subtitle="Example">
                     <x-slot name="paneltoolbar">
                         <x-panel.tool-bar>
@@ -80,16 +42,12 @@
                             </div>
                         </x-panel.tool-bar>
                         <x-panel.tool-bar class="ml-2">
-                            <button class="btn btn-toolbar-master" type="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <i class="fal fa-ellipsis-v"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-animated dropdown-menu-right">
-                                <a class="dropdown-item" href="/dashboard">Kembali</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider m-0"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <x-button-ellipsis :menuItems="[
+                                ['text' => 'Kembali', 'href' => '/dashboard'],
+                                ['text' => 'Another action', 'href' => '#'],
+                                ['divider' => true],
+                                ['text' => 'Something else here', 'href' => '#'],
+                            ]" />
                         </x-panel.tool-bar>
                     </x-slot>
                     <x-slot name="tagpanel">
@@ -108,30 +66,46 @@
                             <input type="checkbox" class="custom-control-input" id="demoCheck">
                             <label class="custom-control-label" for="demoCheck">Checkbox</label>
                         </div>
-                        <x-button href="/dev_component" size="sm" :label="__('Small')" class="ml-auto" />
+                        <x-button type="submit" size="sm" :label="__('Small')" class="ml-auto" />
                     </x-slot>
                 </x-panel.show>
-                <x-panel.show title="Component" subtitle="Alert">
+                {{-- COMPONENT ALERT MESSAGES --}}
+                <x-panel.show title="Alert" subtitle="Messages">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar class="ml-2">
+                            <x-button-ellipsis :menuItems="[
+                                ['text' => 'Kembali', 'href' => '/dashboard'],
+                                ['text' => 'Another action', 'href' => '#'],
+                                ['divider' => true],
+                                ['text' => 'Something else here', 'href' => '#'],
+                            ]" />
+                        </x-panel.tool-bar>
+                    </x-slot>
                     <h5 class="text-info">Component</h5>
                     <code>x-alert-messages</code>
                     <hr>
                     <h5 class="text-info">Example</h5>
+
                     <code>&lt;x-alert-messages color="danger" dismissible :title="__('Error!!')"&gt;</code>
                     <x-alert-messages color="danger" dismissible :title="__('Error!!')">
                         <strong>Well Done!</strong> You error read this important alert message.
                     </x-alert-messages>
+
                     <code>&lt;x-alert-messages color="warning" :title="__('Attention!!')"&gt;</code>
                     <x-alert-messages color="warning" :title="__('Attention!!')">
                         <strong>Well Done!</strong> You warning read this important alert message.
                     </x-alert-messages>
+
                     <code>&lt;x-alert-messages color="info" bground :title="__('Information!!')"&gt;</code>
                     <x-alert-messages color="info" bground dismissible :title="__('Information!!')">
                         <strong>Well Done!</strong> You information read this important alert message.
                     </x-alert-messages>
+
                     <code>&lt;x-alert-messages color="success" bground :title="__('Success!!')"&gt;</code>
                     <x-alert-messages color="success" bground dismissible :title="__('Success!!')">
                         <strong>Well Done!</strong> You successfully read this important alert message.
                     </x-alert-messages>
+
                     <code>&lt;x-alert-messages color="dark" bground&gt;</code>
                     <x-alert-messages color="dark" bground>
                         <span class="h6 m-0 fw-700">Task 55% Complete</span>
@@ -141,6 +115,7 @@
                                 aria-valuemax="100"></div>
                         </div>
                     </x-alert-messages>
+
                     <code>&lt;x-alert-messages color="primary" :title="__('Pro Tip!!!')"&gt;</code>
                     <x-alert-messages color="secondary" :title="__('Pro Tip!!!')">
                         <p>
@@ -159,7 +134,8 @@
                     </x-alert-messages>
                 </x-panel.show>
             </x-slot>
-            <x-slot name="column2">
+            <x-slot name="slot1">
+                {{-- COMPONENT DIV OR SPAN --}}
                 <x-panel.show title="Component" subtitle="Div or Span">
                     <x-title :l="5" :title="__('Example Span')" info class="mb-2" />
                     Script : <code>
@@ -178,6 +154,8 @@
                         :text="__('Pro Tip!')" class="h5" />
                     <hr>
                 </x-panel.show>
+
+                {{-- COMPONENT ICON --}}
                 <x-panel.show title="Component" subtitle="Icon">
                     <x-title :l="5" :title="__('Component')" info class="mb-2" />
                     <code>x-icon</code>
@@ -220,6 +198,8 @@
                         <a href="/icons_fontawesome_light" target="_blank">Reference</a>
                     </x-slot>
                 </x-panel.show>
+
+                {{-- COMPONENT NUMBER STYLE --}}
                 <x-panel.show title="Component" subtitle="Number Style">
                     {{-- Number Style --}}
                     <h5 class="text-info">Component</h5>
@@ -237,6 +217,8 @@
                     <x-number-style color="info" :label="__('25')" />
                     <x-number-style color="danger" :label="__('1')" />
                 </x-panel.show>
+
+                {{-- COMPONENT BADGE --}}
                 <x-panel.show title="Component" subtitle="Badge">
                     <h5 class="text-info">Component</h5>
                     <code>x-badge</code>
@@ -254,12 +236,14 @@
 
                 </x-panel.show>
             </x-slot>
-        </x-row-column>
+        </x-column-layout>
 
-        <x-row-column :column="1">
-            <x-slot name='column1'>
+        {{-- COMPONENT BUTTON --}}
+        <x-column-layout :sizes="[12]" :useCards="[false]">
+            <x-slot name="slot0">
                 <x-panel.show title="Component" subtitle="Button">
                     <x-tabs-pills :tabs="[
+                        ['id' => 'tab0', 'label' => 'Component'],
                         ['id' => 'tab1', 'label' => 'Default & Outline'],
                         ['id' => 'tab2', 'label' => 'Pills'],
                         ['id' => 'tab3', 'label' => 'with ICON'],
@@ -271,193 +255,226 @@
                         ['id' => 'tab9', 'label' => 'Bootbox'],
                         ['id' => 'tab10', 'label' => 'Toastr'],
                     ]">
-                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                            {{-- button --}}
-                            <h5 class="text-info">Default Button & Outline Button</h5>
-                            with color <code>&lt;x-button color="$color" :label="__('Primary')" /&gt;</code>
-                            <hr>
-                            <x-button color="primary" :label="__('Primary')" />
-                            <x-button color="secondary" :label="__('Secondary')" />
-                            <x-button color="default" :label="__('Default')" />
-                            <x-button color="success" :label="__('Success')" />
-                            <x-button color="warning" :label="__('Warning')" />
-                            <x-button color="info" :label="__('Info')" />
-                            <x-button color="danger" :label="__('Danger')" />
-                            <x-button color="dark" :label="__('Dark')" />
-                            <x-button color="light" :label="__('Light')" />
-                            <hr>
-                            with style outline <code>&lt;x-button style
-                                color="$color" :label="__('Primary')" /&gt;</code>
-                            <hr>
-                            <x-button style color="primary" :label="__('Primary')" />
-                            <x-button style color="secondary" :label="__('Secondary')" />
-                            <x-button style color="default" :label="__('Default')" />
-                            <x-button style color="success" :label="__('Success')" />
-                            <x-button style color="warning" :label="__('Warning')" />
-                            <x-button style color="info" :label="__('Info')" />
-                            <x-button style color="danger" :label="__('Danger')" />
-                            <x-button style color="dark" :label="__('Dark')" />
-                            <x-button style color="light" :label="__('Light')" />
-                            <br>
-                            <div class="panel-tag mt-2 mb-2">for outline buttons also applies to btn-icon,
-                                size, rounded-circle, btn-pills</div>
+                        {{-- Default Component --}}
+                        <div class="tab-pane fade show active" id="tab0" role="tabpanel">
+                            @php
+                                $markdownContent = file_get_contents(resource_path('/data/button.md'));
+                            @endphp
+                            <pre>
+                            {!! htmlspecialchars($markdownContent) !!}
+                        </pre>
                         </div>
+                        {{-- Default Button & Outline Button --}}
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name='slot0'>
+                                    <h5 class="text-info">with color</h5>
+                                    <code>&lt;x-button color="$color" :label="__('Primary')" /&gt;</code>
+                                    <hr>
+                                    <h5 class="text-info">Example</h5>
+                                    <x-button class="m-1" color="primary" :label="__('Primary')" />
+                                    <x-button class="m-1" color="secondary" :label="__('Secondary')" />
+                                    <x-button class="m-1" color="default" :label="__('Default')" />
+                                    <x-button class="m-1" color="success" :label="__('Success')" />
+                                    <x-button class="m-1" color="warning" :label="__('Warning')" />
+                                    <x-button class="m-1" color="info" :label="__('Info')" />
+                                    <x-button class="m-1" color="danger" :label="__('Danger')" />
+                                    <x-button class="m-1" color="dark" :label="__('Dark')" />
+                                    <x-button class="m-1" color="light" :label="__('Light')" />
+                                </x-slot>
+                                <x-slot name='slot1'>
+                                    <h5 class="text-info">with style outline</h5>
+                                    <code>&lt;x-button style
+                                        color="$color" :label="__('Primary')" /&gt;</code>
+                                    <hr>
+                                    <h5 class="text-info">Example</h5>
+                                    <x-button style class="m-1" color="primary" :label="__('Primary')" />
+                                    <x-button style class="m-1" color="secondary" :label="__('Secondary')" />
+                                    <x-button style class="m-1" color="default" :label="__('Default')" />
+                                    <x-button style class="m-1" color="success" :label="__('Success')" />
+                                    <x-button style class="m-1" color="warning" :label="__('Warning')" />
+                                    <x-button style class="m-1" color="info" :label="__('Info')" />
+                                    <x-button style class="m-1" color="danger" :label="__('Danger')" />
+                                    <x-button style class="m-1" color="dark" :label="__('Dark')" />
+                                    <x-button style class="m-1" color="light" :label="__('Light')" />
+                                    <div class="panel-tag mt-2 mb-2">for outline buttons also applies to btn-icon,
+                                        size, rounded-circle, btn-pills</div>
+                                </x-slot>
+                            </x-column-layout>
+                        </div>
+
+                        {{-- Pills Button --}}
                         <div class="tab-pane fade" id="tab2" role="tabpanel">
                             <h5 class="text-info">Pills Button</h5>
-                            with pills <code>&lt;x-button color="$color" pills :label="__('Primary')"
+                            <code>&lt;x-button color="$color" pills :label="__('Primary')"
                                 /&gt;</code>
                             <hr>
-                            <x-button color="primary" pills :label="__('Primary')" />
-                            <x-button color="secondary" pills :label="__('Secondari')" />
-                            <x-button color="default" pills :label="__('Default')" />
-                            <x-button color="success" pills :label="__('Success')" />
-                            <x-button color="warning" pills :label="__('Warning')" />
-                            <x-button color="info" pills :label="__('Info')" />
-                            <x-button color="danger" pills :label="__('Danger')" />
-                            <x-button color="dark" pills :label="__('Dark')" />
-                            <x-button color="light" pills :label="__('Light')" />
+                            <x-button class="m-1" color="primary" pills :label="__('Primary')" />
+                            <x-button class="m-1" color="secondary" pills :label="__('Secondari')" />
+                            <x-button class="m-1" color="default" pills :label="__('Default')" />
+                            <x-button class="m-1" color="success" pills :label="__('Success')" />
+                            <x-button class="m-1" color="warning" pills :label="__('Warning')" />
+                            <x-button class="m-1" color="info" pills :label="__('Info')" />
+                            <x-button class="m-1" color="danger" pills :label="__('Danger')" />
+                            <x-button class="m-1" color="dark" pills :label="__('Dark')" />
+                            <x-button class="m-1" color="light" pills :label="__('Light')" />
                             <hr>
                         </div>
+
+                        {{-- Button with ICON --}}
                         <div class="tab-pane fade" id="tab3" role="tabpanel">
                             <h5 class="text-info">Button with ICON</h5>
-                            with icon <code>&lt;x-button color="$color"
-                                icon="$icon" :label="__('Primary')" /&gt;</code>
+                            <code>&lt;x-button color="$color" icon="$icon" :label="__('Primary')" /&gt;</code>
                             <hr>
-                            <x-button color="primary" icon="print" :label="__('Print')" />
-                            <x-button color="secondary" icon="volume-mute" :label="__('Mute')" />
-                            <x-button color="default" icon="check" :label="__('Submit')" />
-                            <x-button color="success" icon="download" :label="__('Download')" />
-                            <x-button color="warning" icon="exclamation-triangle" :label="__('Scan Device')" />
-                            <x-button color="info" icon="bug" :label="__('Report Bug')" />
-                            <x-button color="danger" icon="times" :label="__('Delete')" />
-                            <x-button color="dark" icon="eject" :label="__('Eject')" />
+                            <x-button class="m-1" color="primary" icon="print" :label="__('Print')" />
+                            <x-button class="m-1" color="secondary" icon="volume-mute" :label="__('Mute')" />
+                            <x-button class="m-1" color="default" icon="check" :label="__('Submit')" />
+                            <x-button class="m-1" color="success" icon="download" :label="__('Download')" />
+                            <x-button class="m-1" color="warning" icon="exclamation-triangle" :label="__('Scan Device')" />
+                            <x-button class="m-1" color="info" icon="bug" :label="__('Report Bug')" />
+                            <x-button class="m-1" color="danger" icon="times" :label="__('Delete')" />
+                            <x-button class="m-1" color="dark" icon="eject" :label="__('Eject')" />
                             <hr>
                         </div>
+
+                        {{-- Icon Button --}}
                         <div class="tab-pane fade" id="tab4" role="tabpanel">
-                            <h5 class="text-info">Icon Button</h5>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
-                                    with btn-icon <code>&lt;x-button color="$color" icon="$icon"
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
+                                    <h5 class="text-info">with btn-icon</h5>
+                                    <code>&lt;x-button color="$color" icon="$icon"
                                         btnicon /&gt;</code>
+                                    <hr>
+                                    <h5 class="text-info">Example:</h5>
+                                    <x-button class="m-1" color="primary" icon="print" btnicon />
+                                    <x-button class="m-1" color="secondary" icon="volume-mute" btnicon />
+                                    <x-button class="m-1" color="default" icon="check" btnicon />
+                                    <x-button class="m-1" color="success" icon="download" btnicon />
+                                    <x-button class="m-1" color="warning" icon="exclamation-triangle" btnicon />
+                                    <x-button class="m-1" color="info" icon="bug" btnicon />
+                                    <x-button class="m-1" color="danger" icon="times" btnicon />
+                                    <x-button class="m-1" color="dark" icon="eject" btnicon />
                                 </x-slot>
-                                <x-slot name="column2">
-                                    <x-button color="primary" icon="print" btnicon />
-                                    <x-button color="secondary" icon="volume-mute" btnicon />
-                                    <x-button color="default" icon="check" btnicon />
-                                    <x-button color="success" icon="download" btnicon />
-                                    <x-button color="warning" icon="exclamation-triangle" btnicon />
-                                    <x-button color="info" icon="bug" btnicon />
-                                    <x-button color="danger" icon="times" btnicon />
-                                    <x-button color="dark" icon="eject" btnicon />
-                                </x-slot>
-                            </x-row-column>
-                            <hr>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
-                                    with btn-icon and rounded-circle <br><code>&lt;x-button href="#"
+                                <x-slot name="slot1">
+                                    <h5 class="text-info">with btn-icon and rounded-circle</h5>
+                                    <code>&lt;x-button href="#"
                                         color="$color" icon="$icon" btnicon
                                         circle /&gt;</code>
-                                </x-slot>
-                                <x-slot name="column2">
-                                    <x-button href="#" color="primary" icon="print" btnicon circle />
-                                    <x-button href="#" color="secondary" icon="volume-mute" btnicon circle />
-                                    <x-button href="#" color="default" icon="check" btnicon circle />
-                                    <x-button href="#" color="success" icon="download" btnicon circle />
-                                    <x-button href="#" color="warning" icon="exclamation-triangle" btnicon
+                                    <hr>
+                                    <h5 class="text-info">Example:</h5>
+                                    <x-button href="#" class="m-1" color="primary" icon="print" btnicon
                                         circle />
-                                    <x-button href="#" color="info" icon="bug" btnicon circle />
-                                    <x-button href="#" color="danger" icon="times" btnicon circle />
-                                    <x-button href="#" color="dark" icon="eject" btnicon circle />
+                                    <x-button href="#" class="m-1" color="secondary" icon="volume-mute" btnicon
+                                        circle />
+                                    <x-button href="#" class="m-1" color="default" icon="check" btnicon
+                                        circle />
+                                    <x-button href="#" class="m-1" color="success" icon="download" btnicon
+                                        circle />
+                                    <x-button href="#" class="m-1" color="warning" icon="exclamation-triangle"
+                                        btnicon circle />
+                                    <x-button href="#" class="m-1" color="info" icon="bug" btnicon
+                                        circle />
+                                    <x-button href="#" class="m-1" color="danger" icon="times" btnicon
+                                        circle />
+                                    <x-button href="#" class="m-1" color="dark" icon="eject" btnicon
+                                        circle />
                                 </x-slot>
-                            </x-row-column>
-                            <hr>
+                            </x-column-layout>
                         </div>
+
+                        {{-- Button Size --}}
                         <div class="tab-pane fade" id="tab5" role="tabpanel">
-                            <h5 class="text-info">Button Size</h5>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
-                                    size lg (large)<code>&lt;x-button
-                                        size="lg" :label="__('Large')" /&gt;</code>
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
+                                    <h5 class="text-info">size lg (large)</h5>
+                                    <code>&lt;x-button size="lg" :label="__('Large')" /&gt;</code>
                                     <x-button size="lg" :label="__('Large')" />
                                 </x-slot>
-                                <x-slot name="column2">
-                                    size (default) <code>&lt;x-button :label="__('Default')" /&gt;</code>
+                                <x-slot name="slot1">
+                                    <h5 class="text-info">size (default)</h5>
+                                    <code>&lt;x-button :label="__('Default')" /&gt;</code>
                                     <x-button :label="__('Default')" />
                                 </x-slot>
-                            </x-row-column>
+                            </x-column-layout>
                             <hr>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
-                                    size sm (small)<code>&lt;x-button
-                                        size="sm" :label="__('Small')" /&gt;</code>
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
+                                    <h5 class="text-info">size sm (small)</h5>
+                                    <code>&lt;x-button size="sm" :label="__('Small')" /&gt;</code>
                                     <x-button size="sm" :label="__('Small')" />
                                 </x-slot>
-                                <x-slot name="column2">
-                                    size xs (smallest) <code>&lt;x-button
-                                        size="xs" :label="__('Smallest')" /&gt;</code>
+                                <x-slot name="slot1">
+                                    <h5 class="text-info">size xs (smallest)</h5>
+                                    <code>&lt;x-button size="xs" :label="__('Smallest')" /&gt;</code>
                                     <x-button size="xs" :label="__('Smallest')" />
                                 </x-slot>
-                            </x-row-column>
-                            <hr>
+                            </x-column-layout>
                         </div>
+
+                        {{-- Button Block --}}
                         <div class="tab-pane fade" id="tab6" role="tabpanel">
-                            <h5 class="text-info">Button Block</h5>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
-                                    size lg (large) + pills <code>&lt;x-button
-                                        size="lg" block pills&gt;Large&lt;/x-button&gt;</code>
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
+                                    <h5 class="text-info">size lg (large) + pills </h5>
+                                    <code>&lt;x-button size="lg" block pills&gt;Large&lt;/x-button&gt;</code>
+                                    <hr>
                                     <x-button size="lg" block pills :label="__('Large')" />
                                 </x-slot>
-                                <x-slot name="column2">
-                                    size (default) + style <code>&lt;x-button block
-                                        style&gt;Default&lt;/x-button&gt;</code>
+                                <x-slot name="slot1">
+                                    <h5 class="text-info">size (default) + style</h5>
+                                    <code>&lt;x-button block style&gt;Default&lt;/x-button&gt;</code>
+                                    <hr>
                                     <x-button block style :label="__('Default')" />
                                 </x-slot>
-                            </x-row-column>
+                            </x-column-layout>
                             <hr>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
-                                    size sm (small)<code>&lt;x-button
-                                        color="danger" size="sm" block :label="__('Small')"
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
+                                    <h5 class="text-info">size sm (small)</h5>
+                                    <code>&lt;x-button color="danger" size="sm" block :label="__('Small')"
                                         /&gt;</code>
+                                    <hr>
                                     <x-button color="danger" size="sm" block :label="__('Small')" />
                                 </x-slot>
-                                <x-slot name="column2">
-                                    size xs (smallest) + href="#" <code>&lt;x-button
-                                        href="#" size="xs"
-                                        block :label="__('Smallest')" /&gt;</code>
+                                <x-slot name="slot1">
+                                    <h5 class="text-info">size xs (smallest) + href="#"</h5>
+                                    <code>&lt;x-button href="#" size="xs" block :label="__('Smallest')"
+                                        /&gt;</code>
+                                    <hr>
                                     <x-button href="#" size="xs" block :label="__('Smallest')" />
                                 </x-slot>
-                            </x-row-column>
+                            </x-column-layout>
                             <hr>
                         </div>
+
+                        {{--  Hover dot effect --}}
                         <div class="tab-pane fade" id="tab7" role="tabpanel">
                             <h5 class="text-info">Hover dot effect</h5>
-                            <x-row-column :column="2">
-                                <x-slot name="column1">
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
                                     <code>&lt;x-button
                                         href="javascript:void(0);" color="$color" size="$size"
                                         icon="$icon" btnicon circle
                                         effect /&gt;</code>
                                     <hr>
-                                    <x-button href="javascript:void(0);" color="primary" size="lg" icon="users"
-                                        btnicon circle effect />
-                                    <x-button href="javascript:void(0);" color="success" size="lg" icon="save"
-                                        btnicon circle effect />
-                                    <x-button href="javascript:void(0);" color="secondary" size="lg" icon="home"
-                                        btnicon circle effect />
-                                    <x-button href="javascript:void(0);" color="danger" size="lg" icon="trash"
-                                        btnicon circle effect />
+                                    <x-button href="javascript:void(0);" class="m-1" color="primary" size="lg"
+                                        icon="users" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" class="m-1" color="success" size="lg"
+                                        icon="save" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" class="m-1" color="secondary" size="lg"
+                                        icon="home" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" class="m-1" color="danger" size="lg"
+                                        icon="trash" btnicon circle effect />
                                 </x-slot>
-                                <x-slot name="column2">
+                                <x-slot name="slot1">
                                 </x-slot>
-                            </x-row-column>
+                            </x-column-layout>
                         </div>
+
+                        {{-- Button Dropdown --}}
                         <div class="tab-pane fade" id="tab8" role="tabpanel">
-                            <h5 class="text-info">Button Dropdown</h5>
-                            <hr>
-                            <x-row-column :column="4">
-                                <x-slot name="column1">
+                            <x-column-layout :sizes="[3, 3, 3, 3]" :useCard="[false, false, false, false]">
+                                <x-slot name="slot0">
                                     <h5> Dropdown Default</h5>
                                     <div class="fs-lg fw-300 p-1 border-faded rounded mb-g">
                                         @php
@@ -478,7 +495,7 @@
                                             ]" />
                                     </div>
                                 </x-slot>
-                                <x-slot name="column2">
+                                <x-slot name="slot1">
                                     <h5> Dropdown Left Show</h5>
                                     <div class="fs-lg fw-300 p-1 border-faded rounded mb-g">
                                         @php
@@ -501,7 +518,7 @@
                                             ]" />
                                     </div>
                                 </x-slot>
-                                <x-slot name="column3">
+                                <x-slot name="slot2">
                                     <h5> Dropdown Right Show</h5>
                                     <div class="fs-lg fw-300 p-1 border-faded rounded mb-g">
                                         @php
@@ -524,23 +541,18 @@
                                             ]" />
                                     </div>
                                 </x-slot>
-                                <x-slot name="column4">
+                                <x-slot name="slot3">
                                     <h5> Dropdown Static Show</h5>
-                                    <code>
-                                        &lt;div class="btn-group"&gt;
-                                        &lt;x-button color="secondary" :label="__('Pilihan')" dropdowntoggle
-                                        toggle="dropdown"
-                                        haspopup="true" expanded="false" display="static"
-                                        :items="[
-                                            ['label' => 'Action', 'href' => 'javascript:void(0);'],
-                                            ['label' => 'Another action', 'href' => 'javascript:void(0);'],
-                                            ['label' => 'Something else here', 'href' => 'javascript:void(0);'],
-                                            'divider',
-                                            ['label' => 'Separated link', 'href' => 'javascript:void(0);'],
-                                        ]"
-                                        /&gt;
-                                        &lt;/div&gt;
-                                    </code>
+                                    <div class="fs-lg fw-300 p-1 border-faded rounded mb-g">
+                                        @php
+                                            $DropdownDef = file_get_contents(
+                                                resource_path('/data/DropdownStaticShow.md'),
+                                            );
+                                        @endphp
+                                        <pre>
+                                        {!! htmlspecialchars($DropdownDef) !!}
+                                        </pre>
+                                    </div>
                                     <hr>
                                     <div class="btn-group">
                                         <x-button color="secondary" :label="__('Pilihan')" dropdowntoggle toggle="dropdown"
@@ -553,11 +565,9 @@
                                             ]" />
                                     </div>
                                 </x-slot>
-                            </x-row-column>
-
+                            </x-column-layout>
 
                             <hr>
-
 
                             <div class="btn-group">
                                 <x-button color="secondary" icon="plus" btnicon circle toggle="dropdown"
@@ -580,9 +590,11 @@
                                     ]" />
                             </div>
                         </div>
+
+                        {{-- Component Bootbox --}}
                         <div class="tab-pane fade" id="tab9" role="tabpanel">
-                            <x-row-column :column="2">
-                                <x-slot name='column1'>
+                            <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                                <x-slot name="slot0">
                                     <h5 class="text-info">Konfirmasi Ya atau Tidak</h5>
                                     <code>
                                         &lt;x-button href="#" icon="sign-out-alt" id="ya-atau-tidak"
@@ -605,7 +617,7 @@ Logout
                                         data-title="Konfirmasi" data-message="Apakah Anda yakin ingin logout?"
                                         data-redirect-url="/" title="Logout" :label="__('Logout')" />
                                 </x-slot>
-                                <x-slot name='column2'>
+                                <x-slot name="slot1">
                                     <h5 class="text-info">Pemberitahuan</h5>
                                     <code>
                                         &lt;x-button href="#" icon="save" color="info" id="eksekusi"
@@ -626,13 +638,13 @@ Simpan
                                         data-title="Informasi !!" data-message="Data sukses di simpan"
                                         data-redirect-url="/dashboard" title="Simpan" :label="__('Simpan')" />
                                 </x-slot>
-                            </x-row-column>
-
-
+                            </x-column-layout>
                         </div>
+
+                        {{-- Component Toastr --}}
                         <div class="tab-pane fade" id="tab10" role="tabpanel">
-                            <x-row-column :column="4">
-                                <x-slot name='column1'>
+                            <x-column-layout :sizes="[3, 3, 3, 3]" :useCard="[false, false, false, false]">
+                                <x-slot name="slot0">
                                     <code>
                                         &lt;x-button color="success" size="sm" :label="__('Success')"
                                         onclick="showToast('Success','Data sukses di simpan', 'success')" /&gt;
@@ -641,7 +653,7 @@ Simpan
                                     <x-button color="success" size="sm" :label="__('Success')"
                                         onclick="showToast('Success','Data sukses di simpan', 'success')" />
                                 </x-slot>
-                                <x-slot name='column2'>
+                                <x-slot name='slot1'>
                                     <code>
                                         &lt;x-button color="info" size="sm" :label="__('Info')"
                                         onclick="showToast('Info','Data telah di hapus', 'info')" /&gt;
@@ -650,7 +662,7 @@ Simpan
                                     <x-button color="info" size="sm" :label="__('Info')"
                                         onclick="showToast('Info','Data telah di hapus', 'info')" />
                                 </x-slot>
-                                <x-slot name='column3'>
+                                <x-slot name='slot2'>
                                     <code>
                                         &lt;x-button color="danger" size="sm" :label="__('Error')"
                                         onclick="showToast('Error','Ada Masalah', 'error')" /&gt;
@@ -659,7 +671,7 @@ Simpan
                                     <x-button color="danger" size="sm" :label="__('Error')"
                                         onclick="showToast('Error','Ada Masalah', 'error')" />
                                 </x-slot>
-                                <x-slot name='column4'>
+                                <x-slot name='slot3'>
                                     <code>
                                         &lt;x-button color="warning" size="sm" :label="__('Warning')"
                                         onclick="showToast('Warning','Mohon di perhatikan', 'warning')" /&gt;
@@ -668,184 +680,12 @@ Simpan
                                     <x-button color="warning" size="sm" :label="__('Warning')"
                                         onclick="showToast('Warning','Mohon di perhatikan', 'warning')" />
                                 </x-slot>
-                            </x-row-column>
+                            </x-column-layout>
                         </div>
                     </x-tabs-pills>
-                    @php
-                        $markdownContent = file_get_contents(resource_path('/data/button.md'));
-                    @endphp
-                    <pre>
-                        {!! htmlspecialchars($markdownContent) !!}
-                    </pre>
                 </x-panel.show>
             </x-slot>
-        </x-row-column>
-
-        <x-row-column :column="2">
-            <x-slot name="column1">
-                <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
-                    <h3>
-                        SmartAdmin Team
-                        <small class="mb-0">We build cool things...</small>
-                    </h3>
-                    <div class="d-flex flex-wrap demo demo-h-spacing mt-3 mb-3">
-                        <div
-                            class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/sunny.png" alt="Sunny A."
-                                class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Sunny A. (UI/UX Expert)
-                                    <small class="m-0 fw-300">
-                                        Lead Author
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@myplaneticket" class="text-info fs-sm"
-                                    target="_blank">@myplaneticket</a>
-                                -
-                                <a href="https://wrapbootstrap.com/user/myorange" class="text-info fs-sm" target="_blank"
-                                    title="Contact Sunny"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div
-                            class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/josh.png" alt="Jos K."
-                                class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Jos K. (ASP.NET Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@atlantez" class="text-info fs-sm"
-                                    target="_blank">@atlantez</a> -
-                                <a href="https://wrapbootstrap.com/user/Walapa" class="text-info fs-sm" target="_blank"
-                                    title="Contact Jos"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div
-                            class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/jovanni.png" alt="Jovanni Lo"
-                                class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Jovanni L. (PHP Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@lodev09" class="text-info fs-sm"
-                                    target="_blank">@lodev09</a>
-                                -
-                                <a href="https://wrapbootstrap.com/user/lodev09" class="text-info fs-sm" target="_blank"
-                                    title="Contact Jovanni"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                        <div
-                            class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                            <img src="/assets/img/demo/authors/roberto.png" alt="Jovanni Lo"
-                                class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                            <div class="ml-2 mr-3">
-                                <h5 class="m-0">
-                                    Roberto R. (Rails Developer)
-                                    <small class="m-0 fw-300">
-                                        Partner &amp; Contributor
-                                    </small>
-                                </h5>
-                                <a href="https://twitter.com/@sildur" class="text-info fs-sm" target="_blank">@sildur</a>
-                                -
-                                <a href="https://wrapbootstrap.com/user/sildur" class="text-info fs-sm" target="_blank"
-                                    title="Contact Roberto"><i class="fal fa-envelope"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="fs-lg">
-                        <a href="#" class="fw-500 fs-xl">> Ready to join our dedicated team?</a><br>
-                        We are always on the lookout to expand and add unique app flavors to SmartAdmin. If you think you
-                        can
-                        contribute
-                        and create your very own flavors, get in touch with us or <a href="#" target="_blank">click
-                            here
-                            to
-                            learn
-                            more</a> about our partnership program.
-                    </p>
-                </div>
-            </x-slot>
-            <x-slot name="column2">
-                <div class="fs-lg fw-300 p-5 bg-white border-faded rounded mb-g">
-                    <h3 class="mb-g">
-                        Hi Everyone,
-                    </h3>
-
-                    <p>
-                        Some time ago we asked for your input, whether you were a seasoned SmartAdmin user or just peeking
-                        around
-                        the corner, and WOW, did you deliver! After reading each and everyone of your replies on the survey,
-                        we have
-                        taken each piece of praise and criticism to heart to scope out our plans for SmartAdmin. All
-                        feedback will
-                        be used to make your favorite theme that much better, but these were some of the highlights.
-                    </p>
-                    <p>
-                        A whopping 72% of you said you were ready for a fresh new design, while SmartAdmin is and a
-                        revolutionary
-                        view on what a good bootstrap based template should be, having something new to look at can make
-                        anyone feel
-                        invigorated. And let's be honest, who doesn't like a modern update of your favorite theme! While
-                        most you
-                        are still happy with the current variations, around 50% of you have asked for vue.js support. With
-                        this
-                        framework rapidly gaining popularity it is surely one to include in the family of frameworks! And,
-                        last, but
-                        certainly not least, a very large majority of a staggering 90% wanted more plugins and regular
-                        updates.
-                    </p>
-                    <p>
-                        SmartAdmin takes great care to ensure that valuable and popular plugins are supported as much as
-                        possible on
-                        a drop-in basis, meaning without doing heavy modifications to extend the look and feel of your
-                        favorite
-                        admin template :) . And if the plugin is in demand enough, we won't hesitate to put in the hours to
-                        support
-                        the look and feel of SmartAdmin.
-                    </p>
-                    <p>
-                        But how you ask? Well in order to make the next version of SmartAdmin the best ever and to
-                        re-deliver on our
-                        promise of continued support and quality, we wrote the theme from the ground-up using the latest
-                        Bootstrap
-                        practises. As a result we are better able to support new frameworks as they come up and ensure that
-                        plugin
-                        support is quick and reliable. In addition we have partnered up with some of the communities best
-                        developers
-                        to ensure that our tailor made variations are of top-notch quality and follow the principles that we
-                        at
-                        SmartAdmin take to heart.
-                    </p>
-                    <p>
-                        We're really confident that SmartAdmin 4.0 will bring back that first theme experience while still
-                        keeping
-                        the familiarity that you have grown used to. It's a brand new theme, but with all the things you
-                        love and
-                        then some. And to ensure that you our loyal customers get this experience first-hand, we will be
-                        publishing
-                        the HTML update free-of-charge as an update to your current SmartAdmin license!
-                    </p>
-                    <p>
-                        Last but not least, we would like to thank each and everyone of you, our loyal customers, for your
-                        patience
-                        and continued support in SmartAdmin. Without you this would not have been possible!
-                    </p>
-                    <p>
-                        Sincerely,<br>
-                        The SmartAdmin Team<br>
-                    </p>
-                </div>
-
-            </x-slot>
-        </x-row-column>
+        </x-column-layout>
     </main>
 @endsection
 @section('pages-script')

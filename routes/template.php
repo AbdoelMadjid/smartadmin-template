@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 // DEVELOPER
 Route::get('/dev_component', [TemplateController::class, 'dev_component'])->name('developer_component');
+Route::get('/dev_form', [TemplateController::class, 'dev_form'])->name('developer_form');
 
 
 // INTEL

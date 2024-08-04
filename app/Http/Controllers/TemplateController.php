@@ -20,6 +20,10 @@ class TemplateController extends Controller
     {
         return view('content.developer_component');
     }
+    public function dev_form()
+    {
+        return view('content.developer_form');
+    }
     public function intel_analytics_dashboard()
     {
         return view('content.intel_analytics_dashboard');

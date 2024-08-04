@@ -4,7 +4,8 @@
 <x-button 
 color="danger" 
 :label="__('Pilihan')" 
-dropdowntoggle toggle="dropdown" 
+dropdowntoggle 
+toggle="dropdown" 
 haspopup="true" 
 expanded="false" 
 :items="[ 

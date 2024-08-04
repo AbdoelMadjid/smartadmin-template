@@ -2,13 +2,13 @@
 
 <div class="btn-group"> 
 <x-button 
-color="primary" 
-icon="print" 
-:label="__('Print')" 
+color="secondary" 
+:label="__('Pilihan')" 
 dropdowntoggle 
 toggle="dropdown" 
 haspopup="true" 
 expanded="false" 
+display="static" 
 :items="[ 
     ['label' => 'Action', 'href' => 'javascript:void(0);'], 
     ['label' => 'Another action', 'href' => 'javascript:void(0);'], 
