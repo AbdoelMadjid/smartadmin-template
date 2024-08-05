@@ -17,36 +17,6 @@
             @endcomponent
         </div>
 
-
-        <div class="alert alert-primary">
-            <div class="d-flex flex-start w-100">
-                <div class="mr-2 hidden-md-down">
-                    <span class="icon-stack icon-stack-lg">
-                        <i class="base base-6 icon-stack-3x opacity-100 color-primary-500"></i>
-                        <i class="base base-10 icon-stack-2x opacity-100 color-primary-300 fa-flip-vertical"></i>
-                        <i class="ni ni-blog-read icon-stack-1x opacity-100 color-white"></i>
-                    </span>
-                </div>
-                <div class="d-flex flex-fill">
-                    <div class="flex-fill">
-                        <x-div div :text="__('Pro Tip!')" class="h5" />
-                        <p>
-                            Laravel has provided one of the interesting features in its templating blade, namely Components.
-                            Components allow us to chop up code so that it can be reused without having to rewrite all the
-                            parts completely. Similar to sections and layouts which are also part of the blade tempalting
-                            feature.
-                        </p>
-                        <p class="m-0">
-                            Follow a slogal with a useful link or call to action <a href="#" target="_blank">Call to
-                                action >></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
         <x-column-layout :sizes="[6, 6]" :useCards="[false, false]">
             <x-slot name="slot0">
                 {{-- COMPONENT BUTTON --}}
@@ -372,7 +342,7 @@ Simpan
                         </x-slot>
                         <x-slot name='slot1'>
                             <div class="btn-group dropright">
-                                <x-button color="warning" :label="__('Pilihan')" dropdowntoggle toggle="dropdown"
+                                <x-button color="warning" :label="__('Dropright')" dropdowntoggle toggle="dropdown"
                                     haspopup="true" expanded="false" :items="[
                                         ['label' => 'Action', 'href' => 'javascript:void(0);'],
                                         ['label' => 'Another action', 'href' => 'javascript:void(0);'],
@@ -391,7 +361,7 @@ Simpan
                         </x-slot>
                         <x-slot name='slot1'>
                             <div class="btn-group">
-                                <x-button color="secondary" :label="__('Pilihan')" dropdowntoggle toggle="dropdown"
+                                <x-button color="secondary" :label="__('Static')" dropdowntoggle toggle="dropdown"
                                     haspopup="true" expanded="false" display="static" :items="[
                                         ['label' => 'Action', 'href' => 'javascript:void(0);'],
                                         ['label' => 'Another action', 'href' => 'javascript:void(0);'],
