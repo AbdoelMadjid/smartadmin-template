@@ -6,23 +6,18 @@
     </a>
     <ul>
         <li class="{{ Request::is('component_other') ? 'active' : '' }}">
-            <a href="/component_other" title="Component" data-filter-tags="application component">
-                <span class="nav-link-text" data-i18n="nav.application_component">Component</span>
+            <a href="/component_other" title="Component Other" data-filter-tags="component other">
+                <span class="nav-link-text" data-i18n="nav.component_other">Other</span>
             </a>
         </li>
         <li class="{{ Request::is('component_form') ? 'active' : '' }}">
-            <a href="/component_form" title="Component" data-filter-tags="application component">
-                <span class="nav-link-text" data-i18n="nav.application_component">Component Form</span>
+            <a href="/component_form" title="Component Form" data-filter-tags="component form">
+                <span class="nav-link-text" data-i18n="nav.component_form">Form</span>
             </a>
         </li>
         <li class="{{ Request::is('component_button') ? 'active' : '' }}">
-            <a href="/component_button" title="Component" data-filter-tags="application component">
-                <span class="nav-link-text" data-i18n="nav.application_component">Component Button</span>
-            </a>
-        </li>
-        <li class="{{ Request::is('/dev_landing_page') ? 'active' : '' }}">
-            <a href="/dev_landingpage" title="Landing Page" data-filter-tags="application landing page">
-                <span class="nav-link-text" data-i18n="nav.application_landing_page">Landing Page</span>
+            <a href="/component_button" title="Component Button" data-filter-tags="component button">
+                <span class="nav-link-text" data-i18n="nav.component_button">Button</span>
             </a>
         </li>
     </ul>

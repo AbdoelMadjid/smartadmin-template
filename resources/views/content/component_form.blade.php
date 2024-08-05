@@ -1,14 +1,13 @@
 @extends('layouts.main')
-@section('title', 'Developer Form')
+@section('title', 'Component Form')
 @section('pages-content')
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb')
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'dice-d6',
-                'heading1' => 'Developer',
-                'heading2' => 'Component',
-                'sup' => 'ADDON',
+                'heading1' => 'Component',
+                'heading2' => 'Form',
                 'pagedescription' => 'Components are supporting blade templates on this website',
             ])
             @endcomponent
