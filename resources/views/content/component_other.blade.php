@@ -243,7 +243,6 @@
             <x-slot name="slot0">
                 <x-panel.show title="Component" subtitle="Button">
                     <x-tabs-pills :tabs="[
-                        ['id' => 'tab0', 'label' => 'Component'],
                         ['id' => 'tab1', 'label' => 'Default & Outline'],
                         ['id' => 'tab2', 'label' => 'Pills'],
                         ['id' => 'tab3', 'label' => 'with ICON'],
@@ -254,9 +253,10 @@
                         ['id' => 'tab8', 'label' => 'Dropdown'],
                         ['id' => 'tab9', 'label' => 'Bootbox'],
                         ['id' => 'tab10', 'label' => 'Toastr'],
+                        ['id' => 'tab11', 'label' => 'Component'],
                     ]">
                         {{-- Default Component --}}
-                        <div class="tab-pane fade show active" id="tab0" role="tabpanel">
+                        <div class="tab-pane fade show active" id="tab11" role="tabpanel">
                             @php
                                 $markdownContent = file_get_contents(resource_path('/data/button.md'));
                             @endphp

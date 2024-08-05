@@ -16,13 +16,17 @@ class TemplateController extends Controller
     {
         return view('about');
     }
-    public function dev_component()
+    public function component_other()
     {
-        return view('content.developer_component');
+        return view('content.component_other');
     }
-    public function dev_form()
+    public function component_form()
     {
-        return view('content.developer_form');
+        return view('content.component_form');
+    }
+    public function component_button()
+    {
+        return view('content.component_button');
     }
     public function intel_analytics_dashboard()
     {

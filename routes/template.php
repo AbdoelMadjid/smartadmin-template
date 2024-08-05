@@ -23,9 +23,9 @@ use Illuminate\Support\Facades\Route;
 /* Route::fallback([TemplateController::class, 'error_pages']); */
 
 // DEVELOPER
-Route::get('/dev_component', [TemplateController::class, 'dev_component'])->name('developer_component');
-Route::get('/dev_form', [TemplateController::class, 'dev_form'])->name('developer_form');
-
+Route::get('/component_other', [TemplateController::class, 'component_other'])->name('component_other');
+Route::get('/component_form', [TemplateController::class, 'component_form'])->name('component_form');
+Route::get('/component_button', [TemplateController::class, 'component_button'])->name('component_button');
 
 // INTEL
 Route::get('/intel_analytics_dashboard', [TemplateController::class, 'intel_analytics_dashboard'])->name('intel_analytics_dashboard');
