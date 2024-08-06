@@ -54,8 +54,14 @@
                         padding.
                     </x-slot>
                     <p>
-                        ini content panel
+                        @php
+                            $markdownContent = file_get_contents(resource_path('/data/panel.md'));
+                        @endphp
+                        <pre>
+                            {!! htmlspecialchars($markdownContent) !!}
+                        </pre>
                     </p>
+
                     <x-slot name="panelcontentfoot">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="demoCheck">
@@ -64,6 +70,7 @@
                         <x-button type="submit" size="sm" :label="__('Small')" class="ml-auto" />
                     </x-slot>
                 </x-panel.show>
+
                 {{-- COMPONENT ALERT MESSAGES --}}
                 <x-panel.show title="Alert" subtitle="Messages">
                     <x-slot name="paneltoolbar">
