@@ -33,7 +33,7 @@ function toHijriah($tanggal)
     return $hijriah;
 }
 
-function set_active($uri, $output = 'active')
+/* function set_active($uri, $output = 'active')
 {
     if (is_array($uri)) {
         foreach ($uri as $u) {
@@ -61,7 +61,7 @@ function set_active_mainmenu($uri, $output = 'active open')
             return $output;
         }
     }
-}
+} */
 
 function generateRandomText($length = 10)
 {
