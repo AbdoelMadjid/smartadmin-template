@@ -9,6 +9,9 @@
     'href' => null,
     'dismiss' => null,
     'toggle' => null,
+    'action' => null,
+    'offset' => null,
+    'original_title' => null,
     'click' => null,
     'pills' => false,
     'btnicon' => false,
@@ -33,6 +36,7 @@
     'message' => null,
     'redirecturl' => null,
     'title' => null,
+    'btnpanel' => null,
 ])
 
 @php
@@ -54,12 +58,16 @@
             'dropdown-toggle' => $dropdowntoggle,
             'dropdown-toggle-split' => $toogledropdown,
             'dropdown-' . $dpsize => $dpsize,
+            'btn-panel' => $btnpanel,
         ])
         ->merge([
             'type' => !$href ? $type : null,
             'href' => $href,
             'data-dismiss' => $dismiss,
             'data-toggle' => $toggle,
+            'data-action' => $action,
+            'data-offset' => $offset,
+            'data-original-title' => $original_title,
             'aria-haspopup' => $haspopup,
             'aria-expanded' => $expanded,
             'data-display' => $display,

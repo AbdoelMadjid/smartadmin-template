@@ -36,6 +36,14 @@
                             </div>
                         </x-panel.tool-bar>
                         <x-panel.tool-bar class="ml-2">
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
+                        <x-panel.tool-bar class="ml-2">
                             <x-button-ellipsis :menuItems="[
                                 ['text' => 'Kembali', 'href' => '/dashboard'],
                                 ['text' => 'Another action', 'href' => '#'],
@@ -77,6 +85,14 @@
                 {{-- COMPONENT ALERT MESSAGES --}}
                 <x-panel.show title="Alert" subtitle="Messages">
                     <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar class="ml-2">
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
                         <x-panel.tool-bar class="ml-2">
                             <x-button-ellipsis :menuItems="[
                                 ['text' => 'Kembali', 'href' => '/dashboard'],

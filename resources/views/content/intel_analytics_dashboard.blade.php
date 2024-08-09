@@ -438,7 +438,7 @@
                         <div class="panel-content jqvmap-bg-ocean">
                             <div class="d-flex align-items-center">
                                 <img class="d-inline-block js-jqvmap-flag mr-3 border-faded" alt="flag"
-                                    src="admin/img/flags/4x3/us.svg" style="width:55px; height: auto;">
+                                    src="assets/img/flags/4x3/us.svg" style="width:55px; height: auto;">
                                 <h4 class="d-inline-block fw-300 m-0 text-muted fs-lg">
                                     Showcasing information:
                                     <small class="js-jqvmap-country mb-0 fw-500 text-dark">United States of America -

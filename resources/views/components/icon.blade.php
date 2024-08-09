@@ -21,9 +21,28 @@
 ])
 
 @php
-    $attributes = $attributes->class(['fal' => $fal, 'fas' => $fas, 'far' => $far, 'fad' => $fad, 'fab' => $fab, ' fa-' . $name, 'fa-' . $size => $size, 'text-' . $color => $color, 'fa-spin' => $spin, 'fa-pulse' => $pulse, 'fa-beat' => $beat, 'fa-flip' => $flip, 'fa-shake' => $shake, 'fa-rotate-90' => $rotate_90, 'fa-rotate-180' => $rotate_180, 'fa-rotate-270' => $rotate_270])->merge([
-        //
-    ]);
+    $attributes = $attributes
+        ->class([
+            'fal' => $fal,
+            'fas' => $fas,
+            'far' => $far,
+            'fad' => $fad,
+            'fab' => $fab,
+            ' fa-' . $name,
+            'fa-' . $size => $size,
+            'text-' . $color => $color,
+            'fa-spin' => $spin,
+            'fa-pulse' => $pulse,
+            'fa-beat' => $beat,
+            'fa-flip' => $flip,
+            'fa-shake' => $shake,
+            'fa-rotate-90' => $rotate_90,
+            'fa-rotate-180' => $rotate_180,
+            'fa-rotate-270' => $rotate_270,
+        ])
+        ->merge([
+            //
+        ]);
 @endphp
 
 @if ($name)

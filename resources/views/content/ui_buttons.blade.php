@@ -33,36 +33,41 @@
                         <div class="panel-content">
                             <div class="panel-tag">
                                 SmartAdmin WebApp includes nine predefined button styles, each serving its own semantic
-                                purpose.
+                                purpose. <br>
+                                <code>$color = primary, secondary, success, info, warning, danger, dark, light</code>
                             </div>
                             <h5 class="frame-heading">
                                 Default
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button color="$color" :label="__('Primary')" /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-dark">Dark</button>
-                                    <button type="button" class="btn btn-light">Light</button>
+                                    <x-button color="primary" :label="__('Primary')" />
+                                    <x-button color="secondary" :label="__('Secondary')" />
+                                    <x-button color="success" :label="__('Success')" />
+                                    <x-button color="info" :label="__('Info')" />
+                                    <x-button color="warning" :label="__('Warning')" />
+                                    <x-button color="danger" :label="__('Danger')" />
+                                    <x-button color="dark" :label="__('Dark')" />
+                                    <x-button color="light" :label="__('Light')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
                                 Rounded
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button pills color="$color" :label="__('Primary')" /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-primary btn-pills">Primary</button>
-                                    <button type="button" class="btn btn-secondary btn-pills">Secondary</button>
-                                    <button type="button" class="btn btn-success btn-pills">Success</button>
-                                    <button type="button" class="btn btn-info btn-pills">Info</button>
-                                    <button type="button" class="btn btn-warning btn-pills">Warning</button>
-                                    <button type="button" class="btn btn-danger btn-pills">Danger</button>
-                                    <button type="button" class="btn btn-dark btn-pills">Dark</button>
-                                    <button type="button" class="btn btn-light btn-pills">Light</button>
+                                    <x-button pills color="primary" :label="__('Primary')" />
+                                    <x-button pills color="secondary" :label="__('Secondary')" />
+                                    <x-button pills color="success" :label="__('Success')" />
+                                    <x-button pills color="info" :label="__('Info')" />
+                                    <x-button pills color="warning" :label="__('Warning')" />
+                                    <x-button pills color="danger" :label="__('Danger')" />
+                                    <x-button pills color="dark" :label="__('Dark')" />
+                                    <x-button pills color="light" :label="__('Light')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
@@ -70,8 +75,8 @@
                             </h5>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <button type="button" class="btn btn-default">Default</button>
-                                    <button type="button" class="btn btn-default btn-pills">Default</button>
+                                    <x-button color="default" :label="__('Default')" />
+                                    <x-button pills color="default" :label="__('Default')" />
                                 </div>
                             </div>
                         </div>
@@ -96,46 +101,38 @@
                         <div class="panel-content">
                             <div class="panel-tag">
                                 Create block level buttons—those that span the full width of a parent—by adding
-                                <code>.btn-block</code>
+                                <code>.btn-block</code> <code>$size= lg, sm, xs</code>
                             </div>
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="frame-wrap text-center mb-0">
                                         <div class="row">
                                             <div class="col-xl-6">
+                                                <code>&lt;x-button size="$size" block
+                                                    :label="__('Block <span>large</span>')"
+                                                    /&gt;</code>
+                                                <hr>
                                                 <div class="demo-v-spacing">
-                                                    <button type="button" class="btn btn-primary btn-lg btn-block">Block
-                                                        <span>large</span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary btn-block">Block
-                                                        <span>default</span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary btn-sm btn-block">Block
-                                                        <span>small</span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-primary btn-xs btn-block">Block
-                                                        <span>extra small</span>
-                                                    </button>
+                                                    <x-button size="lg" block>Block <span>large</span></x-button>
+                                                    <x-button block>Block <span>default</span></x-button>
+                                                    <x-button size="sm" block>Block <span>small</span></x-button>
+                                                    <x-button size="xs" block>Block <span>extra small</span></x-button>
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
+                                                <code>&lt;x-button size="$size" color="success" block
+                                                    :label="__('Block <span>large</span>')"
+                                                    /&gt;</code>
+                                                <hr>
                                                 <div class="demo-v-spacing mt-3 mt-xl-0">
-                                                    <button type="button"
-                                                        class="btn btn-success btn-pills btn-lg btn-block">Block
-                                                        <span>large</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-success btn-pills btn-block">Block
-                                                        <span>default</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-success btn-pills btn-sm btn-block">Block
-                                                        <span>small</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-success btn-pills btn-xs btn-block">Block
-                                                        <span>extra small</span>
-                                                    </button>
+                                                    <x-button pills color="success" size="lg" block>Block
+                                                        <span>large</span></x-button>
+                                                    <x-button pills color="success" block>Block
+                                                        <span>default</span></x-button>
+                                                    <x-button pills color="success" size="sm" block>Block
+                                                        <span>small</span></x-button>
+                                                    <x-button pills color="success" size="xs" block>Block <span>extra
+                                                            small</span></x-button>
                                                 </div>
                                             </div>
                                         </div>
@@ -170,60 +167,72 @@
                                 Largest size
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button size="lg" color="$color" :label="__('Primary')" /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-lg btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-lg btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-lg btn-default">Default</button>
-                                    <button type="button" class="btn btn-lg btn-success">Success</button>
-                                    <button type="button" class="btn btn-lg btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-lg btn-info">Info</button>
-                                    <button type="button" class="btn btn-lg btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-lg btn-dark">Dark</button>
+                                    <x-button size="lg" color="primary" :label="__('Primary')" />
+                                    <x-button size="lg" color="secondary" :label="__('Secondary')" />
+                                    <x-button size="lg" color="default" :label="__('Default')" />
+                                    <x-button size="lg" color="success" :label="__('Success')" />
+                                    <x-button size="lg" color="info" :label="__('Info')" />
+                                    <x-button size="lg" color="warning" :label="__('Warning')" />
+                                    <x-button size="lg" color="danger" :label="__('Danger')" />
+                                    <x-button size="lg" color="dark" :label="__('Dark')" />
+                                    <x-button size="lg" color="light" :label="__('Light')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
                                 Default size
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button color="$color" :label="__('Primary')" /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-default">Default</button>
-                                    <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <x-button color="primary" :label="__('Primary')" />
+                                    <x-button color="secondary" :label="__('Secondary')" />
+                                    <x-button color="default" :label="__('Default')" />
+                                    <x-button color="success" :label="__('Success')" />
+                                    <x-button color="info" :label="__('Info')" />
+                                    <x-button color="warning" :label="__('Warning')" />
+                                    <x-button color="danger" :label="__('Danger')" />
+                                    <x-button color="dark" :label="__('Dark')" />
+                                    <x-button color="light" :label="__('Light')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
                                 Small size
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button size="sm" color="$color" :label="__('Primary')" /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-sm btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-sm btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-sm btn-default">Default</button>
-                                    <button type="button" class="btn btn-sm btn-success">Success</button>
-                                    <button type="button" class="btn btn-sm btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-sm btn-info">Info</button>
-                                    <button type="button" class="btn btn-sm btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-sm btn-dark">Dark</button>
+                                    <x-button size="sm" color="primary" :label="__('Primary')" />
+                                    <x-button size="sm" color="secondary" :label="__('Secondary')" />
+                                    <x-button size="sm" color="default" :label="__('Default')" />
+                                    <x-button size="sm" color="success" :label="__('Success')" />
+                                    <x-button size="sm" color="info" :label="__('Info')" />
+                                    <x-button size="sm" color="warning" :label="__('Warning')" />
+                                    <x-button size="sm" color="danger" :label="__('Danger')" />
+                                    <x-button size="sm" color="dark" :label="__('Dark')" />
+                                    <x-button size="sm" color="light" :label="__('Light')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
                                 Smallest size
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button size="xs" color="$color" :label="__('Primary')" /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-xs btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-xs btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-xs btn-default">Default</button>
-                                    <button type="button" class="btn btn-xs btn-success">Success</button>
-                                    <button type="button" class="btn btn-xs btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-xs btn-info">Info</button>
-                                    <button type="button" class="btn btn-xs btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-xs btn-dark">Dark</button>
+                                    <x-button size="xs" color="primary" :label="__('Primary')" />
+                                    <x-button size="xs" color="secondary" :label="__('Secondary')" />
+                                    <x-button size="xs" color="default" :label="__('Default')" />
+                                    <x-button size="xs" color="success" :label="__('Success')" />
+                                    <x-button size="xs" color="info" :label="__('Info')" />
+                                    <x-button size="xs" color="warning" :label="__('Warning')" />
+                                    <x-button size="xs" color="danger" :label="__('Danger')" />
+                                    <x-button size="xs" color="dark" :label="__('Dark')" />
+                                    <x-button size="xs" color="light" :label="__('Light')" />
                                 </div>
                             </div>
                         </div>
@@ -247,41 +256,20 @@
                     <div class="panel-container show">
                         <div class="panel-content">
                             <div class="panel-tag">
-                                We use the icon tags to insert icons into buttons
+                                We use the icon tags to insert icons into buttons <br>
+                                <code>&lt;x-button size="lg" icon="$icon mr-1" color="$color" :label="__('Primary')"
+                                    /&gt;</code>
                             </div>
                             <div class="demo">
-                                <button type="button" class="btn btn-lg btn-primary">
-                                    <span class="fal fa-print mr-1"></span>
-                                    Print
-                                </button>
-                                <button type="button" class="btn btn-lg btn-secondary">
-                                    <span class="fal fa-volume-mute mr-1"></span>
-                                    Mute
-                                </button>
-                                <button type="button" class="btn btn-lg btn-default">
-                                    <span class="fal fa-check mr-1"></span>
-                                    Submit
-                                </button>
-                                <button type="button" class="btn btn-lg btn-success">
-                                    <span class="fal fa-download mr-1"></span>
-                                    Download
-                                </button>
-                                <button type="button" class="btn btn-lg btn-warning">
-                                    <span class="fal fa-exclamation-triangle mr-1"></span>
-                                    Scan Device
-                                </button>
-                                <button type="button" class="btn btn-lg btn-info">
-                                    <span class="fal fa-bug mr-1"></span>
-                                    Report Bug
-                                </button>
-                                <button type="button" class="btn btn-lg btn-danger">
-                                    <span class="fal fa-times mr-1"></span>
-                                    Delete
-                                </button>
-                                <button type="button" class="btn btn-lg btn-dark">
-                                    <span class="fal  fa-eject mr-1"></span>
-                                    Eject
-                                </button>
+                                <x-button size="lg" icon="print mr-1" color="primary" :label="__('Print')" />
+                                <x-button size="lg" icon="volume-mute mr-1" color="secondary" :label="__('Mute')" />
+                                <x-button size="lg" icon="check mr-1" color="default" :label="__('Submit')" />
+                                <x-button size="lg" icon="download mr-1" color="success" :label="__('Download')" />
+                                <x-button size="lg" icon="exclamation-triangle mr-1" color="warning"
+                                    :label="__('Scan Device')" />
+                                <x-button size="lg" icon="bug mr-1" color="info" :label="__('Report Bug')" />
+                                <x-button size="lg" icon="times mr-1" color="danger" :label="__('Delete')" />
+                                <x-button size="lg" icon="eject mr-1" color="dark" :label="__('Eject')" />
                             </div>
                         </div>
                     </div>
@@ -310,240 +298,192 @@
                                 Various sizes
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button href="#" size="$size" color="$color"
+                                    icon="$icon" btnicon /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-lg btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-secondary btn-lg btn-icon">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-lg btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-lg btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-lg btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-lg btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-lg btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-lg btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" size="lg" color="primary" icon="print"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="secondary"
+                                        icon="volume-mute fs-md" btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="default" icon="check"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="success" icon="download"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="info" icon="bug"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="danger" icon="times"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="lg" color="dark" icon="eject"
+                                        btnicon />
                                 </div>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-secondary btn-icon">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" color="primary" icon="print" btnicon />
+                                    <x-button href="javascript:void(0);" color="secondary" icon="volume-mute fs-md"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" color="default" icon="check" btnicon />
+                                    <x-button href="javascript:void(0);" color="success" icon="download" btnicon />
+                                    <x-button href="javascript:void(0);" color="warning" icon="exclamation-triangle"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" color="info" icon="bug" btnicon />
+                                    <x-button href="javascript:void(0);" color="danger" icon="times" btnicon />
+                                    <x-button href="javascript:void(0);" color="dark" icon="eject" btnicon />
                                 </div>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-secondary btn-sm btn-icon">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-sm btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-sm btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-sm btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-sm btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-sm btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" size="sm" color="primary" icon="print"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="secondary"
+                                        icon="volume-mute fs-md" btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="default" icon="check"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="success" icon="download"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="info" icon="bug"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="danger" icon="times"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="sm" color="dark" icon="eject"
+                                        btnicon />
                                 </div>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-xs btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-secondary btn-xs btn-icon">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-xs btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-xs btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-xs btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-xs btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-xs btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" size="xs" color="primary" icon="print"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="secondary"
+                                        icon="volume-mute fs-md" btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="default" icon="check"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="success" icon="download"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="info" icon="bug"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="danger" icon="times"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" size="xs" color="dark" icon="eject"
+                                        btnicon />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
                                 Rounded
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button href="#" size="$size" color="$color"
+                                    icon="$icon" btnicon circle /&gt;</code>
+                                <hr>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-secondary btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" size="lg" color="primary" icon="print"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="default" icon="check"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="success" icon="download"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="info" icon="bug"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="danger" icon="times"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="lg" color="dark" icon="eject"
+                                        btnicon circle />
                                 </div>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-secondary btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" color="primary" icon="print" btnicon circle />
+                                    <x-button href="javascript:void(0);" color="secondary" icon="volume-mute fs-md"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" color="default" icon="check" btnicon circle />
+                                    <x-button href="javascript:void(0);" color="success" icon="download" btnicon
+                                        circle />
+                                    <x-button href="javascript:void(0);" color="warning" icon="exclamation-triangle"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" color="info" icon="bug" btnicon circle />
+                                    <x-button href="javascript:void(0);" color="danger" icon="times" btnicon circle />
+                                    <x-button href="javascript:void(0);" color="dark" icon="eject" btnicon circle />
                                 </div>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-secondary btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" size="sm" color="primary" icon="print"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="default" icon="check"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="success" icon="download"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="info" icon="bug"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="danger" icon="times"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="sm" color="dark" icon="eject"
+                                        btnicon circle />
                                 </div>
                                 <div class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-primary btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-secondary btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-default btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-success btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-warning btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-info btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-danger btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-dark btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" size="xs" color="primary" icon="print"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="default" icon="check"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="success" icon="download"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="info" icon="bug"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="danger" icon="times"
+                                        btnicon circle />
+                                    <x-button href="javascript:void(0);" size="xs" color="dark" icon="eject"
+                                        btnicon circle />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
                                 Hover dot effect
                             </h5>
                             <div class="frame-wrap">
+                                <code>&lt;x-button href="#" color="$color" size="$size" icon="$icon"
+                                    btnicon circle effect /&gt;</code>
+                                <hr>
                                 <p class="demo">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-primary btn-lg btn-icon rounded-circle hover-effect-dot">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-secondary btn-lg btn-icon rounded-circle hover-effect-dot">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-success btn-lg btn-icon hover-effect-dot">
-                                        <i class="fal fa-download"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" color="primary" size="lg" icon="users"
+                                        btnicon circle effect />
+                                    <x-button href="javascript:void(0);" color="secondary" size="lg" icon="home"
+                                        btnicon circle effect />
+                                    <x-button href="javascript:void(0);" color="success" size="lg" icon="save"
+                                        btnicon circle effect />
+                                    <x-button href="javascript:void(0);" color="danger" size="lg" icon="trash"
+                                        btnicon circle effect />
+                                    <x-button href="javascript:void(0);" color="warning" size="lg" icon="print"
+                                        btnicon circle effect />
+                                    <x-button href="javascript:void(0);" color="default" size="lg"
+                                        icon="volume-mute fs-md" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" color="info" size="lg" icon="download"
+                                        btnicon circle effect />
+                                </p>
+                                <code>&lt;x-button href="#" color="$color" size="$size" icon="$icon"
+                                    btnicon effect /&gt;</code>
+                                <hr>
+                                <p class="demo">
+                                    <x-button href="javascript:void(0);" color="primary" size="lg" icon="users"
+                                        btnicon effect />
+                                    <x-button href="javascript:void(0);" color="secondary" size="lg" icon="home"
+                                        btnicon effect />
+                                    <x-button href="javascript:void(0);" color="success" size="lg" icon="save"
+                                        btnicon effect />
+                                    <x-button href="javascript:void(0);" color="danger" size="lg" icon="trash"
+                                        btnicon effect />
+                                    <x-button href="javascript:void(0);" color="warning" size="lg" icon="print"
+                                        btnicon effect />
+                                    <x-button href="javascript:void(0);" color="default" size="lg"
+                                        icon="volume-mute fs-md" btnicon effect />
+                                    <x-button href="javascript:void(0);" color="info" size="lg" icon="download"
+                                        btnicon effect />
                                 </p>
                             </div>
                         </div>
@@ -576,14 +516,13 @@
                             </h5>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-outline-success">Success</button>
-                                    <button type="button" class="btn btn-outline-info">Info</button>
-                                    <button type="button" class="btn btn-outline-warning">Warning</button>
-                                    <button type="button" class="btn btn-outline-danger">Danger</button>
-                                    <button type="button" class="btn btn-outline-dark">Dark</button>
-                                    <button type="button" class="btn btn-outline-light">Light</button>
+                                    <x-button style color="primary" :label="__('Primary')" />
+                                    <x-button style color="secondary" :label="__('Secondary')" />
+                                    <x-button style color="success" :label="__('Success')" />
+                                    <x-button style color="info" :label="__('Info')" />
+                                    <x-button style color="warning" :label="__('Warning')" />
+                                    <x-button style color="danger" :label="__('Danger')" />
+                                    <x-button style color="dark" :label="__('Dark')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
@@ -591,14 +530,13 @@
                             </h5>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <button type="button" class="btn btn-outline-primary btn-pills">Primary</button>
-                                    <button type="button" class="btn btn-outline-secondary btn-pills">Secondary</button>
-                                    <button type="button" class="btn btn-outline-success btn-pills">Success</button>
-                                    <button type="button" class="btn btn-outline-info btn-pills">Info</button>
-                                    <button type="button" class="btn btn-outline-warning btn-pills">Warning</button>
-                                    <button type="button" class="btn btn-outline-danger btn-pills">Danger</button>
-                                    <button type="button" class="btn btn-outline-dark btn-pills">Dark</button>
-                                    <button type="button" class="btn btn-outline-light btn-pills">Light</button>
+                                    <x-button style pills color="primary" :label="__('Primary')" />
+                                    <x-button style pills color="secondary" :label="__('Secondary')" />
+                                    <x-button style pills color="success" :label="__('Success')" />
+                                    <x-button style pills color="info" :label="__('Info')" />
+                                    <x-button style pills color="warning" :label="__('Warning')" />
+                                    <x-button style pills color="danger" :label="__('Danger')" />
+                                    <x-button style pills color="dark" :label="__('Dark')" />
                                 </div>
                             </div>
                             <h5 class="frame-heading">
@@ -606,8 +544,8 @@
                             </h5>
                             <div class="frame-wrap mb-0">
                                 <div class="demo">
-                                    <button type="button" class="btn btn-outline-default">Default</button>
-                                    <button type="button" class="btn btn-outline-default btn-pills">Default</button>
+                                    <x-button style color="default" :label="__('Default')" />
+                                    <x-button style pills color="default" :label="__('Default')" />
                                 </div>
                             </div>
                         </div>
@@ -639,41 +577,26 @@
                                         <div class="row">
                                             <div class="col-xl-6">
                                                 <div class="demo-v-spacing">
-                                                    <button type="button"
-                                                        class="btn btn-outline-primary btn-lg btn-block">Block
-                                                        <span>large</span>
-                                                    </button>
-                                                    <button type="button" class="btn btn-outline-primary btn-block">Block
-                                                        <span>default</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-primary btn-sm btn-block">Block
-                                                        <span>small</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-primary btn-xs btn-block">Block
-                                                        <span>extra small</span>
-                                                    </button>
+                                                    <x-button style size="lg" block>Block
+                                                        <span>large</span></x-button>
+                                                    <x-button style block>Block <span>default</span></x-button>
+                                                    <x-button style size="sm" block>Block
+                                                        <span>small</span></x-button>
+                                                    <x-button style size="xs" block>Block <span>extra
+                                                            small</span></x-button>
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
                                                 <div class="demo-v-spacing mt-3 mt-xl-0">
-                                                    <button type="button"
-                                                        class="btn btn-outline-success btn-pills btn-lg btn-block">Block
-                                                        <span>large</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success btn-pills btn-block">Block
-                                                        <span>default</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success btn-pills btn-sm btn-block">Block
-                                                        <span>small</span>
-                                                    </button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success btn-pills btn-xs btn-block">Block
-                                                        <span>extra small</span>
-                                                    </button>
+                                                    <x-button style pills color="success" size="lg" block>Block
+                                                        <span>large</span></x-button>
+                                                    <x-button style pills color="success" block>Block
+                                                        <span>default</span></x-button>
+                                                    <x-button style pills color="success" size="sm" block>Block
+                                                        <span>small</span></x-button>
+                                                    <x-button style pills color="success" size="xs" block>Block
+                                                        <span>extra
+                                                            small</span></x-button>
                                                 </div>
                                             </div>
                                         </div>
@@ -709,14 +632,15 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <button type="button" class="btn btn-lg btn-outline-primary">Primary</button>
-                                    <button type="button" class="btn btn-lg btn-outline-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-lg btn-outline-default">Default</button>
-                                    <button type="button" class="btn btn-lg btn-outline-success">Success</button>
-                                    <button type="button" class="btn btn-lg btn-outline-warning">Warning</button>
-                                    <button type="button" class="btn btn-lg btn-outline-info">Info</button>
-                                    <button type="button" class="btn btn-lg btn-outline-danger">Danger</button>
-                                    <button type="button" class="btn btn-lg btn-outline-dark">Dark</button>
+                                    <x-button style size="lg" color="primary" :label="__('Primary')" />
+                                    <x-button style size="lg" color="secondary" :label="__('Secondary')" />
+                                    <x-button style size="lg" color="default" :label="__('Default')" />
+                                    <x-button style size="lg" color="success" :label="__('Success')" />
+                                    <x-button style size="lg" color="info" :label="__('Info')" />
+                                    <x-button style size="lg" color="warning" :label="__('Warning')" />
+                                    <x-button style size="lg" color="danger" :label="__('Danger')" />
+                                    <x-button style size="lg" color="dark" :label="__('Dark')" />
+                                    <x-button style size="lg" color="light" :label="__('Light')" />
                                 </p>
                             </div>
                             <h5 class="frame-heading">
@@ -724,14 +648,15 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-outline-default">Default</button>
-                                    <button type="button" class="btn btn-outline-success">Success</button>
-                                    <button type="button" class="btn btn-outline-warning">Warning</button>
-                                    <button type="button" class="btn btn-outline-info">Info</button>
-                                    <button type="button" class="btn btn-outline-danger">Danger</button>
-                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                    <x-button style color="primary" :label="__('Primary')" />
+                                    <x-button style color="secondary" :label="__('Secondary')" />
+                                    <x-button style color="default" :label="__('Default')" />
+                                    <x-button style color="success" :label="__('Success')" />
+                                    <x-button style color="info" :label="__('Info')" />
+                                    <x-button style color="warning" :label="__('Warning')" />
+                                    <x-button style color="danger" :label="__('Danger')" />
+                                    <x-button style color="dark" :label="__('Dark')" />
+                                    <x-button style color="light" :label="__('Light')" />
                                 </p>
                             </div>
                             <h5 class="frame-heading">
@@ -739,14 +664,15 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <button type="button" class="btn btn-sm btn-outline-primary">Primary</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-sm btn-outline-default">Default</button>
-                                    <button type="button" class="btn btn-sm btn-outline-success">Success</button>
-                                    <button type="button" class="btn btn-sm btn-outline-warning">Warning</button>
-                                    <button type="button" class="btn btn-sm btn-outline-info">Info</button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Danger</button>
-                                    <button type="button" class="btn btn-sm btn-outline-dark">Dark</button>
+                                    <x-button style size="sm" color="primary" :label="__('Primary')" />
+                                    <x-button style size="sm" color="secondary" :label="__('Secondary')" />
+                                    <x-button style size="sm" color="default" :label="__('Default')" />
+                                    <x-button style size="sm" color="success" :label="__('Success')" />
+                                    <x-button style size="sm" color="info" :label="__('Info')" />
+                                    <x-button style size="sm" color="warning" :label="__('Warning')" />
+                                    <x-button style size="sm" color="danger" :label="__('Danger')" />
+                                    <x-button style size="sm" color="dark" :label="__('Dark')" />
+                                    <x-button style size="sm" color="light" :label="__('Light')" />
                                 </p>
                             </div>
                             <h5 class="frame-heading">
@@ -754,14 +680,15 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <button type="button" class="btn btn-xs btn-outline-primary">Primary</button>
-                                    <button type="button" class="btn btn-xs btn-outline-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-xs btn-outline-default">Default</button>
-                                    <button type="button" class="btn btn-xs btn-outline-success">Success</button>
-                                    <button type="button" class="btn btn-xs btn-outline-warning">Warning</button>
-                                    <button type="button" class="btn btn-xs btn-outline-info">Info</button>
-                                    <button type="button" class="btn btn-xs btn-outline-danger">Danger</button>
-                                    <button type="button" class="btn btn-xs btn-outline-dark">Dark</button>
+                                    <x-button style size="xs" color="primary" :label="__('Primary')" />
+                                    <x-button style size="xs" color="secondary" :label="__('Secondary')" />
+                                    <x-button style size="xs" color="default" :label="__('Default')" />
+                                    <x-button style size="xs" color="success" :label="__('Success')" />
+                                    <x-button style size="xs" color="info" :label="__('Info')" />
+                                    <x-button style size="xs" color="warning" :label="__('Warning')" />
+                                    <x-button style size="xs" color="danger" :label="__('Danger')" />
+                                    <x-button style size="xs" color="dark" :label="__('Dark')" />
+                                    <x-button style size="xs" color="light" :label="__('Light')" />
                                 </p>
                             </div>
                         </div>
@@ -788,38 +715,17 @@
                                 We use the icon tags to insert icons into buttons
                             </div>
                             <div class="demo">
-                                <button type="button" class="btn btn-lg btn-outline-primary">
-                                    <span class="fal fa-print mr-1"></span>
-                                    Print
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-secondary">
-                                    <span class="fal fa-volume-mute mr-1"></span>
-                                    Mute
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-default">
-                                    <span class="fal fa-check mr-1"></span>
-                                    Submit
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-success">
-                                    <span class="fal fa-download mr-1"></span>
-                                    Download
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-warning">
-                                    <span class="fal fa-exclamation-triangle mr-1"></span>
-                                    Scan Device
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-info">
-                                    <span class="fal fa-bug mr-1"></span>
-                                    Report Bug
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-danger">
-                                    <span class="fal fa-times mr-1"></span>
-                                    Delete
-                                </button>
-                                <button type="button" class="btn btn-lg btn-outline-dark">
-                                    <span class="fal  fa-eject mr-1"></span>
-                                    Eject
-                                </button>
+                                <x-button style size="lg" icon="print mr-1" color="primary" :label="__('Print')" />
+                                <x-button style size="lg" icon="volume-mute mr-1" color="secondary"
+                                    :label="__('Mute')" />
+                                <x-button style size="lg" icon="check mr-1" color="default" :label="__('Submit')" />
+                                <x-button style size="lg" icon="download mr-1" color="success"
+                                    :label="__('Download')" />
+                                <x-button style size="lg" icon="exclamation-triangle mr-1" color="warning"
+                                    :label="__('Scan Device')" />
+                                <x-button style size="lg" icon="bug mr-1" color="info" :label="__('Report Bug')" />
+                                <x-button style size="lg" icon="times mr-1" color="danger" :label="__('Delete')" />
+                                <x-button style size="lg" icon="eject mr-1" color="dark" :label="__('Eject')" />
                             </div>
                         </div>
                     </div>
@@ -849,108 +755,70 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary btn-lg btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary btn-lg btn-icon">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-default btn-lg btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-success btn-lg btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-warning btn-lg btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-info btn-lg btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-danger btn-lg btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-dark btn-lg btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style size="lg" color="primary"
+                                        icon="print" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="secondary"
+                                        icon="volume-mute fs-md" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="default"
+                                        icon="check" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="success"
+                                        icon="download" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="info"
+                                        icon="bug" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="danger"
+                                        icon="times" btnicon />
+                                    <x-button href="javascript:void(0);" style size="lg" color="dark"
+                                        icon="eject" btnicon />
                                 </p>
                                 <p class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary btn-icon">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-default btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-success btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-warning btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-info btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-dark btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style color="primary" icon="print" btnicon />
+                                    <x-button href="javascript:void(0);" style color="secondary" icon="volume-mute fs-md"
+                                        btnicon />
+                                    <x-button href="javascript:void(0);" style color="default" icon="check" btnicon />
+                                    <x-button href="javascript:void(0);" style color="success" icon="download" btnicon />
+                                    <x-button href="javascript:void(0);" style color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" style color="info" icon="bug" btnicon />
+                                    <x-button href="javascript:void(0);" style color="danger" icon="times" btnicon />
+                                    <x-button href="javascript:void(0);" style color="dark" icon="eject" btnicon />
                                 </p>
                                 <p class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary btn-sm btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary btn-sm btn-icon">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-default btn-sm btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-success btn-sm btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-warning btn-sm btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-info btn-sm btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-danger btn-sm btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-dark btn-sm btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style size="sm" color="primary"
+                                        icon="print" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="secondary"
+                                        icon="volume-mute fs-md" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="default"
+                                        icon="check" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="success"
+                                        icon="download" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="info"
+                                        icon="bug" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="danger"
+                                        icon="times" btnicon />
+                                    <x-button href="javascript:void(0);" style size="sm" color="dark"
+                                        icon="eject" btnicon />
                                 </p>
                                 <p class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary btn-xs btn-icon">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary btn-xs btn-icon">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-default btn-xs btn-icon">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-success btn-xs btn-icon">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-warning btn-xs btn-icon">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-info btn-xs btn-icon">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-danger btn-xs btn-icon">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-dark btn-xs btn-icon">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style size="xs" color="primary"
+                                        icon="print" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="secondary"
+                                        icon="volume-mute fs-md" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="default"
+                                        icon="check" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="success"
+                                        icon="download" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="warning"
+                                        icon="exclamation-triangle" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="info"
+                                        icon="bug" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="danger"
+                                        icon="times" btnicon />
+                                    <x-button href="javascript:void(0);" style size="xs" color="dark"
+                                        icon="eject" btnicon />
                                 </p>
                             </div>
                             <h5 class="frame-heading">
@@ -958,133 +826,76 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-primary btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-default btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-success btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-warning btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-info btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-danger btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-dark btn-lg btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style size="lg" color="primary"
+                                        icon="print" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="default"
+                                        icon="check" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="success"
+                                        icon="download" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="info"
+                                        icon="bug" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="danger"
+                                        icon="times" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="lg" color="dark"
+                                        icon="eject" btnicon circle />
                                 </p>
                                 <p class="demo">
-                                    <a href="javascript:void(0);" class="btn btn-outline-primary btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-default btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-success btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-warning btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-info btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-danger btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);" class="btn btn-outline-dark btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style color="primary" icon="print" btnicon
+                                        circle />
+                                    <x-button href="javascript:void(0);" style color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" style color="default" icon="check" btnicon
+                                        circle />
+                                    <x-button href="javascript:void(0);" style color="success" icon="download" btnicon
+                                        circle />
+                                    <x-button href="javascript:void(0);" style color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" style color="info" icon="bug" btnicon
+                                        circle />
+                                    <x-button href="javascript:void(0);" style color="danger" icon="times" btnicon
+                                        circle />
+                                    <x-button href="javascript:void(0);" style color="dark" icon="eject" btnicon
+                                        circle />
                                 </p>
                                 <p class="demo">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-primary btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-default btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-success btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-warning btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-info btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-danger btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-dark btn-sm btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style size="sm" color="primary"
+                                        icon="print" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="default"
+                                        icon="check" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="success"
+                                        icon="download" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="info"
+                                        icon="bug" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="danger"
+                                        icon="times" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="sm" color="dark"
+                                        icon="eject" btnicon circle />
                                 </p>
                                 <p class="demo">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-primary btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-volume-mute"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-default btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-check"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-success btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-download"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-warning btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-exclamation-triangle"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-info btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-bug"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-danger btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-times"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-dark btn-xs btn-icon rounded-circle">
-                                        <i class="fal fa-eject"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style size="xs" color="primary"
+                                        icon="print" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="secondary"
+                                        icon="volume-mute fs-md" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="default"
+                                        icon="check" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="success"
+                                        icon="download" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="warning"
+                                        icon="exclamation-triangle" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="info"
+                                        icon="bug" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="danger"
+                                        icon="times" btnicon circle />
+                                    <x-button href="javascript:void(0);" style size="xs" color="dark"
+                                        icon="eject" btnicon circle />
                                 </p>
                             </div>
                             <h5 class="frame-heading">
@@ -1092,18 +903,20 @@
                             </h5>
                             <div class="frame-wrap">
                                 <p class="demo">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-primary btn-lg btn-icon rounded-circle hover-effect-dot">
-                                        <i class="fal fa-print"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary btn-lg btn-icon rounded-circle hover-effect-dot">
-                                        <i class="fal fa-volume-mute fs-md"></i>
-                                    </a>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-success btn-lg btn-icon hover-effect-dot">
-                                        <i class="fal fa-download"></i>
-                                    </a>
+                                    <x-button href="javascript:void(0);" style color="primary" size="lg"
+                                        icon="users" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" style color="secondary" size="lg"
+                                        icon="home" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" style color="success" size="lg"
+                                        icon="save" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" style color="danger" size="lg"
+                                        icon="trash" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" style color="warning" size="lg"
+                                        icon="print" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" style color="default" size="lg"
+                                        icon="volume-mute fs-md" btnicon circle effect />
+                                    <x-button href="javascript:void(0);" style color="info" size="lg"
+                                        icon="download" btnicon circle effect />
                                 </p>
                             </div>
                         </div>

@@ -137,7 +137,7 @@ class="btn btn-info waves-effect waves-themed"&gt;
 Logout
 &lt;/a&gt;
                     </pre>
-                    <x-button href="#" icon="sign-out-alt" id="ya-atau-tidak" data-title="Konfirmasi"
+                    <x-button href="#" icon="sign-out-alt mr-1" id="ya-atau-tidak" data-title="Konfirmasi"
                         data-message="Apakah Anda yakin ingin logout?" data-redirect-url="/" title="Logout"
                         :label="__('Logout')" />
 
@@ -158,7 +158,7 @@ class="btn btn-info waves-effect waves-themed"&gt;
 Simpan
 &lt;/a&gt;
                         </pre>
-                    <x-button href="#" icon="save" color="info" id="eksekusi" data-title="Informasi !!"
+                    <x-button href="#" icon="save mr-1" color="info" id="eksekusi" data-title="Informasi !!"
                         data-message="Data sukses di simpan" data-redirect-url="/dashboard" title="Simpan"
                         :label="__('Simpan')" />
                 </x-panel.show>
@@ -182,15 +182,17 @@ Simpan
                         <code>&lt;x-button color="$color" :label="__('Primary')" /&gt;</code>
                     </div>
                     <hr>
-                    <x-button class="m-1" color="primary" :label="__('Primary')" />
-                    <x-button class="m-1" color="secondary" :label="__('Secondary')" />
-                    <x-button class="m-1" color="default" :label="__('Default')" />
-                    <x-button class="m-1" color="success" :label="__('Success')" />
-                    <x-button class="m-1" color="warning" :label="__('Warning')" />
-                    <x-button class="m-1" color="info" :label="__('Info')" />
-                    <x-button class="m-1" color="danger" :label="__('Danger')" />
-                    <x-button class="m-1" color="dark" :label="__('Dark')" />
-                    <x-button class="m-1" color="light" :label="__('Light')" />
+                    <p class="demo">
+                        <x-button color="primary" :label="__('Primary')" />
+                        <x-button color="secondary" :label="__('Secondary')" />
+                        <x-button color="default" :label="__('Default')" />
+                        <x-button color="success" :label="__('Success')" />
+                        <x-button color="warning" :label="__('Warning')" />
+                        <x-button color="info" :label="__('Info')" />
+                        <x-button color="danger" :label="__('Danger')" />
+                        <x-button color="dark" :label="__('Dark')" />
+                        <x-button color="light" :label="__('Light')" />
+                    </p>
                 </x-panel.show>
 
                 {{-- BUTTON STYLE OUTLINE --}}
@@ -199,15 +201,17 @@ Simpan
                         <code>&lt;x-button style color="$color" :label="__('Primary')" /&gt;</code>
                     </div>
                     <hr>
-                    <x-button style class="m-1" color="primary" :label="__('Primary')" />
-                    <x-button style class="m-1" color="secondary" :label="__('Secondary')" />
-                    <x-button style class="m-1" color="default" :label="__('Default')" />
-                    <x-button style class="m-1" color="success" :label="__('Success')" />
-                    <x-button style class="m-1" color="warning" :label="__('Warning')" />
-                    <x-button style class="m-1" color="info" :label="__('Info')" />
-                    <x-button style class="m-1" color="danger" :label="__('Danger')" />
-                    <x-button style class="m-1" color="dark" :label="__('Dark')" />
-                    <x-button style class="m-1" color="light" :label="__('Light')" />
+                    <p class="demo">
+                        <x-button style color="primary" :label="__('Primary')" />
+                        <x-button style color="secondary" :label="__('Secondary')" />
+                        <x-button style color="default" :label="__('Default')" />
+                        <x-button style color="success" :label="__('Success')" />
+                        <x-button style color="warning" :label="__('Warning')" />
+                        <x-button style color="info" :label="__('Info')" />
+                        <x-button style color="danger" :label="__('Danger')" />
+                        <x-button style color="dark" :label="__('Dark')" />
+                        <x-button style color="light" :label="__('Light')" />
+                    </p>
                     <div class="panel-tag mt-2 mb-2">for outline buttons also applies to btn-icon,
                         size, rounded-circle, btn-pills</div>
                 </x-panel.show>
@@ -218,15 +222,17 @@ Simpan
                         <code>&lt;x-button color="$color" pills :label="__('Primary')" /&gt;</code>
                     </div>
                     <hr>
-                    <x-button class="m-1" color="primary" pills :label="__('Primary')" />
-                    <x-button class="m-1" color="secondary" pills :label="__('Secondari')" />
-                    <x-button class="m-1" color="default" pills :label="__('Default')" />
-                    <x-button class="m-1" color="success" pills :label="__('Success')" />
-                    <x-button class="m-1" color="warning" pills :label="__('Warning')" />
-                    <x-button class="m-1" color="info" pills :label="__('Info')" />
-                    <x-button class="m-1" color="danger" pills :label="__('Danger')" />
-                    <x-button class="m-1" color="dark" pills :label="__('Dark')" />
-                    <x-button class="m-1" color="light" pills :label="__('Light')" />
+                    <p class="demo">
+                        <x-button color="primary" pills :label="__('Primary')" />
+                        <x-button color="secondary" pills :label="__('Secondari')" />
+                        <x-button color="default" pills :label="__('Default')" />
+                        <x-button color="success" pills :label="__('Success')" />
+                        <x-button color="warning" pills :label="__('Warning')" />
+                        <x-button color="info" pills :label="__('Info')" />
+                        <x-button color="danger" pills :label="__('Danger')" />
+                        <x-button color="dark" pills :label="__('Dark')" />
+                        <x-button color="light" pills :label="__('Light')" />
+                    </p>
                 </x-panel.show>
 
                 {{-- BUTTON WITH ICON --}}
@@ -235,14 +241,16 @@ Simpan
                         <code>&lt;x-button color="$color" icon="$icon" :label="__('Primary')" /&gt;</code>
                     </div>
                     <hr>
-                    <x-button class="m-1" color="primary" icon="print" :label="__('Print')" />
-                    <x-button class="m-1" color="secondary" icon="volume-mute" :label="__('Mute')" />
-                    <x-button class="m-1" color="default" icon="check" :label="__('Submit')" />
-                    <x-button class="m-1" color="success" icon="download" :label="__('Download')" />
-                    <x-button class="m-1" color="warning" icon="exclamation-triangle" :label="__('Scan Device')" />
-                    <x-button class="m-1" color="info" icon="bug" :label="__('Report Bug')" />
-                    <x-button class="m-1" color="danger" icon="times" :label="__('Delete')" />
-                    <x-button class="m-1" color="dark" icon="eject" :label="__('Eject')" />
+                    <p class="demo">
+                        <x-button color="primary" icon="print" :label="__('Print')" />
+                        <x-button color="secondary" icon="volume-mute" :label="__('Mute')" />
+                        <x-button color="default" icon="check" :label="__('Submit')" />
+                        <x-button color="success" icon="download" :label="__('Download')" />
+                        <x-button color="warning" icon="exclamation-triangle" :label="__('Scan Device')" />
+                        <x-button color="info" icon="bug" :label="__('Report Bug')" />
+                        <x-button color="danger" icon="times" :label="__('Delete')" />
+                        <x-button color="dark" icon="eject" :label="__('Eject')" />
+                    </p>
                 </x-panel.show>
 
                 {{-- BUTTON WITH BTN-ICON --}}
@@ -251,14 +259,16 @@ Simpan
                         <code>&lt;x-button color="$color" icon="$icon" btnicon /&gt;</code>
                     </div>
                     <hr>
-                    <x-button class="m-1" color="primary" icon="print" btnicon />
-                    <x-button class="m-1" color="secondary" icon="volume-mute" btnicon />
-                    <x-button class="m-1" color="default" icon="check" btnicon />
-                    <x-button class="m-1" color="success" icon="download" btnicon />
-                    <x-button class="m-1" color="warning" icon="exclamation-triangle" btnicon />
-                    <x-button class="m-1" color="info" icon="bug" btnicon />
-                    <x-button class="m-1" color="danger" icon="times" btnicon />
-                    <x-button class="m-1" color="dark" icon="eject" btnicon />
+                    <p class="demo">
+                        <x-button color="primary" icon="print" btnicon />
+                        <x-button color="secondary" icon="volume-mute" btnicon />
+                        <x-button color="default" icon="check" btnicon />
+                        <x-button color="success" icon="download" btnicon />
+                        <x-button color="warning" icon="exclamation-triangle" btnicon />
+                        <x-button color="info" icon="bug" btnicon />
+                        <x-button color="danger" icon="times" btnicon />
+                        <x-button color="dark" icon="eject" btnicon />
+                    </p>
                 </x-panel.show>
 
                 {{-- BUTTON WITH BTN-ICON AND ROUNDED-CIRCLE --}}
@@ -267,15 +277,16 @@ Simpan
                         <code>&lt;x-button href="#" color="$color" icon="$icon" btnicon circle /&gt;</code>
                     </div>
                     <hr>
-                    <x-button href="#" class="m-1" color="primary" icon="print" btnicon circle />
-                    <x-button href="#" class="m-1" color="secondary" icon="volume-mute" btnicon circle />
-                    <x-button href="#" class="m-1" color="default" icon="check" btnicon circle />
-                    <x-button href="#" class="m-1" color="success" icon="download" btnicon circle />
-                    <x-button href="#" class="m-1" color="warning" icon="exclamation-triangle" btnicon
-                        circle />
-                    <x-button href="#" class="m-1" color="info" icon="bug" btnicon circle />
-                    <x-button href="#" class="m-1" color="danger" icon="times" btnicon circle />
-                    <x-button href="#" class="m-1" color="dark" icon="eject" btnicon circle />
+                    <p class="demo">
+                        <x-button href="#" color="primary" icon="print" btnicon circle />
+                        <x-button href="#" color="secondary" icon="volume-mute" btnicon circle />
+                        <x-button href="#" color="default" icon="check" btnicon circle />
+                        <x-button href="#" color="success" icon="download" btnicon circle />
+                        <x-button href="#" color="warning" icon="exclamation-triangle" btnicon circle />
+                        <x-button href="#" color="info" icon="bug" btnicon circle />
+                        <x-button href="#" color="danger" icon="times" btnicon circle />
+                        <x-button href="#" color="dark" icon="eject" btnicon circle />
+                    </p>
                 </x-panel.show>
 
                 {{-- Hover dot effect --}}
@@ -285,14 +296,16 @@ Simpan
                             btnicon circle effect /&gt;</code>
                     </div>
                     <hr>
-                    <x-button href="javascript:void(0);" class="m-1" color="primary" size="lg" icon="users"
-                        btnicon circle effect />
-                    <x-button href="javascript:void(0);" class="m-1" color="success" size="lg" icon="save"
-                        btnicon circle effect />
-                    <x-button href="javascript:void(0);" class="m-1" color="secondary" size="lg" icon="home"
-                        btnicon circle effect />
-                    <x-button href="javascript:void(0);" class="m-1" color="danger" size="lg" icon="trash"
-                        btnicon circle effect />
+                    <p class="demo">
+                        <x-button href="javascript:void(0);" color="primary" size="lg" icon="users" btnicon
+                            circle effect />
+                        <x-button href="javascript:void(0);" color="success" size="lg" icon="save" btnicon
+                            circle effect />
+                        <x-button href="javascript:void(0);" color="secondary" size="lg" icon="home" btnicon
+                            circle effect />
+                        <x-button href="javascript:void(0);" color="danger" size="lg" icon="trash" btnicon circle
+                            effect />
+                    </p>
                 </x-panel.show>
 
                 {{-- Dropdown --}}
