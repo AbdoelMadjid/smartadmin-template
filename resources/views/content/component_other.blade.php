@@ -13,7 +13,6 @@
             @endcomponent
         </div>
 
-
         <x-tips icon="ni ni-blog-read" title="Pro Tip!"
             text="Laravel has provided one of the interesting features in its templating blade, namely Components. Components allow us to chop up code so that it can be reused without having to rewrite all the parts completely. Similar to sections and layouts which are also part of the blade templating feature."
             link="#" linkText="Call to action >>" />
@@ -63,6 +62,10 @@
                     </p>
 
                     <x-slot name="panelcontentfoot">
+                        <div class="custom-control d-flex custom-switch mr-2">
+                            <input id="eventlog-switch" type="checkbox" class="custom-control-input" checked="checked">
+                            <label class="custom-control-label fw-500" for="eventlog-switch">Switch</label>
+                        </div>
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="demoCheck">
                             <label class="custom-control-label" for="demoCheck">Checkbox</label>
@@ -235,6 +238,41 @@
                     <hr>
                     <x-badge color="success" :label="__('News')" />
                     <x-badge color="info" fill :label="__('Test')" />
+                </x-panel.show>
+
+                <x-panel.show title="Component" subtitle="Accordion">
+                    <h5 class="text-info">Component</h5>
+                    <code>x-accordion</code> and <code>x-accordion-item</code>
+                    <hr>
+                    <h5 class="text-info">Coding</h5>
+                    <div class="fs-lg fw-300 p-1 border-faded rounded mb-g">
+                        @php
+                            $Accordion = file_get_contents(resource_path('/data/accordion.md'));
+                        @endphp
+                        <pre>
+                        {!! htmlspecialchars($Accordion) !!}
+                        </pre>
+                    </div>
+                    <hr>
+                    <h5 class="text-info">Example</h5>
+                    <hr>
+                    <x-accordion id="accordion1">
+                        <x-accordion-item id="item1" title="Email Marketing" :collapsed="false"
+                            parentId="accordion1">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            ...
+                        </x-accordion-item>
+                        <x-accordion-item id="item2" title="Online Campaign" :collapsed="true"
+                            parentId="accordion1">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            ...
+                        </x-accordion-item>
+                        <x-accordion-item id="item3" title="Electronic Data Management" :collapsed="true"
+                            parentId="accordion1">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                            ...
+                        </x-accordion-item>
+                    </x-accordion>
 
                 </x-panel.show>
             </x-slot>

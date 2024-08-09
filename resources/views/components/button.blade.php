@@ -18,9 +18,14 @@
     'block' => false,
     'effect' => false,
     'dropdowntoggle' => false,
+    'toogledropdown' => false,
+    'dpsize' => null,
     'toggle' => null,
     'haspopup' => null,
     'expanded' => null,
+    'collapses' => false,
+    'target' => null,
+    'controls' => null,
     'display' => null,
     'items' => [],
     'id' => null,
@@ -47,6 +52,8 @@
             'btn-block' => $block,
             'hover-effect-dot' => $effect,
             'dropdown-toggle' => $dropdowntoggle,
+            'dropdown-toggle-split' => $toogledropdown,
+            'dropdown-' . $dpsize => $dpsize,
         ])
         ->merge([
             'type' => !$href ? $type : null,
@@ -56,6 +63,8 @@
             'aria-haspopup' => $haspopup,
             'aria-expanded' => $expanded,
             'data-display' => $display,
+            'aria-controls' => $controls,
+            'data-target' => $target,
             'id' => $id,
             'data-title' => $datatitle,
             'data-message' => $message,
@@ -74,17 +83,31 @@
     {{ $label ?? $slot }}
     </{{ $href ? 'a' : 'button' }}>
 
-    @if ($expanded)
-        <div class="dropdown-menu {{ $display ? 'dropdown-menu-right dropdown-menu-lg-left' : '' }}">
+    @if ($dropdowntoggle)
+        <div
+            class="dropdown-menu {{ $dpsize ? 'dropdown-' . $dpsize : '' }} {{ $display ? 'dropdown-menu-right dropdown-menu-lg-left' : '' }}">
             @foreach ($items as $item)
                 @if ($item === 'divider')
                     <div class="dropdown-divider"></div>
+                @elseif(isset($item['children']))
+                    <div class="dropdown-multilevel">
+                        <div class="dropdown-item">{{ $item['label'] }}</div>
+                        <div class="dropdown-menu">
+                            @foreach ($item['children'] as $child)
+                                @include('components.dropdown-item', ['item' => $child])
+                            @endforeach
+                        </div>
+                    </div>
                 @else
-                    {{-- Make href dynamic --}}
-                    <a class="dropdown-item" href="{{ $item['href'] ?? '#' }}">{{ $item['label'] }}</a>
+                    <a class="dropdown-item {{ isset($item['disabled']) && $item['disabled'] ? 'disabled' : '' }}"
+                        href="{{ $item['href'] ?? '#' }}">{{ $item['label'] }}</a>
                 @endif
             @endforeach
         </div>
+
+    @endif
+
+    @if ($collapses)
     @endif
     {{--
     <button class="btn btn-{{ $typebutton }} btn-sm"

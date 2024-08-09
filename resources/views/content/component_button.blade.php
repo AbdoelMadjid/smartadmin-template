@@ -299,7 +299,7 @@ Simpan
                 <x-panel.show title="Button" subtitle="Dropdown">
                     <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
                         <x-slot name='slot0'>
-                            Dropdown Default Show><br>
+                            Dropdown Default Show<br>
                             <code>&lt;div class="btn-group"/&gt;</code>
                         </x-slot>
                         <x-slot name='slot1'>
@@ -362,13 +362,113 @@ Simpan
                         <x-slot name='slot1'>
                             <div class="btn-group">
                                 <x-button color="secondary" :label="__('Static')" dropdowntoggle toggle="dropdown"
-                                    haspopup="true" expanded="false" display="static" :items="[
+                                    haspopup="true" expanded="false" dpsize="lg" display="static"
+                                    :items="[
                                         ['label' => 'Action', 'href' => 'javascript:void(0);'],
                                         ['label' => 'Another action', 'href' => 'javascript:void(0);'],
                                         ['label' => 'Something else here', 'href' => 'javascript:void(0);'],
                                         'divider',
                                         ['label' => 'Separated link', 'href' => 'javascript:void(0);'],
                                     ]" />
+                            </div>
+                        </x-slot>
+                    </x-column-layout>
+                    <hr>
+                    <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                        <x-slot name='slot0'>
+                            Split Dropdown Buttons<br>
+                            insert : <code>toogledropdown</code>
+                        </x-slot>
+                        <x-slot name='slot1'>
+                            <div class="btn-group">
+                                <x-button :label="__('Split Dropdown')" />
+                                <x-button dropdowntoggle toogledropdown toggle="dropdown" haspopup="true"
+                                    expanded="false" display="static" dpsize="lg" :items="[
+                                        ['label' => 'Action', 'href' => 'javascript:void(0);'],
+                                        ['label' => 'Another action', 'href' => 'javascript:void(0);'],
+                                        ['label' => 'Something else here', 'href' => 'javascript:void(0);'],
+                                        'divider',
+                                        ['label' => 'Separated link', 'href' => 'javascript:void(0);'],
+                                    ]" />
+                            </div>
+                        </x-slot>
+                    </x-column-layout>
+                    <hr>
+                    <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                        <x-slot name='slot0'>
+                            <div class="btn-group">
+                                <x-button color="primary" icon="shield-virus mr-2" :label="__('Multilevel default')" dropdowntoggle
+                                    toggle="dropdown" haspopup="true" expanded="false" :items="[
+                                        ['label' => 'Action', 'href' => 'javascript:void(0);'],
+                                        [
+                                            'label' => 'Multilevel',
+                                            'children' => [
+                                                ['label' => 'First level', 'href' => 'javascript:void(0);'],
+                                                [
+                                                    'label' => 'Second Level',
+                                                    'children' => [
+                                                        ['label' => 'Level two', 'href' => 'javascript:void(0);'],
+                                                        [
+                                                            'label' => 'Disabled menu',
+                                                            'href' => 'javascript:void(0);',
+                                                            'disabled' => true,
+                                                        ],
+                                                        [
+                                                            'label' => 'Third Level (left)',
+                                                            'children' => [
+                                                                [
+                                                                    'label' => 'Menu Item',
+                                                                    'href' => 'javascript:void(0);',
+                                                                ],
+                                                                [
+                                                                    'label' => 'Disabled',
+                                                                    'href' => 'javascript:void(0);',
+                                                                    'disabled' => true,
+                                                                ],
+                                                            ],
+                                                        ],
+                                                    ],
+                                                ],
+                                            ],
+                                        ],
+                                    ]" />
+                            </div>
+                        </x-slot>
+                        <x-slot name='slot1'>
+                            Multilevel Dropdown
+                        </x-slot>
+                    </x-column-layout>
+                    <hr>
+                    <x-column-layout :sizes="[6, 6]" :useCard="[false, false]">
+                        <x-slot name='slot0'>
+                            Collapse<br>
+                            insert : <code>toggle="collapse" target="#collapseExample"
+                            expanded="false" controls="collapseExample" </code>
+                            <br>
+                            <x-collapse-content target="collapseExample">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident.
+                            </x-collapse-content>
+                        </x-slot>
+                        <x-slot name='slot1'>
+                            <div class="frame-wrap mt-3 mb-0 w-100">
+                                {{-- <p class="demo">
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#collapseExample" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        Button with data-target
+                                    </button>
+                                </p> --}}
+                                <p class="demo">
+                                    <x-button :label="__('Button with data-target')" toggle="collapse" target="#collapseExample"
+                                        expanded="false" controls="collapseExample" />
+                                </p>
+                                <x-collapse-content target="collapseExample">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                    squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident.
+                                </x-collapse-content>
                             </div>
                         </x-slot>
                     </x-column-layout>

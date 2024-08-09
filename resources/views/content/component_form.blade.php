@@ -48,13 +48,6 @@
                 <h2>
                     Support
                 </h2>
-                <p class="mb-g">
-                    SmartAdmin is designed and documented to be easy to develop with and to use. Inevitably, as with
-                    any
-                    complex Theme library, you might have a question about how to perform a certain action, or wish
-                    to
-                    support the project to ensure that any issues in the Theme are found and dealt with quickly.
-                </p>
                 <!-- Trigger Modal -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Open Modal
@@ -93,9 +86,11 @@
                     efficiently.
                 </p>
                 <p>
-                    Maintenance and support contracts have a duration of <strong>6 months</strong>, at which point
-                    it can be
-                    renewed to maintain the support level you require.
+                    <x-form.switch id="eventlog-switch" name="event_log" :checked="true" value="1"
+                        labelChecked="Active" labelUnchecked="Inactive" />
+                    <hr>
+                    <x-form.switch id="notifications-switch" name="notifications" :checked="false" value="1"
+                        labelChecked="Enabled" labelUnchecked="Disabled" />
                 </p>
                 <p class="mb-g">
                     <strong>For more information on premium support and purchasing support credits, please find our
