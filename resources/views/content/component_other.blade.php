@@ -19,7 +19,7 @@
 
         <x-column-layout :sizes="[6, 6]" :useCards="[false, false]">
             <x-slot name="slot0">
-                <x-panel.show title="Default" subtitle="Example">
+                <x-panel.show title="Panel" subtitle="Example">
                     <x-slot name="paneltoolbar">
                         <x-panel.tool-bar>
                             <select class="custom-select custom-select-sm">
@@ -35,7 +35,7 @@
                                 <input type="text" class="form-control form-control-sm pl-5" placeholder="Search">
                             </div>
                         </x-panel.tool-bar>
-                        <x-panel.tool-bar class="ml-2">
+                        <x-panel.tool-bar class="ml-1">
                             <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
                                 original_title="Collapse" />
                             <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
@@ -43,7 +43,7 @@
                             <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
                                 original_title="Close" />
                         </x-panel.tool-bar>
-                        <x-panel.tool-bar class="ml-2">
+                        <x-panel.tool-bar class="ml-1">
                             <x-button-ellipsis :menuItems="[
                                 ['text' => 'Kembali', 'href' => '/dashboard'],
                                 ['text' => 'Another action', 'href' => '#'],
@@ -85,21 +85,13 @@
                 {{-- COMPONENT ALERT MESSAGES --}}
                 <x-panel.show title="Alert" subtitle="Messages">
                     <x-slot name="paneltoolbar">
-                        <x-panel.tool-bar class="ml-2">
+                        <x-panel.tool-bar>
                             <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
                                 original_title="Collapse" />
                             <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
                                 original_title="Fullscreen" />
                             <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
                                 original_title="Close" />
-                        </x-panel.tool-bar>
-                        <x-panel.tool-bar class="ml-2">
-                            <x-button-ellipsis :menuItems="[
-                                ['text' => 'Kembali', 'href' => '/dashboard'],
-                                ['text' => 'Another action', 'href' => '#'],
-                                ['divider' => true],
-                                ['text' => 'Something else here', 'href' => '#'],
-                            ]" />
                         </x-panel.tool-bar>
                     </x-slot>
                     <h5 class="text-info">Component</h5>
@@ -158,6 +150,16 @@
             <x-slot name="slot1">
                 {{-- COMPONENT DIV OR SPAN --}}
                 <x-panel.show title="Component" subtitle="Div or Span">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar>
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
+                    </x-slot>
                     <x-title :l="5" :title="__('Example Span')" info class="mb-2" />
                     Script : <code>
                         &lt;x-div :text="__('Pro Tip!')" class="h5" /&gt;
@@ -178,6 +180,16 @@
 
                 {{-- COMPONENT ICON --}}
                 <x-panel.show title="Component" subtitle="Icon">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar>
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
+                    </x-slot>
                     <x-title :l="5" :title="__('Component')" info class="mb-2" />
                     <code>x-icon</code>
                     <hr>
@@ -222,6 +234,16 @@
 
                 {{-- COMPONENT NUMBER STYLE --}}
                 <x-panel.show title="Component" subtitle="Number Style">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar>
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
+                    </x-slot>
                     {{-- Number Style --}}
                     <h5 class="text-info">Component</h5>
                     <code>x-number-style</code>
@@ -241,6 +263,16 @@
 
                 {{-- COMPONENT BADGE --}}
                 <x-panel.show title="Component" subtitle="Badge">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar>
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
+                    </x-slot>
                     <h5 class="text-info">Component</h5>
                     <code>x-badge</code>
                     <hr>
@@ -256,7 +288,18 @@
                     <x-badge color="info" fill :label="__('Test')" />
                 </x-panel.show>
 
+                {{-- COMPONENT ACCORDION --}}
                 <x-panel.show title="Component" subtitle="Accordion">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar>
+                            <x-button btnpanel action="panel-collapse" toggle="tooltip" offset="0,10"
+                                original_title="Collapse" />
+                            <x-button btnpanel action="panel-fullscreen" toggle="tooltip" offset="0,10"
+                                original_title="Fullscreen" />
+                            <x-button btnpanel action="panel-close" toggle="tooltip" offset="0,10"
+                                original_title="Close" />
+                        </x-panel.tool-bar>
+                    </x-slot>
                     <h5 class="text-info">Component</h5>
                     <code>x-accordion</code> and <code>x-accordion-item</code>
                     <hr>

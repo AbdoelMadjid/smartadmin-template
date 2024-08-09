@@ -26,7 +26,6 @@
     'toggle' => null,
     'haspopup' => null,
     'expanded' => null,
-    'collapses' => false,
     'target' => null,
     'controls' => null,
     'display' => null,
@@ -87,7 +86,6 @@
 
 <{{ $href ? 'a' : 'button' }} {{ $attributes }}>
     <x-icon fal :name="$icon" />
-
     {{ $label ?? $slot }}
     </{{ $href ? 'a' : 'button' }}>
 
@@ -112,14 +110,9 @@
                 @endif
             @endforeach
         </div>
-
-    @endif
-
-    @if ($collapses)
     @endif
     {{--
-    <button class="btn btn-{{ $typebutton }} btn-sm"
-        onclick="showToast('{{ $judul }}','{{ $message }}', '{{ $type }}')">{{ $slot }}</button>
-
-    <x-toastr-notif typebutton="warning" type="warning" message="Terjadi Kesalahan">Warning</x-toastr-notif>
- --}}
+        <button class="btn btn-{{ $typebutton }} btn-sm"
+            onclick="showToast('{{ $judul }}','{{ $message }}', '{{ $type }}')">{{ $slot }}</button>
+        <x-toastr-notif typebutton="warning" type="warning" message="Terjadi Kesalahan">Warning</x-toastr-notif>
+    --}}
