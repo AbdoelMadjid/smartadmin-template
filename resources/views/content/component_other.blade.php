@@ -283,9 +283,41 @@
                     <code>
                         &lt;x-badge color="success" :label="__('News')" /&gt;
                     </code>
-                    <hr>
-                    <x-badge color="success" :label="__('News')" />
-                    <x-badge color="info" fill :label="__('Test')" />
+                    <div class="frame-wrap">
+                        <div class="demo">
+                            <x-badge color="success" :label="__('News')" />
+                            <x-badge color="danger" fill="true">
+                                {{ __('Warning') }}
+                            </x-badge>
+                            <x-badge :label="__('Default Color Badge')" />
+                        </div>
+                    </div>
+                    <div class="frame-wrap">
+                        <div class="demo">
+                            <x-badge heading="h1" color="primary" :label="__('New')"> Example heading </x-badge>
+                            <x-badge heading="h2" color="success" :label="__('New')"> Example heading </x-badge>
+                            <x-badge heading="h3" color="info" :label="__('New')"> Example heading </x-badge>
+                            <x-badge heading="h4" color="danger" :label="__('New')"> Example heading </x-badge>
+                            <x-badge heading="h5" color="warning" :label="__('New')"> Example heading </x-badge>
+                            <x-badge heading="h6" color="secondary" :label="__('New')"> Example heading </x-badge>
+                        </div>
+                    </div>
+                    <div class="frame-wrap">
+                        <div class="demo">
+                            <x-button size="lg">
+                                Messages
+                                <x-badge background="primary-300 ml-2" fill="true">
+                                    {{ __('12') }}
+                                </x-badge>
+                            </x-button>
+                            <x-button size="lg" color="secondary">
+                                Messages
+                                <x-badge background="fusion-500 ml-2" fill="true">
+                                    {{ __('12') }}
+                                </x-badge>
+                            </x-button>
+                        </div>
+                    </div>
                 </x-panel.show>
 
                 {{-- COMPONENT ACCORDION --}}
@@ -315,23 +347,43 @@
                     <hr>
                     <h5 class="text-info">Example</h5>
                     <hr>
-                    <x-accordion id="accordion1">
-                        <x-accordion-item id="item1" title="Email Marketing" :collapsed="false"
-                            parentId="accordion1">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                            ...
-                        </x-accordion-item>
-                        <x-accordion-item id="item2" title="Online Campaign" :collapsed="true"
-                            parentId="accordion1">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                            ...
-                        </x-accordion-item>
-                        <x-accordion-item id="item3" title="Electronic Data Management" :collapsed="true"
-                            parentId="accordion1">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                            ...
-                        </x-accordion-item>
-                    </x-accordion>
+                    <div class="accordion" id="js_demo_accordion-12">
+                        <x-accordion id="js_demo_accordion-12">
+                            <x-accordion-item id="js_demo_accordion-12a" title="Medical Records" :collapsed="false"
+                                parentId="js_demo_accordion-12" showCollapseIconsRightOther="true">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </x-accordion-item>
+                            <x-accordion-item id="js_demo_accordion-12b" title="Online Campaign" :collapsed="true"
+                                parentId="js_demo_accordion-12" showCollapseIconsRightOther="true">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </x-accordion-item>
+                            <x-accordion-item id="js_demo_accordion-12c" title="Electronic Data Management"
+                                :collapsed="true" parentId="js_demo_accordion-12" showCollapseIconsRightOther="true">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food
+                                truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                                bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
+                                VHS.
+                            </x-accordion-item>
+                        </x-accordion>
+                    </div>
 
                 </x-panel.show>
             </x-slot>

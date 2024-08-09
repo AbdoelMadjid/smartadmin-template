@@ -58,12 +58,12 @@
                                 and <code>em</code> units
                             </div>
                             <div class="demo-v-spacing">
-                                <h1>Example heading <span class="badge badge-primary">New</span></h1>
-                                <h2>Example heading <span class="badge badge-success">New</span></h2>
-                                <h3>Example heading <span class="badge badge-info">New</span></h3>
-                                <h4>Example heading <span class="badge badge-danger">New</span></h4>
-                                <h5>Example heading <span class="badge badge-warning">New</span></h5>
-                                <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+                                <x-badge heading="h1" color="primary" :label="__('New')"> Example heading </x-badge>
+                                <x-badge heading="h2" color="success" :label="__('New')"> Example heading </x-badge>
+                                <x-badge heading="h3" color="info" :label="__('New')"> Example heading </x-badge>
+                                <x-badge heading="h4" color="danger" :label="__('New')"> Example heading </x-badge>
+                                <x-badge heading="h5" color="warning" :label="__('New')"> Example heading </x-badge>
+                                <x-badge heading="h6" color="secondary" :label="__('New')"> Example heading </x-badge>
                             </div>
                         </div>
                     </div>
@@ -93,37 +93,37 @@
                             </h5>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <button type="button" class="btn btn-lg btn-primary">Messages
-                                        <span class="badge bg-primary-300 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-lg btn-secondary">Messages
-                                        <span class="badge bg-fusion-500 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-lg btn-default">Messages
-                                        <span class="badge bg-primary-500 ml-2">4</span>
-                                    </button>
+                                    <x-button size="lg" color="primary"> Messages
+                                        <x-badge background="primary-300 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button size="lg" color="secondary"> Messages
+                                        <x-badge background="fusion-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button size="lg" color="default"> Messages
+                                        <x-badge background="primary-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
                                 </div>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-default">Messages
-                                        <span class="badge bg-primary-500 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-success">Messages
-                                        <span class="badge bg-success-700 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-warning">Messages
-                                        <span class="badge bg-warning-200 ml-2">4</span>
-                                    </button>
+                                    <x-button color="default"> Messages
+                                        <x-badge background="primary-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button color="success"> Messages
+                                        <x-badge background="success-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button color="warning"> Messages
+                                        <x-badge background="warning-200 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
                                 </div>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-sm btn-info">Messages
-                                        <span class="badge bg-info-700 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-danger">Messages
-                                        <span class="badge bg-danger-800 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-dark">Messages
-                                        <span class="badge bg-fusion-300 ml-2">4</span>
-                                    </button>
+                                    <x-button size="sm" color="info"> Messages
+                                        <x-badge background="info-700 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button size="sm" color="danger"> Messages
+                                        <x-badge background="danger-800 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button size="sm" color="dark"> Messages
+                                        <x-badge background="fusion-300 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
                                 </div>
                             </div>
                             <h5 class="frame-heading">
@@ -131,37 +131,37 @@
                             </h5>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <button type="button" class="btn btn-lg btn-outline-primary">Messages
-                                        <span class="badge bg-primary-300 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-lg btn-outline-secondary">Messages
-                                        <span class="badge bg-fusion-500 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-lg btn-outline-default">Messages
-                                        <span class="badge bg-primary-500 ml-2">4</span>
-                                    </button>
+                                    <x-button style size="lg" color="primary"> Messages
+                                        <x-badge background="primary-300 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button style size="lg" color="secondary"> Messages
+                                        <x-badge background="fusion-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button style size="lg" color="default"> Messages
+                                        <x-badge background="primary-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
                                 </div>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-outline-default">Messages
-                                        <span class="badge bg-primary-500 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-outline-success">Messages
-                                        <span class="badge bg-success-700 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-outline-warning">Messages
-                                        <span class="badge bg-warning-200 ml-2">4</span>
-                                    </button>
+                                    <x-button style color="default"> Messages
+                                        <x-badge background="primary-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button style color="success"> Messages
+                                        <x-badge background="success-500 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button style color="warning"> Messages
+                                        <x-badge background="warning-200 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
                                 </div>
                                 <div class="demo">
-                                    <button type="button" class="btn btn-sm btn-outline-info">Messages
-                                        <span class="badge bg-info-700 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-outline-danger">Messages
-                                        <span class="badge bg-danger-800 ml-2">4</span>
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-outline-dark">Messages
-                                        <span class="badge bg-fusion-300 ml-2">4</span>
-                                    </button>
+                                    <x-button style size="sm" color="info"> Messages
+                                        <x-badge background="info-700 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button style size="sm" color="danger"> Messages
+                                        <x-badge background="danger-800 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
+                                    <x-button style size="sm" color="dark"> Messages
+                                        <x-badge background="fusion-300 ml-2"> {{ __('4') }} </x-badge>
+                                    </x-button>
                                 </div>
                             </div>
                         </div>
@@ -187,82 +187,81 @@
                                 Use utility classes with <code>.btn-icon</code> to place the badge
                             </div>
                             <div class="demo demo-h-spacing mb-4">
-                                <a href="javascript:void(0);"
-                                    class="btn btn-lg btn-primary btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-print"></i>
-                                    <span
-                                        class="badge border border-light rounded-pill bg-danger-500 position-absolute pos-top pos-right">9</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-secondary btn-lg btn-icon position-relative js-waves-off">
-                                    <i class="fal fa-volume-mute fs-md"></i>
-                                    <span
-                                        class="badge border border-light rounded-pill bg-success-700 position-absolute pos-bottom pos-right">18</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-default btn-lg btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-envelope"></i>
-                                    <span
-                                        class="badge border border-light bg-warning-700 position-absolute pos-top pos-left">99</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-outline-success btn-lg btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-download"></i>
-                                    <span
-                                        class="badge border border-success rounded-pill bg-primary-500 position-absolute pos-bottom pos-right">100..</span>
-                                </a>
+                                <x-button href="javascript:void(0);" color="primary" icon="print" size="lg"
+                                    btnicon circle class="position-relative js-waves-off">
+                                    <x-badge background="border border-light rounded-pill bg-danger-500"
+                                        extra-classes="position-absolute pos-top pos-right" :label="__('9')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="secondary" icon="volume-mute fs-md"
+                                    size="lg" btnicon class="position-relative js-waves-off">
+                                    <x-badge background="border border-light rounded-pill bg-success-700"
+                                        extra-classes="position-absolute pos-bottom pos-right" :label="__('18')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="default" icon="envelope" size="lg"
+                                    btnicon circle class="position-relative js-waves-off">
+                                    <x-badge background="border border-light bg-warning-700"
+                                        extra-classes="position-absolute pos-top pos-left" :label="__('99')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="success" icon="download" size="lg"
+                                    btnicon circle style class="position-relative js-waves-off">
+                                    <x-badge background="border border-success rounded-pill bg-primary-500"
+                                        extra-classes="position-absolute pos-bottom pos-right" :label="__('100..')" />
+                                </x-button>
+
                             </div>
                             <div class="demo demo-h-spacing mb-4">
-                                <a href="javascript:void(0);"
-                                    class="btn btn-primary btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-print"></i>
-                                    <span
-                                        class="badge border border-light rounded-pill bg-danger-500 position-absolute pos-top pos-right">16</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-secondary btn-icon position-relative js-waves-off">
-                                    <i class="fal fa-volume-mute fs-md"></i>
-                                    <span
-                                        class="badge border border-light rounded-pill bg-success-700 position-absolute pos-bottom pos-right">4</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-default btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-envelope"></i>
-                                    <span
-                                        class="badge border border-light bg-warning-700 position-absolute pos-top pos-left">4</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-outline-success btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-download"></i>
-                                    <span
-                                        class="badge border border-success rounded-pill bg-primary-500 position-absolute pos-bottom pos-right">99+</span>
-                                </a>
+                                <x-button href="javascript:void(0);" color="primary" icon="print" btnicon circle
+                                    class="position-relative js-waves-off">
+                                    <x-badge background="border border-light rounded-pill bg-danger-500"
+                                        extra-classes="position-absolute pos-top pos-right" :label="__('16')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="secondary" icon="volume-mute fs-md" btnicon
+                                    class="position-relative js-waves-off">
+                                    <x-badge background="border border-light rounded-pill bg-success-700"
+                                        extra-classes="position-absolute pos-bottom pos-right" :label="__('4')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="default" icon="envelope" btnicon circle
+                                    class="position-relative js-waves-off">
+                                    <x-badge background="border border-light bg-warning-700"
+                                        extra-classes="position-absolute pos-top pos-left" :label="__('4')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="success" icon="download" btnicon circle style
+                                    class="position-relative js-waves-off">
+                                    <x-badge background="border border-success rounded-pill bg-primary-500"
+                                        extra-classes="position-absolute pos-bottom pos-right" :label="__('99+')" />
+                                </x-button>
                             </div>
                             <div class="demo demo-h-spacing mb-4">
-                                <a href="javascript:void(0);"
-                                    class="btn btn-sm btn-primary btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-print"></i>
-                                    <span
-                                        class="badge border border-light rounded-pill bg-danger-500 position-absolute pos-top pos-right">4</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-sm btn-secondary btn-icon position-relative js-waves-off">
-                                    <i class="fal fa-volume-mute fs-md"></i>
-                                    <span
-                                        class="badge border border-light rounded-pill bg-success-700 position-absolute pos-bottom pos-right">0</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-sm btn-default btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-envelope"></i>
-                                    <span
-                                        class="badge border border-light bg-warning-700 position-absolute pos-top pos-left">7</span>
-                                </a>
-                                <a href="javascript:void(0);"
-                                    class="btn btn-sm btn-outline-success btn-icon rounded-circle position-relative js-waves-off">
-                                    <i class="fal fa-download"></i>
-                                    <span
-                                        class="badge border border-success rounded-pill bg-primary-500 position-absolute pos-bottom pos-right">4</span>
-                                </a>
+                                <x-button href="javascript:void(0);" color="primary" icon="print" size="sm"
+                                    btnicon circle class="position-relative js-waves-off">
+                                    <x-badge background="border border-light rounded-pill bg-danger-500"
+                                        extra-classes="position-absolute pos-top pos-right" :label="__('4')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="secondary" icon="volume-mute fs-md"
+                                    size="sm" btnicon class="position-relative js-waves-off">
+                                    <x-badge background="border border-light rounded-pill bg-success-700"
+                                        extra-classes="position-absolute pos-bottom pos-right" :label="__('0')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="default" icon="envelope" size="sm"
+                                    btnicon circle class="position-relative js-waves-off">
+                                    <x-badge background="border border-light bg-warning-700"
+                                        extra-classes="position-absolute pos-top pos-left" :label="__('7')" />
+                                </x-button>
+
+                                <x-button href="javascript:void(0);" color="success" icon="download" size="sm"
+                                    btnicon circle style class="position-relative js-waves-off">
+                                    <x-badge background="border border-success rounded-pill bg-primary-500"
+                                        extra-classes="position-absolute pos-bottom pos-right" :label="__('4')" />
+                                </x-button>
+
                             </div>
                         </div>
                     </div>
@@ -354,14 +353,14 @@
                             </div>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <span class="badge badge-primary">Primary</span>
-                                    <span class="badge badge-secondary">Secondary</span>
-                                    <span class="badge badge-success">Success</span>
-                                    <span class="badge badge-danger">Danger</span>
-                                    <span class="badge badge-warning">Warning</span>
-                                    <span class="badge badge-info">Info</span>
-                                    <span class="badge badge-light">Light</span>
-                                    <span class="badge badge-dark">Dark</span>
+                                    <x-badge color="primary" :label="__('Primary')" />
+                                    <x-badge color="secondary" :label="__('Secondary')" />
+                                    <x-badge color="success" :label="__('Success')" />
+                                    <x-badge color="danger" :label="__('Danger')" />
+                                    <x-badge color="warning" :label="__('Warning')" />
+                                    <x-badge color="info" :label="__('Info')" />
+                                    <x-badge color="light" :label="__('Light')" />
+                                    <x-badge color="dark" :label="__('Dark')" />
                                 </div>
                             </div>
                             <div class="frame-heading">
@@ -369,14 +368,14 @@
                             </div>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <span class="badge border border-primary text-primary">Primary</span>
-                                    <span class="badge border border-secondary text-secondary">Secondary</span>
-                                    <span class="badge border border-success text-success">Success</span>
-                                    <span class="badge border border-danger text-danger">Danger</span>
-                                    <span class="badge border border-warning text-warning">Warning</span>
-                                    <span class="badge border border-info text-info">Info</span>
-                                    <span class="badge border border-light text-light">Light</span>
-                                    <span class="badge border border-dark text-dark">Dark</span>
+                                    <x-badge color="primary" border="true" :label="__('Primary')" />
+                                    <x-badge color="secondary" border="true" :label="__('Secondary')" />
+                                    <x-badge color="success" border="true" :label="__('Success')" />
+                                    <x-badge color="danger" border="true" :label="__('Danger')" />
+                                    <x-badge color="warning" border="true" :label="__('Warning')" />
+                                    <x-badge color="info" border="true" :label="__('Info')" />
+                                    <x-badge color="light" border="true" :label="__('Light')" />
+                                    <x-badge color="dark" border="true" :label="__('Dark')" />
                                 </div>
                             </div>
                         </div>
@@ -404,14 +403,14 @@
                             </div>
                             <div class="frame-wrap">
                                 <div class="demo">
-                                    <span class="badge badge-primary badge-pill">Primary</span>
-                                    <span class="badge badge-secondary badge-pill">Secondary</span>
-                                    <span class="badge badge-success badge-pill">Success</span>
-                                    <span class="badge badge-danger badge-pill">Danger</span>
-                                    <span class="badge badge-warning badge-pill">Warning</span>
-                                    <span class="badge badge-info badge-pill">Info</span>
-                                    <span class="badge badge-light badge-pill">Light</span>
-                                    <span class="badge badge-dark badge-pill">Dark</span>
+                                    <x-badge color="primary" :label="__('Primary')" fill="true" />
+                                    <x-badge color="secondary" :label="__('Secondary')" fill="true" />
+                                    <x-badge color="success" :label="__('Success')" fill="true" />
+                                    <x-badge color="danger" :label="__('Danger')" fill="true" />
+                                    <x-badge color="warning" :label="__('Warning')" fill="true" />
+                                    <x-badge color="info" :label="__('Info')" fill="true" />
+                                    <x-badge color="light" :label="__('Light')" fill="true" />
+                                    <x-badge color="dark" :label="__('Dark')" fill="true" />
                                 </div>
                             </div>
                         </div>
@@ -438,14 +437,14 @@
                                 with hover and focus states
                             </div>
                             <div class="demo">
-                                <a href="#" class="badge badge-primary">Link Badge - Primary</a>
-                                <a href="#" class="badge badge-secondary">Link Badge - Secondary</a>
-                                <a href="#" class="badge badge-success">Link Badge - Success</a>
-                                <a href="#" class="badge badge-danger">Link Badge - Danger</a>
-                                <a href="#" class="badge badge-warning">Link Badge - Warning</a>
-                                <a href="#" class="badge badge-info">Link Badge - Info</a>
-                                <a href="#" class="badge badge-light">Link Badge - Light</a>
-                                <a href="#" class="badge badge-dark">Link Badge - Dark</a>
+                                <x-badge href="#" color="primary" :label="__('Link Badge - Primary')" />
+                                <x-badge href="#" color="secondary" :label="__('Link Badge - Secondary')" />
+                                <x-badge href="#" color="success" :label="__('Link Badge - Success')" />
+                                <x-badge href="#" color="danger" :label="__('Link Badge - Danger')" />
+                                <x-badge href="#" color="warning" :label="__('Link Badge - Warning')" />
+                                <x-badge href="#" color="info" :label="__('Link Badge - Info')" />
+                                <x-badge href="#" color="light" :label="__('Link Badge - Light')" />
+                                <x-badge href="#" color="dark" :label="__('Link Badge - Dark')" />
                             </div>
                         </div>
                     </div>
@@ -536,41 +535,41 @@
                                 <a href="javascript:void(0);"
                                     class="height-2 d-inline-flex align-items-center justify-content-center position-relative m-0 text-primary h2">
                                     I am a large text
-                                    <span class="badge badge-icon position-relative ml-2">9999</span>
+                                    <x-badge extra-classes="badge-icon position-relative ml-2" :label="__('9999')" />
                                 </a>
                                 <br>
                                 <a href="javascript:void(0);"
                                     class="width-auto height-2 d-inline-flex align-items-center justify-content-center position-relative m-0 h4 text-primary">
                                     I am smaller text
-                                    <span class="badge badge-icon position-relative ml-2">9999</span>
+                                    <x-badge extra-classes="badge-icon position-relative ml-2" :label="__('8888')" />
                                 </a>
                                 <br>
                                 <a href="javascript:void(0);"
                                     class="width-auto height-2 d-inline-flex align-items-center justify-content-center position-relative m-0 text-primary">
                                     I am normal text
-                                    <span class="badge badge-icon position-relative ml-2">9999</span>
+                                    <x-badge extra-classes="badge-icon position-relative ml-2" :label="__('9999')" />
                                 </a>
                             </div>
                             <div class="demo">
                                 <a href="javascript:void(0);"
                                     class="width-3 height-2 d-inline-flex align-items-center justify-content-center position-relative h1 text-primary">
                                     <i class="fal fa-bell"></i>
-                                    <span class="badge badge-icon pos-top pos-right">11</span>
+                                    <x-badge extra-classes="badge-icon pos-top pos-right" :label="__('17')" />
                                 </a>
                                 <a href="javascript:void(0);"
                                     class="width-3 height-2 d-inline-flex align-items-center justify-content-center position-relative h1 text-primary">
                                     <i class="fal fa-envelope"></i>
-                                    <span class="badge badge-icon pos-top pos-right">17</span>
+                                    <x-badge extra-classes="badge-icon pos-top pos-right" :label="__('17')" />
                                 </a>
                                 <a href="javascript:void(0);"
                                     class="width-3 height-2 d-inline-flex align-items-center justify-content-center position-relative h3 text-primary">
                                     <i class="fal fa-bell"></i>
-                                    <span class="badge badge-icon pos-top pos-right">11</span>
+                                    <x-badge extra-classes="badge-icon pos-top pos-right" :label="__('10')" />
                                 </a>
                                 <a href="javascript:void(0);"
                                     class="width-3 height-2 d-inline-flex align-items-center justify-content-center position-relative h3 text-primary">
                                     <i class="fal fa-envelope"></i>
-                                    <span class="badge badge-icon pos-top pos-right">17</span>
+                                    <x-badge extra-classes="badge-icon pos-top pos-right" :label="__('13')" />
                                 </a>
                             </div>
                         </div>
