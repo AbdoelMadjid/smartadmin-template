@@ -3,59 +3,55 @@
     'label' => null,
     'color' => 'default',
     'dismissible' => false,
+    'iconstack' => false,
     'title' => null,
+    'deskripsi' => null,
     'bground' => false,
-    'iconalt' => null,
+    'closeIcon' => null, // New prop for close button icon
 ])
 
 @php
-    $attributes = $attributes->class(['alert alert-' . $color . ' fade show', 'bg-' . $color . '-500' => $bground, 'alert-dismissible' => $dismissible])->merge([
-        //
-    ]);
-
-    switch ($color) {
-        case 'warning':
-            $icon = 'exclamation-circle';
-            break;
-        case 'danger':
-            $icon = 'times-circle';
-            break;
-        case 'info':
-            $icon = 'info-circle';
-            break;
-        case 'success':
-            $icon = 'check-circle';
-            break;
-        default:
-            $color = 'secondary';
-            break;
-    }
+    $attributes = $attributes
+        ->class([
+            'alert alert-' . $color . ' fade show',
+            'bg-' . $color . '-500' => $bground,
+            'alert-dismissible' => $dismissible,
+        ])
+        ->merge([
+            //
+        ]);
 @endphp
 
-<div {{ $attributes }} role = 'alert'>
+<div {{ $attributes }} role="alert">
     <div class="d-flex align-items-center">
         @if ($icon)
             <div class="alert-icon">
-                <x-icon fal :name="$icon" />
+                @if ($iconstack)
+                    {!! $iconstack !!}
+                @else
+                    <x-icon fal :name="$icon" />
+                @endif
             </div>
-        @elseif($iconalt)
-            <div class="alert-icon">
-                <x-icon fal :name="$iconalt" />
-            </div>
-        @else
         @endif
-        <div class="flex-1 ml-1">
-            @if ($title)
-                <span class="h4 color-{{ $color }}-900">{!! $title !!}</span>
+        @if ($title)
+            <div class="flex-1">
+                <span class="h5">{!! $title !!}</span>
                 <br>
-            @endif
-            {{ $label ?? $slot }}
-        </div>
+                {!! $deskripsi !!}
+            </div>
+        @endif
+        {!! $label ?? $slot !!}
     </div>
 
     @if ($dismissible)
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><i class="fal fa-times"></i></span>
+            <span aria-hidden="true">
+                @if ($closeIcon)
+                    <i class="fal fa-{{ $closeIcon }}"></i>
+                @else
+                    ×
+                @endif
+            </span>
         </button>
     @endif
 </div>
