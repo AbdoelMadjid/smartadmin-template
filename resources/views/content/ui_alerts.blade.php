@@ -16,6 +16,26 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-xl-6">
+                <x-panel.show title="Default" subtitle="Example">
+                    <x-slot name="paneltoolbar">
+                        <x-panel.tool-bar>
+                            <button class="btn btn-panel" data-action="panel-collapse" data-toggle="tooltip"
+                                data-offset="0,10" data-original-title="Collapse"></button>
+                            <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip"
+                                data-offset="0,10" data-original-title="Fullscreen"></button>
+                            <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10"
+                                data-original-title="Close"></button>
+                        </x-panel.tool-bar>
+                    </x-slot>
+                    <p>
+                        @php
+                            $alertscript = file_get_contents(resource_path('/data/alert.md'));
+                        @endphp
+                        <pre>
+                            {!! htmlspecialchars($alertscript) !!}
+                        </pre>
+                    </p>
+                </x-panel.show>
                 <!--Basic alerts-->
                 <div id="panel-1" class="panel">
                     <div class="panel-hdr">
@@ -109,8 +129,8 @@
                                 data-offset="0,10" data-original-title="Collapse"></button>
                             <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip"
                                 data-offset="0,10" data-original-title="Fullscreen"></button>
-                            <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10"
-                                data-original-title="Close"></button>
+                            <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip"
+                                data-offset="0,10" data-original-title="Close"></button>
                         </div>
                     </div>
                     <div class="panel-container show">

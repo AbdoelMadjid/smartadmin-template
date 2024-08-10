@@ -94,57 +94,43 @@
                                 original_title="Close" />
                         </x-panel.tool-bar>
                     </x-slot>
+                    <x-tips icon="ni ni-blog-read" title="Pro Tip!"
+                        text="Laravel has provided one of the interesting features in its templating blade, namely Components. Components allow us to chop up code so that it can be reused without having to rewrite all the parts completely. Similar to sections and layouts which are also part of the blade templating feature."
+                        link="/ui_alerts" linkText="Ui Alert Other >>" />
                     <h5 class="text-info">Component</h5>
                     <code>x-alert-messages</code>
                     <hr>
                     <h5 class="text-info">Example</h5>
 
-                    <code>&lt;x-alert-messages color="danger" dismissible :title="__('Error!!')"&gt;</code>
-                    <x-alert-messages color="danger" dismissible :title="__('Error!!')">
-                        <strong>Well Done!</strong> You error read this important alert message.
-                    </x-alert-messages>
+                    <div class="demo-v-spacing">
+                        <x-alert-messages color="info">
+                            <strong>Info!</strong> Alert for passing information to user.
+                        </x-alert-messages>
+                        <x-alert-messages color="secondary">
+                            <strong>Hello World!</strong> This is default alert message box.
+                        </x-alert-messages>
+                        <x-alert-messages dismissible color="primary">
+                            <strong>Heads up!</strong> This alert needs your attention, but it's not super
+                            important.
+                        </x-alert-messages>
+                        <x-alert-messages dismissible closeIcon="times" color="success">
+                            <strong>Well Done!</strong> You successfully read this important alert message.
+                        </x-alert-messages>
+                        <x-alert-messages dismissible closeIcon="trash-alt" color="danger">
+                            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                        </x-alert-messages>
+                        <x-alert-messages dismissible closeIcon="times-square" color="warning">
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        </x-alert-messages>
 
-                    <code>&lt;x-alert-messages color="warning" :title="__('Attention!!')"&gt;</code>
-                    <x-alert-messages color="warning" :title="__('Attention!!')">
-                        <strong>Well Done!</strong> You warning read this important alert message.
-                    </x-alert-messages>
+                        <x-alert-messages class="bg-fusion-400 border-0" bground icon="shield-check text-warning"
+                            title="Download complete" deskripsi="Install the latest version of SmartAdmin WebApp">
+                            <a href="#" class="btn btn-warning btn-w-m fw-500 btn-sm" data-dismiss="alert"
+                                aria-label="Close">Install</a>
+                        </x-alert-messages>
 
-                    <code>&lt;x-alert-messages color="info" bground :title="__('Information!!')"&gt;</code>
-                    <x-alert-messages color="info" bground dismissible :title="__('Information!!')">
-                        <strong>Well Done!</strong> You information read this important alert message.
-                    </x-alert-messages>
+                    </div>
 
-                    <code>&lt;x-alert-messages color="success" bground :title="__('Success!!')"&gt;</code>
-                    <x-alert-messages color="success" bground dismissible :title="__('Success!!')">
-                        <strong>Well Done!</strong> You successfully read this important alert message.
-                    </x-alert-messages>
-
-                    <code>&lt;x-alert-messages color="dark" bground&gt;</code>
-                    <x-alert-messages color="dark" bground>
-                        <span class="h6 m-0 fw-700">Task 55% Complete</span>
-                        <div class="progress mt-1 progress-xs">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success-600"
-                                role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </x-alert-messages>
-
-                    <code>&lt;x-alert-messages color="primary" :title="__('Pro Tip!!!')"&gt;</code>
-                    <x-alert-messages color="secondary" :title="__('Pro Tip!!!')">
-                        <p>
-                            Laravel has provided one of the interesting features in its templating blade, namely
-                            Components.
-                            Components allow us to chop up code so that it can be reused without having to rewrite all
-                            the
-                            parts completely. Similar to sections and layouts which are also part of the blade
-                            tempalting
-                            feature.
-                        </p>
-                        <p class="m-0">
-                            Follow a slogal with a useful link or call to action <a href="#" target="_blank">Call to
-                                action >></a>
-                        </p>
-                    </x-alert-messages>
                 </x-panel.show>
             </x-slot>
             <x-slot name="slot1">
