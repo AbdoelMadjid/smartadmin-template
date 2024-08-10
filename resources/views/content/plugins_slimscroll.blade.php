@@ -7,14 +7,13 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Core Plugins'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-shield-alt'></i> SlimScroll <sup
-                    class='badge badge-success fw-500'>EXTENSION</sup>
-                <small>
-                    slimScroll is a small (2.8KB) jQuery plugin that transforms any div into a scrollable area with a nice
-                    scrollbar - similar to the one Facebook and Google started using.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'shield-alt',
+                'sup' => 'EXTENSION',
+                'pagedescription' =>
+                    'slimScroll is a small (2.8KB) jQuery plugin that transforms any div into a scrollable area with a nice scrollbar - similar to the one Facebook and Google started using.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

@@ -4,12 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Toasts
-                <small>
-                    Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -106,8 +106,7 @@
                                     <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true"
                                         data-toggle="toast">
                                         <div class="toast-header">
-                                            <img src="/assets/img/logo.png" alt="brand-logo" height="16"
-                                                class="mr-2">
+                                            <img src="/assets/img/logo.png" alt="brand-logo" height="16" class="mr-2">
                                             <strong class="mr-auto">SmartAdmin</strong>
                                             <small class="text-muted">just now</small>
                                             <button type="button" class="ml-2 close" data-dismiss="toast"

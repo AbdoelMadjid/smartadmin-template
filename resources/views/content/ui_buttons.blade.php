@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Buttons
-                <small>
-                    Use custom button styles for actions in forms, dialogs, and more. Includes support for a handful of
-                    contextual variations, sizes, states, and more.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Use custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-md-12 col-xl-6">

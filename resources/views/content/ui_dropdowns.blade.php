@@ -7,12 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Dropdowns
-                <small>
-                    Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

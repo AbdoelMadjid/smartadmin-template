@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Scrollspy
-                <small>
-                    Automatically update Bootstrap navigation or list group components based on scroll position to indicate
-                    which link is currently active in the viewport.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -170,8 +169,8 @@
                                     <div class="row no-gutters">
                                         <div class="col-3">
                                             <div id="spyscroll-2" class="list-group p-3">
-                                                <a class="list-group-item list-group-item-action"
-                                                    href="#spyscroll-2-a">Item 1</a>
+                                                <a class="list-group-item list-group-item-action" href="#spyscroll-2-a">Item
+                                                    1</a>
                                                 <a class="list-group-item list-group-item-action"
                                                     href="#spyscroll-2-b">Item 2</a>
                                                 <a class="list-group-item list-group-item-action"

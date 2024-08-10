@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Tables'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='fal fa-th-list text-primary'></i> Basic tables
-                <small>
-                    Documentation and examples for opt-in styling of tables (given their prevelant use in JavaScript
-                    plugins) with Bootstrap.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'th-list text-primary',
+                'pagedescription' =>
+                    'Documentation and examples for opt-in styling of tables (given their prevelant use in JavaScript plugins) with Bootstrap.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-lg-12 col-xl-6">

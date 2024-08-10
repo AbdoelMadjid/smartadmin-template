@@ -7,13 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Core Plugins'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-shield-alt'></i> i18Next <sup
-                    class='badge badge-success fw-500'>EXTENSION</sup>
-                <small>
-                    i18next is a full-featured i18n javascript library for translating your webapplication.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'shield-alt',
+                'sup' => 'EXTENSION',
+                'pagedescription' => 'i18next is a full-featured i18n javascript library for translating your webapplication.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

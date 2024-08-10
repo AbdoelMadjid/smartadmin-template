@@ -4,14 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Form Stuff'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-edit'></i> Validation
-                <small>
-                    Provide valuable, actionable feedback to your users with HTML5 form validation. Choose from the browser
-                    default validation feedback, or implement custom messages with our built-in classes and starter
-                    JavaScript.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'edit',
+                'pagedescription' =>
+                    'Provide valuable, actionable feedback to your users with HTML5 form validation. Choose from the browser default validation feedback, or implement custom messages with our built-in classes and starter JavaScript.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">

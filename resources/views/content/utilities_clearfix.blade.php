@@ -9,7 +9,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'window',
-                'heading1' => 'Clearfix',
             ])
                 @slot('pagedescription')
                     Quickly and easily clear floated content within a container by adding a clearfix utility.

@@ -8,12 +8,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Page Views'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-plus-circle'></i> Contacts
-                <small>
-                    A simple contact page
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'plus-circle',
+                'pagedescription' => ' A simple contact page',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-12">

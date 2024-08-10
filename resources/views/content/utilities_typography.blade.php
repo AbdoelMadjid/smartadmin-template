@@ -5,7 +5,7 @@
         @include('layouts._page_breadcrumb', ['category_1' => 'Utilities'])
         <div class="subheader">
             @component('layouts._page_heading', [
-                'heading1' => 'Typography',
+                'icon' => 'edit',
             ])
                 @slot('pagedescription')
                     Documentation and examples for typography, including global settings, headings, body text, lists, and

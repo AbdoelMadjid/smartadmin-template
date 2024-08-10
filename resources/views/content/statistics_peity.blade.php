@@ -4,37 +4,37 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Statistics'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-chart-pie'></i> Peity <sup class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    Simple and lightweight miniature chart.
-                </small>
-            </h1>
-            <div class="subheader-block d-none d-sm-flex align-items-center">
-                <div class="d-inline-flex flex-column justify-content-center mr-3">
-                    <span class="fw-300 fs-xs d-block opacity-50">
-                        <small>EXPENSES</small>
-                    </span>
-                    <span class="fw-500 fs-xl d-block color-info-500">
-                        $47,000
-                    </span>
+            @component('layouts._page_heading', [
+                'icon' => 'chart-pie',
+                'sup' => 'ADDON',
+                'pagedescription' => 'Simple and lightweight miniature chart.',
+            ])
+                <div class="subheader-block d-none d-sm-flex align-items-center">
+                    <div class="d-inline-flex flex-column justify-content-center mr-3">
+                        <span class="fw-300 fs-xs d-block opacity-50">
+                            <small>EXPENSES</small>
+                        </span>
+                        <span class="fw-500 fs-xl d-block color-info-500">
+                            $47,000
+                        </span>
+                    </div>
+                    <span class="peity-bar"
+                        data-peity='{ "fill": ["#0d8aee"], "height": 32, "width": 100 }'>1,4,3,6,5,3,9,6,5,9,7</span>
                 </div>
-                <span class="peity-bar"
-                    data-peity='{ "fill": ["#0d8aee"], "height": 32, "width": 100 }'>1,4,3,6,5,3,9,6,5,9,7</span>
-            </div>
-            <div
-                class="subheader-block d-none d-sm-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
-                <div class="d-inline-flex flex-column justify-content-center mr-3">
-                    <span class="fw-300 fs-xs d-block opacity-50">
-                        <small>MY PROFITS</small>
-                    </span>
-                    <span class="fw-500 fs-xl d-block color-danger-500">
-                        $38,500
-                    </span>
+                <div
+                    class="subheader-block d-none d-sm-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
+                    <div class="d-inline-flex flex-column justify-content-center mr-3">
+                        <span class="fw-300 fs-xs d-block opacity-50">
+                            <small>MY PROFITS</small>
+                        </span>
+                        <span class="fw-500 fs-xl d-block color-danger-500">
+                            $38,500
+                        </span>
+                    </div>
+                    <span class="peity-line"
+                        data-peity='{ "fill": "#fe6bb0", "stroke": "#fd3995", "height": 32, "width": 100 }'>1,4,3,6,5,3,9,6,5,9,7</span>
                 </div>
-                <span class="peity-line"
-                    data-peity='{ "fill": "#fe6bb0", "stroke": "#fd3995", "height": 32, "width": 100 }'>1,4,3,6,5,3,9,6,5,9,7</span>
-            </div>
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">
@@ -409,8 +409,8 @@
 @endsection
 @section('pages-script')
     <!-- peity bundle:
-                  + jquery.peity.js (core)
-                  + src/../jquery.peity.config.js (config) -->
+                                      + jquery.peity.js (core)
+                                      + src/../jquery.peity.config.js (config) -->
     <script src="/assets/js/statistics/peity/peity.bundle.js"></script>
     <script>
         $(document).ready(function() {

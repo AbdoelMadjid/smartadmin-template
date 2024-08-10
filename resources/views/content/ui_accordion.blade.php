@@ -7,14 +7,14 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Accordion
-                <small>
-                    Using the card component, you can extend the default collapse behavior to create an accordion. To
-                    properly achieve the accordion style, be sure to use .accordion as a wrapper.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Using the card component, you can extend the default collapse behavior to create an accordion. To properly achieve the accordion style, be sure to use .accordion as a wrapper.',
+            ])
+            @endcomponent
         </div>
+
         <div class="alert alert-primary alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">

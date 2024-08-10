@@ -2,18 +2,20 @@
     @isset($icon)
         <i class='subheader-icon fal fa-{{ $icon }}'></i>
     @endisset
-    @isset($heading1)
-        {{ $heading1 }}
-    @endisset
+
+    {{ $heading1 ?? View::yieldContent('title', 'My App') }}
+
     @isset($heading2)
         <span class='fw-300'>{{ $heading2 }}</span>
-        @isset($sup)
-            <sup class='badge badge-primary fw-500'>{{ $sup }}</sup>
-        @endisset
     @endisset
+
+    @isset($sup)
+        <sup class='badge badge-primary fw-500'>{{ $sup }}</sup>
+    @endisset
+
     @isset($pagedescription)
         <small>
-            {{ $pagedescription }}
+            {!! $pagedescription !!}
         </small>
     @endisset
 </h1>

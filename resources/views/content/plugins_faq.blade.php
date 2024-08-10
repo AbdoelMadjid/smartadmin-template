@@ -4,12 +4,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Core Plugins'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-shield-alt'></i> Plugins FAQ
-                <small>
-                    The difference types of plugins and its appliaction importance within the template
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'shield-alt',
+                'pagedescription' => 'The difference types of plugins and its appliaction importance within the template',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col">

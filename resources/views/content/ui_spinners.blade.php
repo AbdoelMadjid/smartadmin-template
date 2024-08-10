@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Spinners
-                <small>
-                    Indicate the loading state of a component or page with spinners, built entirely with HTML, CSS, and no
-                    JavaScript!
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Indicate the loading state of a component or page with spinners, built entirely with HTML, CSS, and no JavaScript!',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

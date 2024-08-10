@@ -7,13 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Button Group
-                <small>
-                    Group a series of buttons together on a single line with the button group, and super-power them with
-                    JavaScript.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-sm-12">

@@ -7,12 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Statistics'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-chart-pie'></i> Chart.js <sup class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    Simple yet flexible JavaScript charting for designers & developers
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'chart-pie',
+                'sup' => 'ADDON',
+                'pagedescription' => 'Simple yet flexible JavaScript charting for designers & developers.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

@@ -6,7 +6,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'window',
-                'heading1' => 'Position',
                 'pagedescription' => 'Use these shorthand utilities for quickly configuring the position of an element.',
             ])
             @endcomponent

@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', 'App.Core')
+@section('title', 'App.Core.js')
 @section('pages-css')
     <link rel="stylesheet" media="screen, print" href="/assets/css/theme-demo.css">
 @endsection
@@ -7,12 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Core Plugins'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-shield-alt'></i> App.core.js <sup class='badge badge-danger fw-500'>CORE</sup>
-                <small>
-                    The heart and soul of SmartAdmin - Responsive WebApp
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'shield-alt',
+                'sup' => 'CORE',
+                'pagedescription' => 'The heart and soul of SmartAdmin - Responsive WebApp',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">

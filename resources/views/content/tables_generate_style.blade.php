@@ -4,9 +4,10 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Tables'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='fal fa-th-list text-primary'></i> Generate Table Style
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'th-list text-primary',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

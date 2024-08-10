@@ -7,13 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Alerts
-                <small>
-                    Provide contextual feedback messages for typical user actions with the handful of available and flexible
-                    alert messages.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-md-12 col-xl-6">

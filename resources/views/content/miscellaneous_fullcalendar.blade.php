@@ -7,12 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Miscellaneous'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-globe'></i> FullCalendar<sup class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    Display a full-size drag-n-drop event calendar.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'globe',
+                'sup' => 'ADDON',
+                'pagedescription' => 'Display a full-size drag-n-drop event calendar.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

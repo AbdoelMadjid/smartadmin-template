@@ -6,7 +6,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'bolt',
-                'heading1' => 'Helpers',
                 'pagedescription' => 'helpers description',
             ])
             @endcomponent

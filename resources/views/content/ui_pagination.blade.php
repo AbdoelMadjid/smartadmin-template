@@ -4,12 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Pagination
-                <small>
-                    Examples for showing pagination to indicate a series of related content exists across multiple pages.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Examples for showing pagination to indicate a series of related content exists across multiple pages.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">

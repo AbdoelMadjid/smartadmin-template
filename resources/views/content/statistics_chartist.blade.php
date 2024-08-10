@@ -7,13 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Statistics'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-chart-pie'></i> Chartist.js <sup
-                    class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    Simple responsive charts
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'chart-pie',
+                'sup' => 'ADDON',
+                'pagedescription' => 'Simple responsive charts.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

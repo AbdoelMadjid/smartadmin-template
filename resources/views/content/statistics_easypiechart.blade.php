@@ -4,46 +4,45 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Statistics'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-chart-pie'></i> Easy Pie Chart <sup
-                    class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    Lightweight plugin to render simple, animated and retina optimized pie charts.
-                </small>
-            </h1>
-            <div class="subheader-block d-none d-sm-flex align-items-center">
-                <div class="d-inline-flex flex-column justify-content-center mr-3">
-                    <span class="fw-300 fs-xs d-block opacity-50">
-                        <small>EXPENSES</small>
-                    </span>
-                    <span class="fw-500 fs-xl d-block color-info-500">
-                        $47,000
+            @component('layouts._page_heading', [
+                'icon' => 'chart-pie',
+                'sup' => 'ADDON',
+                'pagedescription' => 'Lightweight plugin to render simple, animated and retina optimized pie charts.',
+            ])
+                <div class="subheader-block d-none d-sm-flex align-items-center">
+                    <div class="d-inline-flex flex-column justify-content-center mr-3">
+                        <span class="fw-300 fs-xs d-block opacity-50">
+                            <small>EXPENSES</small>
+                        </span>
+                        <span class="fw-500 fs-xl d-block color-info-500">
+                            $47,000
+                        </span>
+                    </div>
+                    <span
+                        class="js-easy-pie-chart color-primary-500 position-relative d-flex align-items-center justify-content-center"
+                        data-percent="45" data-scalelength="2">
+                        <span
+                            class="js-percent d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom"></span>
                     </span>
                 </div>
-                <span
-                    class="js-easy-pie-chart color-primary-500 position-relative d-flex align-items-center justify-content-center"
-                    data-percent="45" data-scalelength="2">
+                <div
+                    class="subheader-block d-none d-sm-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
+                    <div class="d-inline-flex flex-column justify-content-center mr-3">
+                        <span class="fw-300 fs-xs d-block opacity-50">
+                            <small>MY PROFITS</small>
+                        </span>
+                        <span class="fw-500 fs-xl d-block color-danger-500">
+                            $38,500
+                        </span>
+                    </div>
                     <span
-                        class="js-percent d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom"></span>
-                </span>
-            </div>
-            <div
-                class="subheader-block d-none d-sm-flex align-items-center border-faded border-right-0 border-top-0 border-bottom-0 ml-3 pl-3">
-                <div class="d-inline-flex flex-column justify-content-center mr-3">
-                    <span class="fw-300 fs-xs d-block opacity-50">
-                        <small>MY PROFITS</small>
-                    </span>
-                    <span class="fw-500 fs-xl d-block color-danger-500">
-                        $38,500
+                        class="js-easy-pie-chart color-danger-500 position-relative d-flex align-items-center justify-content-center"
+                        data-percent="86" data-scalelength="2">
+                        <span
+                            class="js-percent d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom"></span>
                     </span>
                 </div>
-                <span
-                    class="js-easy-pie-chart color-danger-500 position-relative d-flex align-items-center justify-content-center"
-                    data-percent="86" data-scalelength="2">
-                    <span
-                        class="js-percent d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom"></span>
-                </span>
-            </div>
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">
@@ -224,15 +223,15 @@
                                     data-percent="75" data-piesize="95" data-linewidth="10" data-scalelength="5">
                                     <div
                                         class="d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom">
-                                        <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle"
-                                            alt="Dr. Codex Lantern">
+                                        <img src="assets/img/demo/avatars/avatar-admin.png"
+                                            class="profile-image rounded-circle" alt="Dr. Codex Lantern">
                                     </div>
                                 </div>
                                 <div class="js-easy-pie-chart color-success-500 position-relative d-inline-flex align-items-center justify-content-center"
                                     data-percent="86" data-piesize="80" data-linewidth="7" data-scalelength="4">
                                     <div
                                         class="d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom">
-                                        <img src="img/demo/avatars/avatar-admin.png"
+                                        <img src="assets/img/demo/avatars/avatar-admin.png"
                                             class="profile-image-md rounded-circle" alt="Dr. Codex Lantern">
                                     </div>
                                 </div>
@@ -241,7 +240,7 @@
                                     data-scalecolor="#fff">
                                     <div
                                         class="d-flex align-items-center justify-content-center position-absolute pos-left pos-right pos-top pos-bottom">
-                                        <img src="img/demo/avatars/avatar-admin.png"
+                                        <img src="assets/img/demo/avatars/avatar-admin.png"
                                             class="profile-image-sm rounded-circle" alt="Dr. Codex Lantern">
                                     </div>
                                 </div>
@@ -339,8 +338,8 @@
 @endsection
 @section('pages-script')
     <!-- easypiechart bundle:
-                  + jquery.easypiechart.js (core)
-                  + src/../jquery.easypiechart.config.js (config) -->
+                                                      + jquery.easypiechart.js (core)
+                                                      + src/../jquery.easypiechart.config.js (config) -->
     <script src="/assets/js/statistics/easypiechart/easypiechart.bundle.js"></script>
     <script>
         $(document).ready(function() {

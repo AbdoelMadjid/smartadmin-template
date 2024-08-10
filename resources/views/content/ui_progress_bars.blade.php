@@ -4,16 +4,15 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Progress Bars
-                <small>
-                    Progress bars featuring support for stacked bars, animated backgrounds, and text labels
-                </small>
-            </h1>
-            <div class="subheader-block">
-                <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary" data-action="toggle"
-                    data-class="justify-content-end" data-target=".progress">Reverse polarity</a>
-            </div>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' => 'Progress bars featuring support for stacked bars, animated backgrounds, and text labels',
+            ])
+                <div class="subheader-block">
+                    <a href="javascript:void(0)" class="btn btn-sm btn-outline-primary" data-action="toggle"
+                        data-class="justify-content-end" data-target=".progress">Reverse polarity</a>
+                </div>
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

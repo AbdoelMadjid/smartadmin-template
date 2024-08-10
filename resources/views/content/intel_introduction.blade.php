@@ -6,7 +6,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'info-circle',
-                'heading1' => 'Introduction',
                 'pagedescription' => 'A brief introduction to this WebApp',
             ])
             @endcomponent

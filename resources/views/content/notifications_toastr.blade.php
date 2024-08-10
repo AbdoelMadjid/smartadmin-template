@@ -8,13 +8,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Notifications'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-exclamation-circle'></i> Toastr <sup
-                    class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    Simple to use, lightweight notification plugin
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'exclamation-circle',
+                'sup' => 'ADDON',
+                'pagedescription' => 'Simple to use, lightweight notification plugin',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

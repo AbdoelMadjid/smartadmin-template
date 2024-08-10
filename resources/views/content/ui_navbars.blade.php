@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Navbars
-                <small>
-                    Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes
-                    support for branding, navigation, and more, including support for our collapse plugin.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -99,8 +98,8 @@
                                 data-offset="0,10" data-original-title="Collapse"></button>
                             <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip"
                                 data-offset="0,10" data-original-title="Fullscreen"></button>
-                            <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip"
-                                data-offset="0,10" data-original-title="Close"></button>
+                            <button class="btn btn-panel" data-action="panel-close" data-toggle="tooltip" data-offset="0,10"
+                                data-original-title="Close"></button>
                         </div>
                     </div>
                     <div class="panel-container show">

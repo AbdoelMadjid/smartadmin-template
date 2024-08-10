@@ -5,7 +5,7 @@
         @include('layouts._page_breadcrumb', ['category_1' => 'Utilities'])
         <div class="subheader">
             @component('layouts._page_heading', [
-                'heading1' => 'Borders',
+                'icon' => 'window',
             ])
                 @slot('pagedescription')
                     Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or

@@ -4,12 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Cards
-                <small>
-                    Cards provide a flexible and extensible content container with multiple variants and options.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Cards provide a flexible and extensible content container with multiple variants and options.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">

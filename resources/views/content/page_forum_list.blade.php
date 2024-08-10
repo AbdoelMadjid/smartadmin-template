@@ -7,12 +7,13 @@
             'category_2' => 'Forum Layouts',
         ])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-plus-circle'></i> Forum: <span class='fw-300'>List</span>
-                <small>
-                    Forum list page
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'plus-circle',
+                'heading1' => 'Forum:',
+                'heading2' => 'List',
+                'pagedescription' => 'Forum list page',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-12">

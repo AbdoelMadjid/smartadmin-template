@@ -9,7 +9,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'bolt',
-                'heading1' => 'Spacing',
             ])
                 @slot('pagedescription')
                     Bootstrap includes a wide range of shorthand responsive margin and padding utility classes to modify an

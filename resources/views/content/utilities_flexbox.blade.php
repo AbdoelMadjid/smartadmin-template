@@ -9,7 +9,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'window',
-                'heading1' => 'Flexbox',
             ])
                 @slot('pagedescription')
                     Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with

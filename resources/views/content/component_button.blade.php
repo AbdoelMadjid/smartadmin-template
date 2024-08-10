@@ -10,8 +10,7 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'dice-d6',
-                'heading1' => 'Component',
-                'heading2' => 'Button',
+                'sup' => 'ADDON',
                 'pagedescription' => 'Components are supporting blade templates on this website',
             ])
             @endcomponent

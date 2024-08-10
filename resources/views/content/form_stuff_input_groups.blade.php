@@ -4,12 +4,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Form Stuff'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-edit'></i> Input Groups
-                <small>
-                    Default input elements for forms
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'edit',
+                'pagedescription' => 'Default input elements for forms',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">

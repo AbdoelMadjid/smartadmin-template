@@ -7,12 +7,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Utilities'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Display Property
-                <small>
-                    Quickly and responsively toggle the display value of components and more with our display utilities.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Quickly and responsively toggle the display value of components and more with our display utilities.',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary alert-dismissible">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">

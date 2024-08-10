@@ -7,12 +7,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Page Views'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-plus-circle'></i> Projects
-                <small>
-                    A generic project page displaying project names and progression
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'plus-circle',
+                'pagedescription' => 'A generic project page displaying project names and progression',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-12">

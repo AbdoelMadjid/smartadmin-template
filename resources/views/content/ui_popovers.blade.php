@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Popovers
-                <small>
-                    Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on
-                    your site.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on your site.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">

@@ -9,12 +9,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Page Views'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-plus-circle'></i> Profile
-                <small>
-                    Profile layout
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'plus-circle',
+                'pagedescription' => 'Profile layout',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-lg-6 col-xl-3 order-lg-1 order-xl-1">

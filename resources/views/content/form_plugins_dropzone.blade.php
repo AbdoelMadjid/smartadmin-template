@@ -7,13 +7,13 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Form Plugins'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-credit-card-front'></i> Dropzone<sup
-                    class='badge badge-primary fw-500'>ADDON</sup>
-                <small>
-                    DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'credit-card-front',
+                'sup' => 'ADDON',
+                'pagedescription' =>
+                    'DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews',
+            ])
+            @endcomponent
         </div>
         <div class="alert alert-primary">
             <div class="d-flex flex-start w-100">

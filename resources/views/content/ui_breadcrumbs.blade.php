@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Breadcrumbs
-                <small>
-                    Indicate the current page’s location within a navigational hierarchy. Separators are automatically added
-                    in CSS through <code>::before</code> and content.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <code>::before</code> and content.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -47,6 +46,11 @@
                                     </li>
                                     <li class="breadcrumb-item active">Data</li>
                                 </ol>
+                                <x-breadcrumb :items="[
+                                    ['url' => '#', 'text' => 'Home'],
+                                    ['url' => '#', 'text' => 'Library'],
+                                    ['url' => '#', 'text' => 'Web'],
+                                ]" active="Data" />
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item">
                                         <a href="#">This is a big text</a>
@@ -59,6 +63,12 @@
                                     </li>
                                     <li class="breadcrumb-item active">Cool right?</li>
                                 </ol>
+                                <x-breadcrumb :items="[
+                                    ['url' => '#', 'text' => 'This is a big text'],
+                                    ['url' => '#', 'text' => 'Hovering reveals the text'],
+                                    ['url' => '#', 'text' => 'Can be big as you like'],
+                                ]" active="Cool right?" />
+
                             </div>
                         </div>
                     </div>

@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Tabs & Pills
-                <small>
-                    Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface.
-                    Use them to create tabbable regions with our tab JavaScript plugin.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Takes the basic nav from above and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our tab JavaScript plugin.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">

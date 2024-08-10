@@ -5,7 +5,7 @@
         @include('layouts._page_breadcrumb', ['category_1' => 'Utilities'])
         <div class="subheader">
             @component('layouts._page_heading', [
-                'heading1' => 'Responsive Grid',
+                'icon' => 'window',
             ])
                 @slot('pagedescription')
                     Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes.

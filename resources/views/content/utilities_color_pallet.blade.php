@@ -5,7 +5,7 @@
         @include('layouts._page_breadcrumb', ['category_1' => 'Utilities'])
         <div class="subheader">
             @component('layouts._page_heading', [
-                'heading1' => 'Color Pallet',
+                'icon' => 'window',
             ])
                 @slot('pagedescription')
                     Comes with 60 unique color pallets, that uses one prime to generate all pallets

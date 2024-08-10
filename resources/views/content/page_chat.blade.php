@@ -4,12 +4,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'Page Views'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-plus-circle'></i> Chat
-                <small>
-                    A robust and simple chat component that is flexible, intuitive, easy to use and customize
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'plus-circle',
+                'pagedescription' => 'A robust and simple chat component that is flexible, intuitive, easy to use and customize',
+            ])
+            @endcomponent
         </div>
         <div class="d-flex flex-grow-1 p-0 border-faded shadow-4" style="max-height:800px;">
             <!-- left slider -->

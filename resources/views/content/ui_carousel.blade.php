@@ -7,12 +7,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Carousel
-                <small>
-                    A slideshow component for cycling through elements—images or slides of text—like a carousel.
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' => 'A slideshow component for cycling through elements—images or slides of text—like a carousel.',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-sm-12">

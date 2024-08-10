@@ -6,7 +6,6 @@
         <div class="subheader">
             @component('layouts._page_heading', [
                 'icon' => 'window',
-                'heading1' => 'Sizing',
                 'pagedescription' => 'Easily make an element as wide or as tall with our width and height utilities.',
             ])
             @endcomponent

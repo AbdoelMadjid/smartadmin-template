@@ -4,13 +4,12 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> List filter
-                <small>
-                    Allow any lists to be filtered via the included filter plugin. Very easy to setup, no programming
-                    needed!
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' =>
+                    'Allow any lists to be filtered via the included filter plugin. Very easy to setup, no programming needed!',
+            ])
+            @endcomponent
         </div>
         <div class="row">
             <div class="col-xl-6">

@@ -4,12 +4,11 @@
     <main id="js-page-content" role="main" class="page-content">
         @include('layouts._page_breadcrumb', ['category_1' => 'UI Components'])
         <div class="subheader">
-            <h1 class="subheader-title">
-                <i class='subheader-icon fal fa-window'></i> Side Panel
-                <small>
-                    A neat way to present side panels
-                </small>
-            </h1>
+            @component('layouts._page_heading', [
+                'icon' => 'window',
+                'pagedescription' => 'A neat way to present side panels',
+            ])
+            @endcomponent
         </div>
         <div class="ie-only alert alert-danger d-none">
             <h4>This message is visible to IE users only!</h4>
